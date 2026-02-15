@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virus Chronicles</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    font-family:"Trebuchet MS",Arial,sans-serif;
+    min-height:100vh;
+    background:url("image/bg.jpg") center/cover no-repeat fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.15);
+    z-index:-1;
+}
+
+/* ===== MENU CARD ===== */
+.menu-card{
+    background:linear-gradient(#d9934f,#c67a3c);
+    border-radius:20px;
+    padding:30px;
+    width:90%;
+    max-width:360px;
+    text-align:center;
+    border:4px solid #8b4a19;
+    box-shadow:inset 0 4px rgba(255,255,255,.3),
+               inset 0 -6px rgba(0,0,0,.25),
+               0 10px #8b4a19;
+}
+
+.menu-title{
+    font-size:32px;
+    margin-bottom:25px;
+    color:#ffffff;
+    text-shadow:0px 0px #ffd28a;
+}
+
+#userBox{
+    position:fixed;
+    top:15px;
+    right:20px;
+    background:rgba(0,0,0,.65);
+    color:#fff;
+    padding:10px 16px;
+    border-radius:14px;
+    font-weight:bold;
+    z-index:20;
+    display:none;
+}
+
+.menu-btn{
+    width:100%;
+    margin:10px 0;
+    padding:16px;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:18px;
+    border:4px solid #7a3e12;
+    cursor:pointer;
+    background:linear-gradient(#ffea81,#ff8400);
+    color:#ffffff;
+    text-shadow:1px 1px rgba(0,0,0,.3);
+    box-shadow:inset 0 5px rgba(255,255,255,.4),
+               inset 0 -4px rgba(0,0,0,.25),
+               0 8px #7a3e12;
+}
+
+.menu-btn:active{
+    transform:translateY(6px);
+    box-shadow:inset 0 3px rgba(255,255,255,.3),
+               inset 0 -3px rgba(0,0,0,.25),
+               0 2px #7a3e12;
+}
+
+/* ===== POPUP ===== */
+.popup-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:10;
+}
+
+.popup{
+    background:linear-gradient(#d9934f,#c67a3c);
+    border-radius:20px;
+    padding:25px;
+    width:90%;
+    max-width:480px;
+    border:4px solid #8b4a19;
+    box-shadow:0 15px 40px rgba(0,0,0,.7);
+    position:relative;
+    text-align:center;
+}
+
+.popup p {
+    font-size: 16px;              /* teks agak besar */
+    line-height: 1.8;
+    color: #ffffff;               /* teks putih */
+    text-align: justify;             /* rata kiri */
+    white-space: pre-line;        /* AKTIFKAN ENTER */
+}
+
+.close-btn{
+    position:absolute;
+    top:10px;
+    right:14px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    color:#4b2600;
+}
+
+.popup h2{
+    margin-bottom:15px;
+    color:white;
+    font-size:24px;
+    text-shadow:2px 2px rgba(0,0,0,.5);
+}
+
+.popup p{
+    font-size:16px;
+    line-height:1.8;
+    color:white;
+}
+
+/* ===== NAV ===== */
+.popup-nav{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+.nav-btn{
+    padding:10px 18px;
+    border-radius:14px;
+    border:3px solid #7a3e12;
+    font-weight:bold;
+    cursor:pointer;
+    background:linear-gradient(#ffe45c,#ffb700);
+    color:#7a3e12;
+}
+/* ================= MATERI IMAGE ================= */
+.popup.materi {
+    width: 95%;
+    max-width: 1000px;     /* CARD LEBIH BESAR */
+    padding: 20px;
+}
+
+/* GAMBAR SLIDE */
+.materi-img {
+    width: 100%;
+    max-height: 70vh;         /* GAMBAR LEBIH BESAR */
+    object-fit: contain;
+    border-radius: 12px;
+    margin: 15px 0;
+    background: rgba(0,0,0,0.4);
+}
+
+/* ===== LOGIN INPUT ===== */
+#loginPopup input{
+    width:100%;
+    padding:14px;
+    border-radius:14px;
+    border:none;
+    font-size:16px;
+    text-align:center;
+    outline:none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- USER BOX -->
+<div id="userBox">Halo, User</div>
+
+<!-- MENU -->
+<div class="menu-card">
+    <div class="menu-title">Virus Chronicles</div>
+    <button class="menu-btn" onclick="startGame()">Start</button>
+    <button class="menu-btn" onclick="openPopup('pendahuluan')">Pendahuluan</button>
+    <button class="menu-btn" onclick="openPopup('deskripsi')">Deskripsi</button>
+    <button class="menu-btn" onclick="openMateri()">Materi</button>
+    <button class="menu-btn" onclick="openPopup('aturan')">Aturan Game</button>
+</div>
+
+<!-- LOGIN POPUP -->
+<div class="popup-overlay" id="loginPopup">
+    <div class="popup">
+        <h2>Masukkan Username</h2>
+        <input type="text" id="usernameInput" placeholder="Username">
+        <br><br>
+        <button class="menu-btn" onclick="submitUsername()">Masuk</button>
+    </div>
+</div>
+
+
+<div class="popup-overlay" id="popup">
+    <div class="popup">
+        <div class="close-btn" onclick="closePopup()">✕</div>
+        <h2 id="popupTitle"></h2>
+        <p id="popupText"></p>
+
+        <div class="popup-nav">
+            <button class="nav-btn" onclick="prevSlide()">←</button>
+            <button class="nav-btn" onclick="nextSlide()">→</button>
+        </div>
+    </div>
+</div>
+
+<div class="popup-overlay" id="materiPopup">
+    <div class="popup materi">
+
+    <div class="close-btn" onclick="closeMateri()">✕</div>
+
+    <h2 id="materiTitle">Materi</h2>
+
+    <!-- GAMBAR SLIDE -->
+    <img id="materiImage"
+            src="image/materi/materi_1.PNG"
+            alt="Materi Slide"
+            class="materi-img">
+
+    <!-- NAV -->
+    <div class="popup-nav">
+        <button class="nav-btn" onclick="prevMateri()">←</button>
+        <button class="nav-btn" onclick="nextMateri()">→</button>
+    </div>
+
+    </div>
+</div>
+
+<script>
+let currentIndex = 0;
+let activeContent = [];
+
+let materiIndex = 1;
+const totalMateri = 30;
+
+function openMateri() {
+    materiIndex = 1;
+    updateMateri();
+    document.getElementById("materiPopup").style.display = "flex";
+}
+
+function closeMateri() {
+    document.getElementById("materiPopup").style.display = "none";
+}
+
+function nextMateri() {
+    if (materiIndex < totalMateri) {
+        materiIndex++;
+        updateMateri();
+    }
+}
+
+function prevMateri() {
+    if (materiIndex > 1) {
+        materiIndex--;
+        updateMateri();
+    }
+}
+
+function updateMateri() {
+    document.getElementById("materiImage").src =
+        `image/materi/materi_${materiIndex}.PNG`;
+
+    document.getElementById("materiTitle").innerText =
+        `Materi (${materiIndex} / ${totalMateri})`;
+}
+
+const content = {
+    pendahuluan: [
+        {
+            title: "Capaian Pembelajaran",
+            text: " Menerapkan prinsip klasifikasi dan strategi pelestarian keanekaragaman hayati; mendeskripsikan peranan virus, bakteri, dan jamur dalam kehidupan; menganalisis interaksi antar komponen ekosistem dan pengaruhnya terhadap keseimbangan ekosistem; menggunakan sistem pengukuran dalam kerja ilmiah; menganalisis gerak dua dimensi; menganalisis pemanfaatan energi alternatif untuk mengatasi permasalahan ketersediaan energi; menganalisis partikel penyusun materi dan menerapkan konsep stoikiometri dalam berbagai aspek kuantitatif reaksi kimia; dan menerapkan konsep IPA untuk mengatasi permasalahan berkaitan dengan perubahan iklim."
+        },
+        {
+            title: "Tujuan Pembelajaran",
+            text: "1. Peserta didik mampu menerapkan konsep struktur serta siklus reproduksi virus (litik dan lisogenik) untuk menentukan fase infeksi virus pada kasus kontekstual. \n" +
+            "2. Peserta didik mampu menganalisis keterkaitan antara karakteristik virus, mekanisme infeksi, dan respons inang untuk menjelaskan dampak infeksi virus serta menilai efektivitas upaya pencegahan. \n" + 
+            "3. Peserta didik mampu menafsirkan data dan informasi terkait karakteristik virus, tingkat mutasi, dan pola penyebaran."
+        }
+    ],
+    deskripsi: [
+        {
+            title: "Deskripsi Game",
+            text: "Virus Chronicles adalah game RPG edukatif yang mengajak pemain menjelajahi dunia mikroskopis, di mana virus menjadi ancaman bagi keseimbangan kehidupan. Pemain berperan sebagai agen biologi muda yang bertugas menyelidiki dan mengendalikan penyebaran virus dalam tubuh manusia. Setiap misi dirancang menyerupai situasi nyata pembelajaran biologi, sehingga pemain dapat memahami jenis virus, cara penularan, dan dampaknya secara menyenangkan.\n\n" +
+            "Melalui cerita, tantangan, dan pilihan strategi, permainan ini melatih pemain berpikir kritis dalam mengambil keputusan dan menyimpulkan informasi. Elemen RPG seperti level dan misi membuat proses belajar materi virus menjadi lebih menarik dan mudah dipahami."
+        }
+    ],
+    aturan: [
+        {
+            title: "Aturan Game",
+            text: "1. Pemain memulai permainan dari Level 1 dan harus menyelesaikan setiap level secara berurutan untuk membuka level berikutnya. \n" + 
+            "2. Setiap level terdiri atas misi dan tantangan berupa soal atau kasus terkait struktur, ciri, reproduksi, dan peranan virus dalam kehidupan.\n" +  
+            "3. Pemain wajib membaca skenario atau narasi pada setiap misi sebelum menjawab soal, karena jawaban harus disesuaikan dengan konteks yang diberikan."
+        },
+        {
+            title: "Aturan Game",
+            text: 
+            "4. Jawaban yang benar akan mendapatkan poin, sedangkan jawaban yang kurang tepat tidak menambah poin atau mengurangi kesempatan bermain.\n" + 
+            "5. Level lanjutan memiliki tingkat kesulitan lebih tinggi, dengan soal berbasis analisis kasus, data, atau situasi nyata (HOTS).\n" + 
+            "6. Skor akhir mencerminkan pemahaman konsep dan kemampuan berpikir kritis, bukan sekadar kecepatan bermain.\n" + 
+            "7. Permainan dinyatakan selesai apabila seluruh level berhasil diselesaikan."
+        }
+    ]
+};
+
+function openPopup(type){
+    activeContent = content[type];
+    currentIndex = 0;
+    updatePopup();
+    document.getElementById("popup").style.display="flex";
+}
+
+function updatePopup(){
+    document.getElementById("popupTitle").innerText = activeContent[currentIndex].title;
+    document.getElementById("popupText").innerText = activeContent[currentIndex].text;
+}
+
+function nextSlide(){
+    if(currentIndex < activeContent.length-1){
+        currentIndex++;
+        updatePopup();
+    }
+}
+
+function prevSlide(){
+    if(currentIndex > 0){
+        currentIndex--;
+        updatePopup();
+    }
+}
+
+function closePopup(){
+    document.getElementById("popup").style.display="none";
+}
+
+function startGame(){
+    window.location.href="index.html";
+}
+
+/* ===== LOGIN LOGIC ===== */
+window.onload = function(){
+    const username = sessionStorage.getItem("username");
+    if(username){
+        showUser(username);
+    }else{
+        document.getElementById("loginPopup").style.display = "flex";
+    }
+}
+
+function submitUsername(){
+    const username = document.getElementById("usernameInput").value.trim();
+    if(username === ""){
+        alert("Username tidak boleh kosong!");
+        return;
+    }
+    sessionStorage.setItem("username", username);
+    showUser(username);
+}
+
+function showUser(username){
+    document.getElementById("loginPopup").style.display = "none";
+    const userBox = document.getElementById("userBox");
+    userBox.innerText = `Halo, ${username}`;
+    userBox.style.display = "block";
+}
+
+
+</script>
+
+</body>
+</html>
