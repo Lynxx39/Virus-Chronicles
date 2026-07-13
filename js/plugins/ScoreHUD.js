@@ -1,15 +1,14 @@
 /*:
- * @plugindesc HUD Skor Sederhana - Menampilkan skor pemain di layar atas kiri (Variabel #1)
+ * @plugindesc HUD Skor Sederhana & Kontrol Pilihan - Menampilkan skor pemain di layar atas kiri (Variabel #1) dan menonaktifkan pembatalan pilihan.
  * @author ChatGPT
  * @target MZ
  * @help
- * Plugin ini akan menampilkan skor pemain (Variabel ID 1) di pojok kiri atas layar.
- * 
- * Tidak ada pengaturan tambahan. Cukup aktifkan plugin ini.
+ * Plugin ini akan menampilkan skor pemain (Variabel ID 1) di pojok kiri atas layar seperti semula.
+ * Tombol ESC / pembatalan dinonaktifkan pada pilihan agar soal tidak terlewat/selesai tanpa poin.
  */
 
 (() => {
-  // Membuat jendela skor
+  // Membuat jendela skor (kembali seperti semula)
   class Window_ScoreHUD extends Window_Base {
     initialize() {
       const width = 200;
@@ -38,5 +37,19 @@
     _Scene_Map_createAllWindows.call(this);
     this._scoreHUD = new Window_ScoreHUD();
     this.addWindow(this._scoreHUD);
+  };
+
+  // Menonaktifkan pembatalan pilihan (ESC / klik luar / tombol cancel)
+  Window_ChoiceList.prototype.isCancelEnabled = function() {
+    return false;
+  };
+
+  Window_ChoiceList.prototype.needsCancelButton = function() {
+    return false;
+  };
+
+  // Membuat jendela dialog lebih tinggi (6 baris) agar memuat teks deskripsi soal yang panjang dalam 1 kotak
+  Window_Message.prototype.numVisibleRows = function() {
+    return 6;
   };
 })();
