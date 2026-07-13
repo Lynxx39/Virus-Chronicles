@@ -1,11 +1,12 @@
 /*:
- * @plugindesc HUD Skor Sederhana, Kontrol Pilihan, D-pad Touch & WASD - Menampilkan skor, menonaktifkan pembatalan pilihan, D-pad virtual, dan pergerakan WASD.
+ * @plugindesc HUD Skor Sederhana, Kontrol Pilihan, D-pad Touch & WASD - Menampilkan skor, menonaktifkan pembatalan pilihan, D-pad virtual (sembunyi saat dialog), dan pergerakan WASD.
  * @author ChatGPT & Antigravity
  * @target MZ
  * @help
  * Plugin ini akan menampilkan skor pemain (Variabel ID 1) di pojok kiri atas layar seperti semula.
  * Tombol ESC / pembatalan dinonaktifkan pada pilihan agar soal tidak terlewat/selesai tanpa poin.
  * Menambahkan D-pad Virtual (Cross Layout) di pojok kiri bawah layar agar mempermudah navigasi karakter di mobile/touch.
+ * D-pad otomatis tersembunyi ketika dialog sedang berlangsung agar tidak menutupi wajah karakter.
  * Menambahkan dukungan keyboard WASD untuk bergerak.
  */
 
@@ -30,6 +31,19 @@
     update() {
       super.update();
       this.refresh();
+
+      // Kontrol visibilitas D-pad secara dinamis setiap frame
+      const dpad = document.getElementById("virtual-dpad-container");
+      if (dpad) {
+        if ($gameMessage.isBusy()) {
+          dpad.style.display = "none";
+          // Reset arah ketika disembunyikan agar karakter tidak jalan sendiri
+          joystickDirection = 0;
+          activeDir = 0;
+        } else {
+          dpad.style.display = "block";
+        }
+      }
     }
   }
 
