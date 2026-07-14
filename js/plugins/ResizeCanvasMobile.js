@@ -90,7 +90,104 @@
         updateIcon();
     }
 
-    // Initialize button on mobile devices ONLY if Fullscreen API is supported by the device browser (hides it on iPhone Safari)
+    // Show iOS Fullscreen Guide modal
+    function showIosFullscreenGuide() {
+        let modal = document.getElementById("iosFullscreenGuideModal");
+        if (modal) {
+            modal.style.display = modal.style.display === "none" ? "flex" : "none";
+            return;
+        }
+
+        modal = document.createElement("div");
+        modal.id = "iosFullscreenGuideModal";
+        modal.style.position = "fixed";
+        modal.style.inset = "0";
+        modal.style.backgroundColor = "rgba(0, 0, 0, 0.85)";
+        modal.style.zIndex = "2000";
+        modal.style.display = "flex";
+        modal.style.flexDirection = "column";
+        modal.style.alignItems = "center";
+        modal.style.justifyContent = "center";
+        modal.style.padding = "20px";
+        modal.style.color = "#ffffff";
+        modal.style.fontFamily = "sans-serif";
+        modal.style.textAlign = "center";
+
+        const contentBox = document.createElement("div");
+        contentBox.style.backgroundColor = "#2c1c0c";
+        contentBox.style.border = "3px solid #ffe45c";
+        contentBox.style.borderRadius = "16px";
+        contentBox.style.padding = "20px";
+        contentBox.style.maxWidth = "400px";
+        contentBox.style.width = "90%";
+        contentBox.style.boxShadow = "0 8px 24px rgba(0,0,0,0.6)";
+
+        contentBox.innerHTML = `
+            <h3 style="margin-top: 0; color: #ffe45c; font-size: 18px;">📱 Cara Fullscreen di iPhone</h3>
+            <p style="font-size: 14px; line-height: 1.6; text-align: justify; margin: 15px 0;">
+                Apple membatasi layar penuh pada browser iPhone. Untuk bermain dengan layar penuh tanpa terpotong batas browser:
+            </p>
+            <ol style="font-size: 13px; line-height: 1.6; text-align: left; padding-left: 20px; margin-bottom: 20px;">
+                <li style="margin-bottom: 8px;">Tekan tombol <strong>Share / Bagikan</strong> (ikon <span style="font-size:16px;">⎋</span> atau kotak dengan panah atas) di bagian bawah Safari.</li>
+                <li style="margin-bottom: 8px;">Scroll ke bawah dan pilih menu <strong>'Tambahkan ke Layar Utama'</strong> (Add to Home Screen).</li>
+                <li style="margin-bottom: 8px;">Buka game dari ikon baru di Home Screen HP Anda.</li>
+            </ol>
+            <button id="closeIosGuideBtn" style="padding: 8px 20px; border-radius: 10px; border: 2px solid #7a3e12; font-weight: bold; background: linear-gradient(#ffe45c,#ffb700); color: #7a3e12; cursor: pointer;">Mengerti</button>
+        `;
+
+        modal.appendChild(contentBox);
+        document.body.appendChild(modal);
+
+        modal.querySelector("#closeIosGuideBtn").addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    }
+
+    // Create floating help button for iOS devices
+    function createIosFullscreenButton() {
+        if (document.getElementById("mobileIosFullscreenBtn")) return;
+
+        const btn = document.createElement("div");
+        btn.id = "mobileIosFullscreenBtn";
+        
+        btn.style.position = "fixed";
+        btn.style.top = "15px";
+        btn.style.left = "15px";
+        btn.style.zIndex = "1000";
+        btn.style.width = "42px";
+        btn.style.height = "42px";
+        btn.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+        btn.style.border = "1.5px solid rgba(255, 255, 255, 0.4)";
+        btn.style.borderRadius = "50%";
+        btn.style.display = "flex";
+        btn.style.alignItems = "center";
+        btn.style.justifyContent = "center";
+        btn.style.cursor = "pointer";
+        btn.style.color = "#ffffff";
+        btn.style.userSelect = "none";
+        btn.style.webkitUserSelect = "none";
+        btn.style.boxShadow = "0 2px 6px rgba(0, 0, 0, 0.4)";
+        btn.style.transition = "background-color 0.2s, border-color 0.2s";
+
+        const infoIcon = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>';
+        btn.innerHTML = infoIcon;
+
+        btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            showIosFullscreenGuide();
+        });
+
+        btn.addEventListener("touchstart", () => {
+            btn.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+        });
+        btn.addEventListener("touchend", () => {
+            btn.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+        });
+
+        document.body.appendChild(btn);
+    }
+
+    // Initialize button on mobile devices
     window.addEventListener("load", () => {
         const hasFullscreenSupport = !!(
             document.documentElement.requestFullscreen ||
@@ -98,8 +195,15 @@
             document.documentElement.mozRequestFullScreen ||
             document.documentElement.msRequestFullscreen
         );
-        if (Utils.isMobileDevice() && hasFullscreenSupport) {
-            createFullscreenButton();
+        if (Utils.isMobileDevice()) {
+            if (hasFullscreenSupport) {
+                createFullscreenButton();
+            } else {
+                const isStandalone = window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches;
+                if (!isStandalone) {
+                    createIosFullscreenButton();
+                }
+            }
         }
     });
 

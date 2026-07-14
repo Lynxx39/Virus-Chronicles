@@ -160,6 +160,48 @@ body::before{
     background: rgba(0,0,0,0.4);
 }
 
+/* ===== IOS PWA PROMPT ===== */
+.ios-prompt-box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    background: linear-gradient(#5a2a0c, #3a1a05);
+    border: 3px solid #ffe45c;
+    border-radius: 16px;
+    padding: 15px;
+    color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    z-index: 100;
+    text-align: center;
+}
+.ios-prompt-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffe45c;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.ios-prompt-text {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.ios-prompt-btn {
+    padding: 6px 16px;
+    border-radius: 10px;
+    border: 2px solid #7a3e12;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(#ffe45c,#ffb700);
+    color: #7a3e12;
+}
 
 </style>
 </head>
@@ -327,8 +369,37 @@ function startGame(){
     window.location.href="index.html";
 }
 
+window.addEventListener("load", () => {
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    const isStandalone = window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches;
+    if (isIOS && !isStandalone) {
+        showIosPrompt();
+    }
+});
 
+function showIosPrompt() {
+    const prompt = document.createElement("div");
+    prompt.id = "iosPromptBox";
+    prompt.className = "ios-prompt-box";
+    prompt.innerHTML = `
+        <div class="ios-prompt-title">
+            <span>📱 Info Layar Penuh iPhone</span>
+        </div>
+        <div class="ios-prompt-text">
+            Bermain di Safari membuat layar game menjadi kecil/terpotong. Tambahkan game ke <strong>Layar Utama (Home Screen)</strong> untuk tampilan Fullscreen penuh.<br>
+            <span style="font-size: 11px; color: #ffe45c; display: block; margin-top: 5px;">Caranya: Tekan tombol share <span style="font-size: 14px;">⎋</span> lalu pilih 'Tambahkan ke Layar Utama'.</span>
+        </div>
+        <button class="ios-prompt-btn" onclick="closeIosPrompt()">Saya Mengerti</button>
+    `;
+    document.body.appendChild(prompt);
+}
 
+function closeIosPrompt() {
+    const prompt = document.getElementById("iosPromptBox");
+    if (prompt) {
+        prompt.style.display = "none";
+    }
+}
 
 </script>
 
