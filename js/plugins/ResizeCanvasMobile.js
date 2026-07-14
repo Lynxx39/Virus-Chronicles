@@ -18,22 +18,6 @@
         };
     }
 
-    // Force Touch UI to be active on mobile devices (prevents players from getting stuck without a menu button)
-    // On desktop, disabling Touch UI also disables map touch movement (preventing accidental walking on window focus)
-    if (typeof ConfigManager !== "undefined") {
-        Object.defineProperty(ConfigManager, "touchUI", {
-            get: function() {
-                if (typeof Utils !== "undefined" && Utils.isMobileDevice()) {
-                    return true;
-                }
-                return this._touchUI !== undefined ? this._touchUI : true;
-            },
-            set: function(value) {
-                this._touchUI = value;
-            },
-            configurable: true
-        });
-    }
 
     if (typeof Scene_Map !== "undefined") {
         const _Scene_Map_isMapTouchOk = Scene_Map.prototype.isMapTouchOk;
