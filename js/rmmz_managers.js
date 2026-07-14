@@ -3079,7 +3079,7 @@ PluginManager.onError = function(e) {
 };
 
 PluginManager.makeUrl = function(filename) {
-    return "js/plugins/" + Utils.encodeURI(filename) + ".js";
+    return "js/plugins/" + Utils.encodeURI(filename) + ".js?v=" + Date.now();
 };
 
 PluginManager.checkErrors = function() {
