@@ -19,33 +19,6 @@
     }
 
 
-    // Force Touch UI to always be active on mobile devices (prevents players from getting stuck without a menu button)
-    // On desktop, disabling Touch UI also disables map touch movement (preventing accidental walking on window focus)
-    if (typeof ConfigManager !== "undefined") {
-        Object.defineProperty(ConfigManager, "touchUI", {
-            get: function() {
-                if (typeof Utils !== "undefined" && Utils.isMobileDevice()) {
-                    return true;
-                }
-                return this._touchUI !== undefined ? this._touchUI : true;
-            },
-            set: function(value) {
-                this._touchUI = value;
-            },
-            configurable: true
-        });
-    }
-
-    // Hide the "Touch UI" option from the Options window on mobile devices to prevent players from turning it off and getting stuck
-    if (typeof Window_Options !== "undefined") {
-        Window_Options.prototype.addGeneralOptions = function() {
-            this.addCommand(TextManager.alwaysDash, "alwaysDash");
-            this.addCommand(TextManager.commandRemember, "commandRemember");
-            if (typeof Utils !== "undefined" && !Utils.isMobileDevice()) {
-                this.addCommand(TextManager.touchUI, "touchUI");
-            }
-        };
-    }
 
     if (typeof Scene_Map !== "undefined") {
         const _Scene_Map_isMapTouchOk = Scene_Map.prototype.isMapTouchOk;
