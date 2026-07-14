@@ -90,9 +90,15 @@
         updateIcon();
     }
 
-    // Initialize button on mobile devices
+    // Initialize button on mobile devices ONLY if Fullscreen API is supported by the device browser (hides it on iPhone Safari)
     window.addEventListener("load", () => {
-        if (Utils.isMobileDevice()) {
+        const hasFullscreenSupport = !!(
+            document.documentElement.requestFullscreen ||
+            document.documentElement.webkitRequestFullscreen ||
+            document.documentElement.mozRequestFullScreen ||
+            document.documentElement.msRequestFullscreen
+        );
+        if (Utils.isMobileDevice() && hasFullscreenSupport) {
             createFullscreenButton();
         }
     });
