@@ -47,18 +47,7 @@ body::before{
     text-shadow:0px 0px #ffd28a;
 }
 
-#userBox{
-    position:fixed;
-    top:15px;
-    right:20px;
-    background:rgba(0,0,0,.65);
-    color:#fff;
-    padding:10px 16px;
-    border-radius:14px;
-    font-weight:bold;
-    z-index:20;
-    display:none;
-}
+
 
 .menu-btn{
     width:100%;
@@ -171,23 +160,13 @@ body::before{
     background: rgba(0,0,0,0.4);
 }
 
-/* ===== LOGIN INPUT ===== */
-#loginPopup input{
-    width:100%;
-    padding:14px;
-    border-radius:14px;
-    border:none;
-    font-size:16px;
-    text-align:center;
-    outline:none;
-}
+
 </style>
 </head>
 
 <body>
 
-<!-- USER BOX -->
-<div id="userBox">Halo, User</div>
+
 
 <!-- MENU -->
 <div class="menu-card">
@@ -199,15 +178,7 @@ body::before{
     <button class="menu-btn" onclick="openPopup('aturan')">Aturan Game</button>
 </div>
 
-<!-- LOGIN POPUP -->
-<div class="popup-overlay" id="loginPopup">
-    <div class="popup">
-        <h2>Masukkan Username</h2>
-        <input type="text" id="usernameInput" placeholder="Username">
-        <br><br>
-        <button class="menu-btn" onclick="submitUsername()">Masuk</button>
-    </div>
-</div>
+
 
 
 <div class="popup-overlay" id="popup">
@@ -356,32 +327,7 @@ function startGame(){
     window.location.href="index.html";
 }
 
-/* ===== LOGIN LOGIC ===== */
-window.onload = function(){
-    const username = sessionStorage.getItem("username");
-    if(username){
-        showUser(username);
-    }else{
-        document.getElementById("loginPopup").style.display = "flex";
-    }
-}
 
-function submitUsername(){
-    const username = document.getElementById("usernameInput").value.trim();
-    if(username === ""){
-        alert("Username tidak boleh kosong!");
-        return;
-    }
-    sessionStorage.setItem("username", username);
-    showUser(username);
-}
-
-function showUser(username){
-    document.getElementById("loginPopup").style.display = "none";
-    const userBox = document.getElementById("userBox");
-    userBox.innerText = `Halo, ${username}`;
-    userBox.style.display = "block";
-}
 
 
 </script>
