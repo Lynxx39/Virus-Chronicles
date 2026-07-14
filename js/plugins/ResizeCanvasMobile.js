@@ -19,81 +19,38 @@
     }
 
 
+    // Force Touch UI to always be active on mobile devices (prevents players from getting stuck without a menu button)
+    // On desktop, disabling Touch UI also disables map touch movement (preventing accidental walking on window focus)
+    if (typeof ConfigManager !== "undefined") {
+        Object.defineProperty(ConfigManager, "touchUI", {
+            get: function() {
+                if (typeof Utils !== "undefined" && Utils.isMobileDevice()) {
+                    return true;
+                }
+                return this._touchUI !== undefined ? this._touchUI : true;
+            },
+            set: function(value) {
+                this._touchUI = value;
+            },
+            configurable: true
+        });
+    }
+
+    // Hide the "Touch UI" option from the Options window on mobile devices to prevent players from turning it off and getting stuck
+    if (typeof Window_Options !== "undefined") {
+        Window_Options.prototype.addGeneralOptions = function() {
+            this.addCommand(TextManager.alwaysDash, "alwaysDash");
+            this.addCommand(TextManager.commandRemember, "commandRemember");
+            if (typeof Utils !== "undefined" && !Utils.isMobileDevice()) {
+                this.addCommand(TextManager.touchUI, "touchUI");
+            }
+        };
+    }
+
     if (typeof Scene_Map !== "undefined") {
         const _Scene_Map_isMapTouchOk = Scene_Map.prototype.isMapTouchOk;
         Scene_Map.prototype.isMapTouchOk = function() {
             return _Scene_Map_isMapTouchOk.call(this) && ConfigManager.touchUI;
-        };
-    }
-
-    // Create custom floating Back/Cancel button for mobile devices in menu screens
-    let mobileBackButton = null;
-
-    function createMobileBackButton() {
-        if (mobileBackButton) return;
-
-        mobileBackButton = document.createElement("div");
-        mobileBackButton.id = "mobileBackButton";
-        
-        // Styling
-        mobileBackButton.style.position = "fixed";
-        mobileBackButton.style.top = "15px";
-        mobileBackButton.style.right = "15px"; // Top right corner, safe from notches
-        mobileBackButton.style.zIndex = "1500";
-        mobileBackButton.style.width = "42px";
-        mobileBackButton.style.height = "42px";
-        mobileBackButton.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
-        mobileBackButton.style.border = "1.5px solid rgba(255, 255, 255, 0.4)";
-        mobileBackButton.style.borderRadius = "50%";
-        mobileBackButton.style.display = "none"; // Hidden by default
-        mobileBackButton.style.alignItems = "center";
-        mobileBackButton.style.justifyContent = "center";
-        mobileBackButton.style.cursor = "pointer";
-        mobileBackButton.style.color = "#ffffff";
-        mobileBackButton.style.userSelect = "none";
-        mobileBackButton.style.webkitUserSelect = "none";
-        mobileBackButton.style.boxShadow = "0 2px 6px rgba(0, 0, 0, 0.4)";
-        mobileBackButton.style.transition = "background-color 0.2s";
-
-        // SVG Back Arrow Icon
-        const backIcon = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>';
-        mobileBackButton.innerHTML = backIcon;
-
-        // Click / Touch Action
-        const handleBack = (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            if (typeof SoundManager !== "undefined") {
-                SoundManager.playCancel();
-            }
-            if (typeof SceneManager !== "undefined") {
-                SceneManager.pop();
-            }
-        };
-        mobileBackButton.addEventListener("click", handleBack);
-        mobileBackButton.addEventListener("touchstart", handleBack);
-
-        document.body.appendChild(mobileBackButton);
-    }
-
-    if (typeof Scene_MenuBase !== "undefined") {
-        const _Scene_MenuBase_start = Scene_MenuBase.prototype.start;
-        Scene_MenuBase.prototype.start = function() {
-            _Scene_MenuBase_start.call(this);
-            if (Utils.isMobileDevice()) {
-                createMobileBackButton();
-                if (mobileBackButton) {
-                    mobileBackButton.style.display = "flex";
-                }
-            }
-        };
-
-        const _Scene_MenuBase_terminate = Scene_MenuBase.prototype.terminate;
-        Scene_MenuBase.prototype.terminate = function() {
-            _Scene_MenuBase_terminate.call(this);
-            if (mobileBackButton) {
-                mobileBackButton.style.display = "none";
-            }
         };
     }
 
