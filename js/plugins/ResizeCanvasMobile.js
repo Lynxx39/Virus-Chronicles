@@ -51,19 +51,21 @@
 
         btn.innerHTML = enterFSIcon;
 
-        // Click Action
-        btn.addEventListener("click", (e) => {
+        // Click / Touch Action
+        const toggleFS = (e) => {
+            e.preventDefault();
             e.stopPropagation();
             if (typeof Graphics !== "undefined") {
                 Graphics._switchFullScreen();
             }
-        });
-
-        // Hover / Active states
-        btn.addEventListener("touchstart", () => {
+        };
+        btn.addEventListener("click", toggleFS);
+        btn.addEventListener("touchstart", (e) => {
             btn.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+            toggleFS(e);
         });
-        btn.addEventListener("touchend", () => {
+        btn.addEventListener("touchend", (e) => {
+            e.stopPropagation();
             btn.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
         });
 
@@ -138,9 +140,25 @@
         modal.appendChild(contentBox);
         document.body.appendChild(modal);
 
-        modal.querySelector("#closeIosGuideBtn").addEventListener("click", () => {
+        // Prevent events from bubbling to RPG Maker's TouchInput handlers
+        const stopBubble = (e) => {
+            e.stopPropagation();
+        };
+        modal.addEventListener("touchstart", stopBubble, { passive: true });
+        modal.addEventListener("touchmove", stopBubble, { passive: true });
+        modal.addEventListener("touchend", stopBubble);
+        modal.addEventListener("mousedown", stopBubble);
+        modal.addEventListener("mouseup", stopBubble);
+        modal.addEventListener("click", stopBubble);
+
+        const closeBtn = modal.querySelector("#closeIosGuideBtn");
+        const closeAction = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
             modal.style.display = "none";
-        });
+        };
+        closeBtn.addEventListener("click", closeAction);
+        closeBtn.addEventListener("touchstart", closeAction);
     }
 
     // Create floating help button for iOS devices
@@ -172,15 +190,18 @@
         const infoIcon = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>';
         btn.innerHTML = infoIcon;
 
-        btn.addEventListener("click", (e) => {
+        const handleIosGuide = (e) => {
+            e.preventDefault();
             e.stopPropagation();
             showIosFullscreenGuide();
-        });
-
-        btn.addEventListener("touchstart", () => {
+        };
+        btn.addEventListener("click", handleIosGuide);
+        btn.addEventListener("touchstart", (e) => {
             btn.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+            handleIosGuide(e);
         });
-        btn.addEventListener("touchend", () => {
+        btn.addEventListener("touchend", (e) => {
+            e.stopPropagation();
             btn.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
         });
 
@@ -206,25 +227,4 @@
             }
         }
     });
-
-    function resizeCanvas() {
-        const canvas = document.getElementById("gameCanvas");
-        if (!canvas) return;
-
-        const baseWidth = 1280;
-        const baseHeight = 720;
-
-        const scale = Math.min(
-            window.innerWidth / baseWidth,
-            window.innerHeight / baseHeight
-        );
-
-        canvas.style.width = baseWidth * scale + "px";
-        canvas.style.height = baseHeight * scale + "px";
-    }
-
-    window.addEventListener("resize", resizeCanvas);
-    window.addEventListener("orientationchange", resizeCanvas);
-
-    setTimeout(resizeCanvas, 1000);
 })();
