@@ -18,12 +18,31 @@
         };
     }
 
-
+    // Force Touch UI to always be active on mobile devices for drawing UI buttons, except in the Options screen
+    // This prevents mobile players from getting stuck without a menu/back button, while still allowing them to toggle it.
+    if (typeof ConfigManager !== "undefined") {
+        Object.defineProperty(ConfigManager, "touchUI", {
+            get: function() {
+                if (typeof Utils !== "undefined" && Utils.isMobileDevice()) {
+                    if (typeof SceneManager !== "undefined" && SceneManager._scene instanceof Scene_Options) {
+                        return this._touchUI !== undefined ? this._touchUI : true;
+                    }
+                    return true;
+                }
+                return this._touchUI !== undefined ? this._touchUI : true;
+            },
+            set: function(value) {
+                this._touchUI = value;
+            },
+            configurable: true
+        });
+    }
 
     if (typeof Scene_Map !== "undefined") {
         const _Scene_Map_isMapTouchOk = Scene_Map.prototype.isMapTouchOk;
         Scene_Map.prototype.isMapTouchOk = function() {
-            return _Scene_Map_isMapTouchOk.call(this) && ConfigManager.touchUI;
+            const realTouchUI = ConfigManager._touchUI !== undefined ? ConfigManager._touchUI : true;
+            return _Scene_Map_isMapTouchOk.call(this) && realTouchUI;
         };
     }
 
