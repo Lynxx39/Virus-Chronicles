@@ -1,0 +1,16 @@
+{
+  "short_name": "Virus Chronicles",
+  "name": "Virus Chronicles",
+  "icons": [
+    {
+      "src": "icon/icon.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "display": "standalone",
+  "orientation": "landscape"
+}
