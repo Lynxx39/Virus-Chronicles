@@ -3,16 +3,19 @@
 //=============================================================================
 /*:
  * @target MZ
- * @plugindesc Auto-wraps dialogue text to fill the entire message window width.
+ * @plugindesc Auto-wraps dialogue text to fill the message window cleanly without overflowing.
  * @author Antigravity
  *
  * @help AutoMessageWrap.js
  *
  * This plugin automatically joins short broken lines in dialogue messages
- * and word-wraps text across the full width of the message window (1280px resolution).
+ * and word-wraps text safely (max 60 chars per line) so it fills the text box
+ * without spilling over the right edge.
  */
 
 (() => {
+    const MAX_LINE_CHARS = 60;
+
     const _Window_Message_startMessage = Window_Message.prototype.startMessage;
     Window_Message.prototype.startMessage = function() {
         this.autoWrapGameMessage();
@@ -21,12 +24,6 @@
 
     Window_Message.prototype.autoWrapGameMessage = function() {
         if (!$gameMessage || !$gameMessage._texts || $gameMessage._texts.length === 0) return;
-
-        const faceExists = $gameMessage.faceName() !== "";
-        const faceWidth = ImageManager.faceWidth || 144;
-        const padding = this.padding || 12;
-        const faceMargin = faceExists ? faceWidth + 20 : 4;
-        const availableWidth = (this.innerWidth || (Graphics.width - padding * 2)) - faceMargin - 16;
 
         const rawTexts = [...$gameMessage._texts];
         let items = [];
@@ -52,14 +49,6 @@
         }
 
         let newTexts = [];
-        const measure = (str) => {
-            if (this.contents && this.contents.measureTextWidth) {
-                // Strip escape codes for width measurement
-                const cleanStr = str.replace(/\\c\[\d+\]|\\n\[\d+\]|\\v\[\d+\]|\\i\[\d+\]/gi, "");
-                return this.contents.measureTextWidth(cleanStr);
-            }
-            return str.length * 11;
-        };
 
         for (const item of items) {
             if (item.isHeader) {
@@ -72,11 +61,12 @@
 
             for (const word of words) {
                 if (!word) continue;
-                const testLine = currentLine ? currentLine + " " + word : word;
-                if (measure(testLine) <= availableWidth) {
-                    currentLine = testLine;
+                if (!currentLine) {
+                    currentLine = word;
+                } else if ((currentLine + " " + word).length <= MAX_LINE_CHARS) {
+                    currentLine += " " + word;
                 } else {
-                    if (currentLine) newTexts.push(currentLine);
+                    newTexts.push(currentLine);
                     currentLine = word;
                 }
             }
