@@ -13,15 +13,15 @@
  */
 
 (() => {
-    const MAX_LINE_CHARS = 75;
+    const MAX_LINE_CHARS = 80;
 
     const _Window_Message_startMessage = Window_Message.prototype.startMessage;
-    Window_Message.prototype.startMessage = function() {
+    Window_Message.prototype.startMessage = function () {
         this.autoWrapGameMessage();
         _Window_Message_startMessage.call(this);
     };
 
-    Window_Message.prototype.autoWrapGameMessage = function() {
+    Window_Message.prototype.autoWrapGameMessage = function () {
         if (!$gameMessage || !$gameMessage._texts || $gameMessage._texts.length === 0) return;
 
         const rawTexts = [...$gameMessage._texts];
