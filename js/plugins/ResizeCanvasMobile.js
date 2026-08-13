@@ -18,7 +18,7 @@
         };
     }
 
-    // Allow Touch UI to be toggled ON / OFF in Options while defaulting to ON
+    // Allow Touch UI to be toggled ON / OFF in Options (defaults to ON)
     if (typeof ConfigManager !== "undefined") {
         Object.defineProperty(ConfigManager, "touchUI", {
             get: function () {
@@ -31,15 +31,17 @@
         });
     }
 
+    // Touch UI ON  = Click on map to walk enabled
+    // Touch UI OFF = Click on map to walk disabled (movement only via analog/d-pad)
+    // (UI window clicks for questions/options/menus remain 100% active always)
     if (typeof Scene_Map !== "undefined") {
         const _Scene_Map_isMapTouchOk = Scene_Map.prototype.isMapTouchOk;
         Scene_Map.prototype.isMapTouchOk = function () {
-            const realTouchUI = ConfigManager.touchUI;
-            return _Scene_Map_isMapTouchOk.call(this) && realTouchUI;
+            return _Scene_Map_isMapTouchOk.call(this) && ConfigManager.touchUI;
         };
     }
 
-    // Bring Touch UI buttons to the top layer and sync visibility with ConfigManager.touchUI
+    // Bring Touch UI buttons to top layer in Menu scenes and sync button visibility
     if (typeof Scene_MenuBase !== "undefined") {
         const _Scene_MenuBase_start = Scene_MenuBase.prototype.start;
         Scene_MenuBase.prototype.start = function () {
@@ -66,6 +68,7 @@
             }
         };
     }
+
 
 
 
