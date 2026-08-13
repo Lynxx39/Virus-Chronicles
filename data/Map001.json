@@ -10466,46 +10466,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Antibiotik seperti amoksisilin efektif untuk"
+                "Antibiotik seperti amoksisilin efektif untuk membunuh bakteri penyebab infeksi tenggorokan,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "membunuh bakteri penyebab infeksi"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "tenggorokan, tetapi tidak efektif untuk flu"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "yang disebabkan oleh virus. Alasan yang"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "paling tepat adalah…"
+                "tetapi tidak efektif untuk flu yang disebabkan oleh virus. Alasan yang paling tepat adalah…"
               ]
             },
             {
@@ -10555,21 +10523,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "ukuran virus yang kecil tidak memengaruhi"
+                "ukuran virus yang kecil tidak memengaruhi kerja antibiotik, begitu pula perkembangbiakan virus"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "kerja antibiotik, begitu pula"
+                "yang cepat bukan alasan antibiotik tidak dapat bekerja. Kapsid virus juga bukan penyebab"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "perkembangbiakan virus yang cepat bukan"
+                "antibiotik tidak efektif, karena antibiotik tidak bekerja dengan menghancurkan kapsid. Selain"
               ]
             },
             {
@@ -10587,60 +10555,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "alasan antibiotik tidak dapat bekerja. Kapsid"
+                "itu, virus tidak disebut resisten terhadap antibiotik karena antibiotik memang tidak memiliki"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus juga bukan penyebab antibiotik tidak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "efektif, karena antibiotik tidak bekerja"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "dengan menghancurkan kapsid. Selain itu,"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "virus tidak disebut resisten terhadap"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "antibiotik karena antibiotik memang tidak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "memiliki target kerja pada virus."
+                "target kerja pada virus."
               ]
             },
             {
@@ -10683,14 +10605,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Virus tidak memiliki dinding sel dan sistem metabolisme yang menjadi target "
+                "Benar! Virus tidak memiliki dinding sel dan sistem metabolisme yang menjadi target kerja"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "kerja antibiotik."
+                "antibiotik."
               ]
             },
             {
@@ -10735,21 +10657,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "ukuran virus yang kecil tidak memengaruhi"
+                "ukuran virus yang kecil tidak memengaruhi kerja antibiotik, begitu pula perkembangbiakan virus"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "kerja antibiotik, begitu pula"
+                "yang cepat bukan alasan antibiotik tidak dapat bekerja. Kapsid virus juga bukan penyebab"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "perkembangbiakan virus yang cepat bukan"
+                "antibiotik tidak efektif, karena antibiotik tidak bekerja dengan menghancurkan kapsid. Selain"
               ]
             },
             {
@@ -10767,60 +10689,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "alasan antibiotik tidak dapat bekerja. Kapsid"
+                "itu, virus tidak disebut resisten terhadap antibiotik karena antibiotik memang tidak memiliki"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus juga bukan penyebab antibiotik tidak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "efektif, karena antibiotik tidak bekerja"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "dengan menghancurkan kapsid. Selain itu,"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "virus tidak disebut resisten terhadap"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "antibiotik karena antibiotik memang tidak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "memiliki target kerja pada virus."
+                "target kerja pada virus."
               ]
             },
             {
@@ -10870,21 +10746,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "ukuran virus yang kecil tidak memengaruhi"
+                "ukuran virus yang kecil tidak memengaruhi kerja antibiotik, begitu pula perkembangbiakan virus"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "kerja antibiotik, begitu pula"
+                "yang cepat bukan alasan antibiotik tidak dapat bekerja. Kapsid virus juga bukan penyebab"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "perkembangbiakan virus yang cepat bukan"
+                "antibiotik tidak efektif, karena antibiotik tidak bekerja dengan menghancurkan kapsid. Selain"
               ]
             },
             {
@@ -10902,60 +10778,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "alasan antibiotik tidak dapat bekerja. Kapsid"
+                "itu, virus tidak disebut resisten terhadap antibiotik karena antibiotik memang tidak memiliki"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus juga bukan penyebab antibiotik tidak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "efektif, karena antibiotik tidak bekerja"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "dengan menghancurkan kapsid. Selain itu,"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "virus tidak disebut resisten terhadap"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "antibiotik karena antibiotik memang tidak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "memiliki target kerja pada virus."
+                "target kerja pada virus."
               ]
             },
             {
@@ -11005,21 +10835,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "ukuran virus yang kecil tidak memengaruhi"
+                "ukuran virus yang kecil tidak memengaruhi kerja antibiotik, begitu pula perkembangbiakan virus"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "kerja antibiotik, begitu pula"
+                "yang cepat bukan alasan antibiotik tidak dapat bekerja. Kapsid virus juga bukan penyebab"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "perkembangbiakan virus yang cepat bukan"
+                "antibiotik tidak efektif, karena antibiotik tidak bekerja dengan menghancurkan kapsid. Selain"
               ]
             },
             {
@@ -11037,60 +10867,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "alasan antibiotik tidak dapat bekerja. Kapsid"
+                "itu, virus tidak disebut resisten terhadap antibiotik karena antibiotik memang tidak memiliki"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus juga bukan penyebab antibiotik tidak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "efektif, karena antibiotik tidak bekerja"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "dengan menghancurkan kapsid. Selain itu,"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "virus tidak disebut resisten terhadap"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "antibiotik karena antibiotik memang tidak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "memiliki target kerja pada virus."
+                "target kerja pada virus."
               ]
             },
             {
@@ -11495,53 +11279,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Penyakit rabies disebabkan oleh virus"
+                "Penyakit rabies disebabkan oleh virus Rabdovirus yang ditularkan melalui gigitan hewan"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Rabdovirus yang ditularkan melalui gigitan"
+                "terinfeksi. Seseorang yang digigit anjing rabies harus segera mendapat vaksin rabies meskipun"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "hewan terinfeksi. Seseorang yang digigit"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "anjing rabies harus segera mendapat vaksin"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "rabies meskipun sudah tergigit. Tindakan ini"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "efektif karena…"
+                "sudah tergigit. Tindakan ini efektif karena…"
               ]
             },
             {
@@ -11584,14 +11336,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Virus rabies bergerak lambat menuju otak, jadi vaksin masih bisa "
+                "Benar! Virus rabies bergerak lambat menuju otak, jadi vaksin masih bisa memicu antibodi sebelum"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "memicu antibodi sebelum virus menyebabkan penyakit."
+                "virus menyebabkan penyakit."
               ]
             },
             {
@@ -11636,21 +11388,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena vaksin tidak mengandung antibiotik"
+                "karena vaksin tidak mengandung antibiotik untuk membunuh virus. Vaksin bekerja dengan cara"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "untuk membunuh virus. Vaksin bekerja dengan"
+                "merangsang sistem imun untuk membentuk antibodi, bukan karena virus tidak tahan terhadap sistem"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "cara merangsang sistem imun untuk membentuk"
+                "imun ataupun dapat menghancurkan sel saraf (neuron) serta virus rabies tidak dapat mati sendiri"
               ]
             },
             {
@@ -11668,53 +11420,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibodi, bukan karena virus tidak tahan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "terhadap sistem imun ataupun dapat"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "menghancurkan sel saraf (neuron) serta virus"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "rabies tidak dapat mati sendiri dalam waktu"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "24 jam setelah gigitan, virus tetap akan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "berkembang dan menyebar dalam tubuh hingga"
+                "dalam waktu 24 jam setelah gigitan, virus tetap akan berkembang dan menyebar dalam tubuh hingga"
               ]
             },
             {
@@ -11771,21 +11477,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena vaksin tidak mengandung antibiotik"
+                "karena vaksin tidak mengandung antibiotik untuk membunuh virus. Vaksin bekerja dengan cara"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "untuk membunuh virus. Vaksin bekerja dengan"
+                "merangsang sistem imun untuk membentuk antibodi, bukan karena virus tidak tahan terhadap sistem"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "cara merangsang sistem imun untuk membentuk"
+                "imun ataupun dapat menghancurkan sel saraf (neuron) serta virus rabies tidak dapat mati sendiri"
               ]
             },
             {
@@ -11803,53 +11509,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibodi, bukan karena virus tidak tahan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "terhadap sistem imun ataupun dapat"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "menghancurkan sel saraf (neuron) serta virus"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "rabies tidak dapat mati sendiri dalam waktu"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "24 jam setelah gigitan, virus tetap akan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "berkembang dan menyebar dalam tubuh hingga"
+                "dalam waktu 24 jam setelah gigitan, virus tetap akan berkembang dan menyebar dalam tubuh hingga"
               ]
             },
             {
@@ -11894,21 +11554,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena vaksin tidak mengandung antibiotik"
+                "karena vaksin tidak mengandung antibiotik untuk membunuh virus. Vaksin bekerja dengan cara"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "untuk membunuh virus. Vaksin bekerja dengan"
+                "merangsang sistem imun untuk membentuk antibodi, bukan karena virus tidak tahan terhadap sistem"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "cara merangsang sistem imun untuk membentuk"
+                "imun ataupun dapat menghancurkan sel saraf (neuron) serta virus rabies tidak dapat mati sendiri"
               ]
             },
             {
@@ -11926,53 +11586,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibodi, bukan karena virus tidak tahan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "terhadap sistem imun ataupun dapat"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "menghancurkan sel saraf (neuron) serta virus"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "rabies tidak dapat mati sendiri dalam waktu"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "24 jam setelah gigitan, virus tetap akan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "berkembang dan menyebar dalam tubuh hingga"
+                "dalam waktu 24 jam setelah gigitan, virus tetap akan berkembang dan menyebar dalam tubuh hingga"
               ]
             },
             {
@@ -12029,21 +11643,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena vaksin tidak mengandung antibiotik"
+                "karena vaksin tidak mengandung antibiotik untuk membunuh virus. Vaksin bekerja dengan cara"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "untuk membunuh virus. Vaksin bekerja dengan"
+                "merangsang sistem imun untuk membentuk antibodi, bukan karena virus tidak tahan terhadap sistem"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "cara merangsang sistem imun untuk membentuk"
+                "imun ataupun dapat menghancurkan sel saraf (neuron) serta virus rabies tidak dapat mati sendiri"
               ]
             },
             {
@@ -12061,53 +11675,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibodi, bukan karena virus tidak tahan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "terhadap sistem imun ataupun dapat"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "menghancurkan sel saraf (neuron) serta virus"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "rabies tidak dapat mati sendiri dalam waktu"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "24 jam setelah gigitan, virus tetap akan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "berkembang dan menyebar dalam tubuh hingga"
+                "dalam waktu 24 jam setelah gigitan, virus tetap akan berkembang dan menyebar dalam tubuh hingga"
               ]
             },
             {
@@ -12519,60 +12087,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Seorang petani menemukan tanaman tembakau di"
+                "Seorang petani menemukan tanaman tembakau di kebunnya menunjukkan gejala mosaik pada daun."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "kebunnya menunjukkan gejala mosaik pada daun."
+                "Setelah diperiksa, tanaman tersebut terinfeksi TMV (Tobacco Mosaic Virus). Tindakan"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Setelah diperiksa, tanaman tersebut"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "terinfeksi TMV (Tobacco Mosaic Virus)."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Tindakan pengendalian yang paling tepat untuk"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "mencegah penyebaran virus ke tanaman lain"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "adalah..."
+                "pengendalian yang paling tepat untuk mencegah penyebaran virus ke tanaman lain adalah..."
               ]
             },
             {
@@ -12622,60 +12151,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "insektisida hanya digunakan untuk"
+                "insektisida hanya digunakan untuk mengendalikan serangga, pupuk nitrogen hanya membantu"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "mengendalikan serangga, pupuk nitrogen hanya"
+                "pertumbuhan tanaman, fungisida digunakan untuk mengendalikan jamur, dan memindahkan tanaman ke"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "membantu pertumbuhan tanaman, fungisida"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "digunakan untuk mengendalikan jamur, dan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "memindahkan tanaman ke tempat teduh tidak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "dapat menghentikan infeksi atau penyebaran"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "TMV."
+                "tempat teduh tidak dapat menghentikan infeksi atau penyebaran TMV."
               ]
             },
             {
@@ -12726,14 +12216,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Tanaman terinfeksi TMV harus dicabut dan dimusnahkan agar virus "
+                "Benar! Tanaman terinfeksi TMV harus dicabut dan dimusnahkan agar virus tidak menular ke tanaman"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tidak menular ke tanaman sehat."
+                "sehat."
               ]
             },
             {
@@ -12786,60 +12276,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "insektisida hanya digunakan untuk"
+                "insektisida hanya digunakan untuk mengendalikan serangga, pupuk nitrogen hanya membantu"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "mengendalikan serangga, pupuk nitrogen hanya"
+                "pertumbuhan tanaman, fungisida digunakan untuk mengendalikan jamur, dan memindahkan tanaman ke"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "membantu pertumbuhan tanaman, fungisida"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "digunakan untuk mengendalikan jamur, dan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "memindahkan tanaman ke tempat teduh tidak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "dapat menghentikan infeksi atau penyebaran"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "TMV."
+                "tempat teduh tidak dapat menghentikan infeksi atau penyebaran TMV."
               ]
             },
             {
@@ -12897,60 +12348,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "insektisida hanya digunakan untuk"
+                "insektisida hanya digunakan untuk mengendalikan serangga, pupuk nitrogen hanya membantu"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "mengendalikan serangga, pupuk nitrogen hanya"
+                "pertumbuhan tanaman, fungisida digunakan untuk mengendalikan jamur, dan memindahkan tanaman ke"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "membantu pertumbuhan tanaman, fungisida"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "digunakan untuk mengendalikan jamur, dan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "memindahkan tanaman ke tempat teduh tidak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "dapat menghentikan infeksi atau penyebaran"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "TMV."
+                "tempat teduh tidak dapat menghentikan infeksi atau penyebaran TMV."
               ]
             },
             {
@@ -13008,60 +12420,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "insektisida hanya digunakan untuk"
+                "insektisida hanya digunakan untuk mengendalikan serangga, pupuk nitrogen hanya membantu"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "mengendalikan serangga, pupuk nitrogen hanya"
+                "pertumbuhan tanaman, fungisida digunakan untuk mengendalikan jamur, dan memindahkan tanaman ke"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "membantu pertumbuhan tanaman, fungisida"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "digunakan untuk mengendalikan jamur, dan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "memindahkan tanaman ke tempat teduh tidak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "dapat menghentikan infeksi atau penyebaran"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "TMV."
+                "tempat teduh tidak dapat menghentikan infeksi atau penyebaran TMV."
               ]
             },
             {
@@ -13657,25 +13030,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Selamat datang, pengembara."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor2",
-                6,
-                0,
-                2,
-                "Wendel Stanley"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Aku Wendel Stanley. Dan kau... siapa namamu?"
+                "Selamat datang, pengembara. Aku Wendel Stanley. Dan kau... siapa namamu?"
               ]
             },
             {
@@ -13726,25 +13081,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Terima kasih..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor1",
-                0,
-                0,
-                2,
-                "\\n[1]"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\n[1] Tempat apa ini? "
+                "Terima kasih... \\n[1] Tempat apa ini?"
               ]
             },
             {
@@ -13762,64 +13099,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Tempat ini adalah Dunia Cahaya, "
+                "Tempat ini adalah Dunia Cahaya, gerbang pertama dalam perjalananmu. Untuk keluar dari sini, kau"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "gerbang pertama dalam perjalananmu."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor2",
-                6,
-                0,
-                2,
-                "Wendel Stanley"
+                "harus mengaktifkan tiga kristal penjaga. Kristal-kristal itu tersebar di sekitar area ini. Saat"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Untuk keluar dari sini, kau harus mengaktifkan "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "tiga kristal penjaga."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor2",
-                6,
-                0,
-                2,
-                "Wendel Stanley"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Kristal-kristal itu tersebar di sekitar area ini. "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Saat semuanya menyala, portal akan terbuka kembali."
+                "semuanya menyala, portal akan terbuka kembali."
               ]
             },
             {
@@ -13862,14 +13156,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Hati-hati. Energi di sini tidak stabil. Tapi aku percaya "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "padamu, \\n[1]."
+                "Hati-hati. Energi di sini tidak stabil. Tapi aku percaya padamu, \\n[1]."
               ]
             },
             {
@@ -14014,14 +13301,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Selamat datang di labirin \\n[1], nyalakan kristal "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "dan keluar dari sini"
+                "Selamat datang di labirin \\n[1], nyalakan kristal dan keluar dari sini"
               ]
             },
             {
