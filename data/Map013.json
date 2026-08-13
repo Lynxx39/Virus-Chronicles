@@ -11697,60 +11697,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Analisis]"
+                "[Indikator: Analisis] Pemerintah mengadakan program vaksinasi untuk mencegah penyebaran penyakit akibat virus."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Pemerintah mengadakan program vaksinasi untuk mencegah penyebaran penyakit"
+                "Pada salah satu jenis vaksinasi, vaksin diberikan melalui mulut (oral) agar dapat membentuk kekebalan tubuh"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "akibat virus. Pada salah satu jenis vaksinasi, vaksin diberikan melalui"
+                "terhadap penyakit tertentu."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "mulut (oral) agar dapat membentuk kekebalan tubuh terhadap penyakit"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "tertentu."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Berdasarkan cara pemberiannya, penyakit yang dapat dicegah melalui vaksin"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "oral adalah…"
+                "Berdasarkan cara pemberiannya, penyakit yang dapat dicegah melalui vaksin oral adalah…"
               ]
             },
             {
@@ -11779,6 +11747,63 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Alasan jawaban salah : Jawaban Salah, karena hepatitis tidak menggunakan vaksin oral sebagai pemberian vaksin"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "yang umum, melainkan diberikan melalui suntikan; disentri belum memiliki vaksin rutin yang digunakan secara umum"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "untuk mencegah penyakit tersebut; cacar menggunakan vaksin yang diberikan melalui metode khusus pada kulit,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bukan melalui mulut; sedangkan kolera memang memiliki vaksin oral, tetapi vaksin oral yang dimaksud dalam"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "program imunisasi rutin adalah vaksin polio, sehingga pilihan yang paling tepat adalah polio."
+              ]
+            },
+            {
               "code": 250,
               "indent": 1,
               "parameters": [
@@ -11804,6 +11829,63 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Alasan jawaban salah : Jawaban Salah, karena hepatitis tidak menggunakan vaksin oral sebagai pemberian vaksin"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "yang umum, melainkan diberikan melalui suntikan; disentri belum memiliki vaksin rutin yang digunakan secara umum"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "untuk mencegah penyakit tersebut; cacar menggunakan vaksin yang diberikan melalui metode khusus pada kulit,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bukan melalui mulut; sedangkan kolera memang memiliki vaksin oral, tetapi vaksin oral yang dimaksud dalam"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "program imunisasi rutin adalah vaksin polio, sehingga pilihan yang paling tepat adalah polio."
+              ]
+            },
+            {
               "code": 250,
               "indent": 1,
               "parameters": [
@@ -11826,6 +11908,63 @@
               "parameters": [
                 2,
                 "Cacar"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Alasan jawaban salah : Jawaban Salah, karena hepatitis tidak menggunakan vaksin oral sebagai pemberian vaksin"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "yang umum, melainkan diberikan melalui suntikan; disentri belum memiliki vaksin rutin yang digunakan secara umum"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "untuk mencegah penyakit tersebut; cacar menggunakan vaksin yang diberikan melalui metode khusus pada kulit,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bukan melalui mulut; sedangkan kolera memang memiliki vaksin oral, tetapi vaksin oral yang dimaksud dalam"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "program imunisasi rutin adalah vaksin polio, sehingga pilihan yang paling tepat adalah polio."
               ]
             },
             {
@@ -11908,6 +12047,63 @@
               "parameters": [
                 4,
                 "Kolera"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Alasan jawaban salah : Jawaban Salah, karena hepatitis tidak menggunakan vaksin oral sebagai pemberian vaksin"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "yang umum, melainkan diberikan melalui suntikan; disentri belum memiliki vaksin rutin yang digunakan secara umum"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "untuk mencegah penyakit tersebut; cacar menggunakan vaksin yang diberikan melalui metode khusus pada kulit,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bukan melalui mulut; sedangkan kolera memang memiliki vaksin oral, tetapi vaksin oral yang dimaksud dalam"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "program imunisasi rutin adalah vaksin polio, sehingga pilihan yang paling tepat adalah polio."
               ]
             },
             {
@@ -12192,53 +12388,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Inference]"
+                "[Indikator: Inference] Dalam suatu percobaan, sel inang yang terinfeksi virus mengalami pembentukan banyak"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Dalam suatu percobaan, sel inang yang terinfeksi virus mengalami pembentukan"
+                "partikel virus baru dan akhirnya pecah dalam waktu singkat setelah infeksi."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "banyak partikel virus baru dan akhirnya pecah dalam waktu singkat setelah"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "infeksi."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Berdasarkan peristiwa tersebut, simpulkan alasan mengapa proses tersebut"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "termasuk ke dalam siklus litik."
+                "Berdasarkan peristiwa tersebut, simpulkan alasan mengapa proses tersebut termasuk ke dalam siklus litik."
               ]
             },
             {
@@ -12264,6 +12428,45 @@
               "parameters": [
                 0,
                 "Virus berintegrasi dengan DNA sel inang tanpa merusak sel"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Alasan jawaban salah : Jawaban Salah, karena integrasi materi genetik virus ke DNA sel inang tanpa merusak sel"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "merupakan ciri siklus lisogenik, begitu pula sel inang yang tetap hidup dan membelah bersama materi genetik"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus. Keadaan virus yang tidak aktif di dalam sel juga menunjukkan fase lisogenik, sedangkan virus tidak dapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bereplikasi tanpa melibatkan sel inang karena membutuhkan sistem sel inang untuk memperbanyak diri."
               ]
             },
             {
@@ -12349,6 +12552,45 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Alasan jawaban salah : Jawaban Salah, karena integrasi materi genetik virus ke DNA sel inang tanpa merusak sel"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "merupakan ciri siklus lisogenik, begitu pula sel inang yang tetap hidup dan membelah bersama materi genetik"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus. Keadaan virus yang tidak aktif di dalam sel juga menunjukkan fase lisogenik, sedangkan virus tidak dapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bereplikasi tanpa melibatkan sel inang karena membutuhkan sistem sel inang untuk memperbanyak diri."
+              ]
+            },
+            {
               "code": 250,
               "indent": 1,
               "parameters": [
@@ -12374,6 +12616,45 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Alasan jawaban salah : Jawaban Salah, karena integrasi materi genetik virus ke DNA sel inang tanpa merusak sel"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "merupakan ciri siklus lisogenik, begitu pula sel inang yang tetap hidup dan membelah bersama materi genetik"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus. Keadaan virus yang tidak aktif di dalam sel juga menunjukkan fase lisogenik, sedangkan virus tidak dapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bereplikasi tanpa melibatkan sel inang karena membutuhkan sistem sel inang untuk memperbanyak diri."
+              ]
+            },
+            {
               "code": 250,
               "indent": 1,
               "parameters": [
@@ -12396,6 +12677,45 @@
               "parameters": [
                 4,
                 "Replikasi virus terjadi tanpa melibatkan sel inang"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Alasan jawaban salah : Jawaban Salah, karena integrasi materi genetik virus ke DNA sel inang tanpa merusak sel"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "merupakan ciri siklus lisogenik, begitu pula sel inang yang tetap hidup dan membelah bersama materi genetik"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus. Keadaan virus yang tidak aktif di dalam sel juga menunjukkan fase lisogenik, sedangkan virus tidak dapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bereplikasi tanpa melibatkan sel inang karena membutuhkan sistem sel inang untuk memperbanyak diri."
               ]
             },
             {
@@ -12911,28 +13231,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Evaluasi]"
+                "[Indikator: Evaluasi] Seorang peneliti harus memilih antara menggunakan bakteriofag atau antibiotik untuk"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Seorang peneliti harus memilih antara menggunakan bakteriofag atau"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "antibiotik untuk mengatasi infeksi bakteri tertentu. Berdasarkan prinsip"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "kerja, manakah pilihan yang lebih tepat dan mengapa?"
+                "mengatasi infeksi bakteri tertentu. Berdasarkan prinsip kerja, manakah pilihan yang lebih tepat dan mengapa?"
               ]
             },
             {
@@ -12958,6 +13264,38 @@
               "parameters": [
                 0,
                 "Antibiotik, karena hanya bekerja pada sel bakteri dan tidak merusak DNA virus."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Alasan jawaban salah : Jawaban Salah, karena antibiotik hanya bekerja pada bakteri dan tidak dapat menyerang"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus, bakteriofag memiliki target bakteri tertentu sehingga tidak merusak semua sel inang, serta antibiotik"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "tidak bekerja dengan menghambat siklus lisogenik virus."
               ]
             },
             {
@@ -13043,6 +13381,38 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Alasan jawaban salah : Jawaban Salah, karena antibiotik hanya bekerja pada bakteri dan tidak dapat menyerang"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus, bakteriofag memiliki target bakteri tertentu sehingga tidak merusak semua sel inang, serta antibiotik"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "tidak bekerja dengan menghambat siklus lisogenik virus."
+              ]
+            },
+            {
               "code": 250,
               "indent": 1,
               "parameters": [
@@ -13068,6 +13438,38 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Alasan jawaban salah : Jawaban Salah, karena antibiotik hanya bekerja pada bakteri dan tidak dapat menyerang"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus, bakteriofag memiliki target bakteri tertentu sehingga tidak merusak semua sel inang, serta antibiotik"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "tidak bekerja dengan menghambat siklus lisogenik virus."
+              ]
+            },
+            {
               "code": 250,
               "indent": 1,
               "parameters": [
@@ -13090,6 +13492,38 @@
               "parameters": [
                 4,
                 "Antibiotik, karena menghambat proses lisogenik pada virus."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Alasan jawaban salah : Jawaban Salah, karena antibiotik hanya bekerja pada bakteri dan tidak dapat menyerang"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus, bakteriofag memiliki target bakteri tertentu sehingga tidak merusak semua sel inang, serta antibiotik"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "tidak bekerja dengan menghambat siklus lisogenik virus."
               ]
             },
             {
