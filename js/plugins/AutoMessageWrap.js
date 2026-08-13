@@ -33,7 +33,10 @@
             line = line.trim();
             if (!line) continue;
 
-            if (line.startsWith("[Indikator:") || line.startsWith("Alasan jawaban")) {
+            // Strip "Alasan jawaban salah : " prefix if present
+            line = line.replace(/^Alasan jawaban salah\s*:\s*/i, '');
+
+            if (line.startsWith("[Indikator:") || line.startsWith("Jawaban Salah") || line.startsWith("Jawaban salah")) {
                 if (currentPara.length > 0) {
                     items.push({ text: currentPara.join(" "), isHeader: false });
                     currentPara = [];
@@ -43,6 +46,7 @@
                 currentPara.push(line);
             }
         }
+
         if (currentPara.length > 0) {
             items.push({ text: currentPara.join(" "), isHeader: false });
         }

@@ -1,18 +1,692 @@
 [
-null,
-{"id":1,"list":[{"code":122,"indent":0,"parameters":[1,1,1,0,100]},{"code":250,"indent":0,"parameters":[{"name":"Coin","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["",0,0,2,""]},{"code":401,"indent":0,"parameters":["Jawaban Kamu benar ! Poin pengetahuanmu bertambah 100 poin"]},{"code":0,"indent":0,"parameters":[]}],"name":"pointVariable ","switchId":1,"trigger":0},
-{"id":2,"list":[{"code":231,"indent":0,"parameters":[1,"LlevelUp",0,0,0,-100,125,125,255,0]},{"code":101,"indent":0,"parameters":["",0,0,2,""]},{"code":401,"indent":0,"parameters":["Selamat!"]},{"code":401,"indent":0,"parameters":["Anda telah menaikkan level !"]},{"code":230,"indent":0,"parameters":[30]},{"code":235,"indent":0,"parameters":[1]},{"code":0,"indent":0,"parameters":[]}],"name":"Level_Up","switchId":1,"trigger":0},
-{"id":3,"list":[{"code":231,"indent":0,"parameters":[1,"LlevelUpp",0,0,0,-100,125,125,255,0]},{"code":101,"indent":0,"parameters":["",0,0,2,""]},{"code":401,"indent":0,"parameters":["Selamat!"]},{"code":401,"indent":0,"parameters":["Anda telah menaikkan level !"]},{"code":230,"indent":0,"parameters":[30]},{"code":235,"indent":0,"parameters":[1]},{"code":0,"indent":0,"parameters":[]}],"name":"Level_Upp","switchId":1,"trigger":0},
-{"id":4,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
-{"id":5,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
-{"id":6,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
-{"id":7,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
-{"id":8,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
-{"id":9,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
-{"id":10,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
-{"id":11,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
-{"id":12,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
-{"id":13,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
-{"id":14,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
-{"id":15,"list":[{"code":201,"indent":0,"parameters":[0,14,100,100,0,0]},{"code":122,"indent":0,"parameters":[21,21,0,0,1]},{"code":118,"indent":0,"parameters":["Start"]},{"code":112,"indent":0,"parameters":[]},{"code":111,"indent":1,"parameters":[1,21,0,1,0]},{"code":231,"indent":2,"parameters":[1,"Materi1",0,0,0,0,55,55,255,0]},{"code":0,"indent":2,"parameters":[]},{"code":411,"indent":1,"parameters":[]},{"code":111,"indent":2,"parameters":[1,21,0,2,0]},{"code":231,"indent":3,"parameters":[1,"Materi2",0,0,0,0,100,100,255,0]},{"code":0,"indent":3,"parameters":[]},{"code":411,"indent":2,"parameters":[]},{"code":111,"indent":3,"parameters":[1,21,0,3,0]},{"code":231,"indent":4,"parameters":[1,"Materi3",0,0,0,0,100,100,255,0]},{"code":0,"indent":4,"parameters":[]},{"code":412,"indent":3,"parameters":[]},{"code":0,"indent":3,"parameters":[]},{"code":412,"indent":2,"parameters":[]},{"code":0,"indent":2,"parameters":[]},{"code":412,"indent":1,"parameters":[]},{"code":102,"indent":1,"parameters":[["Next","Previous","Exit"],1,0,0,0]},{"code":402,"indent":1,"parameters":[0,"Next"]},{"code":122,"indent":2,"parameters":[21,21,1,0,1]},{"code":111,"indent":2,"parameters":[1,21,0,3,3]},{"code":122,"indent":3,"parameters":[21,21,0,0,3]},{"code":0,"indent":3,"parameters":[]},{"code":412,"indent":2,"parameters":[]},{"code":119,"indent":2,"parameters":["Start"]},{"code":0,"indent":2,"parameters":[]},{"code":402,"indent":1,"parameters":[1,"Previous"]},{"code":122,"indent":2,"parameters":[1,1,2,0,1]},{"code":111,"indent":2,"parameters":[1,21,0,1,4]},{"code":122,"indent":3,"parameters":[21,21,0,0,1]},{"code":354,"indent":3,"parameters":[]},{"code":0,"indent":3,"parameters":[]},{"code":412,"indent":2,"parameters":[]},{"code":119,"indent":2,"parameters":["Start"]},{"code":0,"indent":2,"parameters":[]},{"code":402,"indent":1,"parameters":[2,"Exit"]},{"code":354,"indent":2,"parameters":[]},{"code":113,"indent":2,"parameters":[]},{"code":235,"indent":2,"parameters":[1]},{"code":0,"indent":2,"parameters":[]},{"code":404,"indent":1,"parameters":[]},{"code":0,"indent":1,"parameters":[]},{"code":413,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"materi","switchId":1,"trigger":0}
+  null,
+  {
+    "id": 1,
+    "list": [
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          1,
+          0,
+          100
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Coin",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2,
+          ""
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Jawaban Kamu benar ! Poin pengetahuanmu bertambah 100 poin"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "pointVariable ",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "list": [
+      {
+        "code": 231,
+        "indent": 0,
+        "parameters": [
+          1,
+          "LlevelUp",
+          0,
+          0,
+          0,
+          -100,
+          125,
+          125,
+          255,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2,
+          ""
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Selamat! Anda telah menaikkan level !"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 0,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Level_Up",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "list": [
+      {
+        "code": 231,
+        "indent": 0,
+        "parameters": [
+          1,
+          "LlevelUpp",
+          0,
+          0,
+          0,
+          -100,
+          125,
+          125,
+          255,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2,
+          ""
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Selamat! Anda telah menaikkan level !"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 0,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Level_Upp",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 4,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 5,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 6,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 7,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 8,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 9,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 10,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 11,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 12,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 13,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 14,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 15,
+    "list": [
+      {
+        "code": 201,
+        "indent": 0,
+        "parameters": [
+          0,
+          14,
+          100,
+          100,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          21,
+          21,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": [
+          "Start"
+        ]
+      },
+      {
+        "code": 112,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          21,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 231,
+        "indent": 2,
+        "parameters": [
+          1,
+          "Materi1",
+          0,
+          0,
+          0,
+          0,
+          55,
+          55,
+          255,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          1,
+          21,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 231,
+        "indent": 3,
+        "parameters": [
+          1,
+          "Materi2",
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          255,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 3,
+        "parameters": [
+          1,
+          21,
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "code": 231,
+        "indent": 4,
+        "parameters": [
+          1,
+          "Materi3",
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          255,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 102,
+        "indent": 1,
+        "parameters": [
+          [
+            "Next",
+            "Previous",
+            "Exit"
+          ],
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 1,
+        "parameters": [
+          0,
+          "Next"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          21,
+          21,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          1,
+          21,
+          0,
+          3,
+          3
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 3,
+        "parameters": [
+          21,
+          21,
+          0,
+          0,
+          3
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 119,
+        "indent": 2,
+        "parameters": [
+          "Start"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 1,
+        "parameters": [
+          1,
+          "Previous"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          1,
+          1,
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          1,
+          21,
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 3,
+        "parameters": [
+          21,
+          21,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 354,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 119,
+        "indent": 2,
+        "parameters": [
+          "Start"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 1,
+        "parameters": [
+          2,
+          "Exit"
+        ]
+      },
+      {
+        "code": 354,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 113,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 235,
+        "indent": 2,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "materi",
+    "switchId": 1,
+    "trigger": 0
+  }
 ]
