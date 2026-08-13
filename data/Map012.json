@@ -12274,28 +12274,85 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Analisis]"
+                "[Indikator: Analisis] Human papilloma virus"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Human papilloma virus dapat menyebabkan infeksi pada permukaan kulit dan berpotensi menyebabkan kanker virus."
+                "dapat menyebabkan infeksi pada permukaan kulit"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "HPV memiliki struktur utama berupa asam nukleat yang dilindungi oleh lapisan protein."
+                "dan berpotensi menyebabkan kanker virus. HPV"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Berdasarkan informasi tersebut, struktur HPV yang berfungsi melindungi materi genetik virus adalah…"
+                "memiliki struktur utama berupa"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "asam nukleat yang dilindungi oleh lapisan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "protein. Berdasarkan informasi tersebut,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "struktur HPV yang berfungsi melindungi materi"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "genetik virus"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "adalah…"
               ]
             },
             {
@@ -12371,7 +12428,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tidak dimiliki oleh HPV karena HPV merupakan virus"
+                "tidak dimiliki oleh HPV karena HPV merupakan"
               ]
             },
             {
@@ -12389,21 +12446,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "non-enveloped, sedangkan serabut ekor dan base"
+                "virus non-enveloped, sedangkan serabut ekor dan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "plate tidak terdapat pada struktur HPV karena"
+                "base plate tidak terdapat pada struktur HPV"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "keduanya merupakan struktur khas bakteriofag."
+                "karena keduanya merupakan struktur khas"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bakteriofag."
               ]
             },
             {
@@ -12446,7 +12510,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Kapsid adalah lapisan protein yang melindungi materi genetik virus."
+                "Benar! Kapsid adalah lapisan protein yang"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "melindungi materi genetik virus."
               ]
             },
             {
@@ -12517,7 +12588,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tidak dimiliki oleh HPV karena HPV merupakan virus"
+                "tidak dimiliki oleh HPV karena HPV merupakan"
               ]
             },
             {
@@ -12535,21 +12606,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "non-enveloped, sedangkan serabut ekor dan base"
+                "virus non-enveloped, sedangkan serabut ekor dan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "plate tidak terdapat pada struktur HPV karena"
+                "base plate tidak terdapat pada struktur HPV"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "keduanya merupakan struktur khas bakteriofag."
+                "karena keduanya merupakan struktur khas"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bakteriofag."
               ]
             },
             {
@@ -12613,7 +12691,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tidak dimiliki oleh HPV karena HPV merupakan virus"
+                "tidak dimiliki oleh HPV karena HPV merupakan"
               ]
             },
             {
@@ -12631,21 +12709,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "non-enveloped, sedangkan serabut ekor dan base"
+                "virus non-enveloped, sedangkan serabut ekor dan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "plate tidak terdapat pada struktur HPV karena"
+                "base plate tidak terdapat pada struktur HPV"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "keduanya merupakan struktur khas bakteriofag."
+                "karena keduanya merupakan struktur khas"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bakteriofag."
               ]
             },
             {
@@ -12709,7 +12794,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tidak dimiliki oleh HPV karena HPV merupakan virus"
+                "tidak dimiliki oleh HPV karena HPV merupakan"
               ]
             },
             {
@@ -12727,21 +12812,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "non-enveloped, sedangkan serabut ekor dan base"
+                "virus non-enveloped, sedangkan serabut ekor dan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "plate tidak terdapat pada struktur HPV karena"
+                "base plate tidak terdapat pada struktur HPV"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "keduanya merupakan struktur khas bakteriofag."
+                "karena keduanya merupakan struktur khas"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bakteriofag."
               ]
             },
             {
@@ -13046,7 +13138,7 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor1",
+                "",
                 0,
                 0,
                 2,
@@ -13187,8 +13279,8 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "People4",
-                6,
+                "",
+                0,
                 0,
                 2,
                 ""
@@ -13205,8 +13297,8 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "People4",
-                6,
+                "",
+                0,
                 0,
                 2,
                 ""
@@ -13216,15 +13308,22 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Aku... satu-satunya yang masih bertahan di luar gerbang ini."
+                "Aku... satu-satunya yang masih bertahan di luar"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "gerbang ini."
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "People4",
-                6,
+                "",
+                0,
                 0,
                 2,
                 ""
@@ -13241,15 +13340,22 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Selama nyalanya masih menyala, pintu itu takkan pernah terbuka."
+                "Selama nyalanya masih menyala, pintu itu takkan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "pernah terbuka."
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "People4",
-                6,
+                "",
+                0,
                 0,
                 2,
                 ""
@@ -13266,15 +13372,22 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Tapi kini... api itu justru menjadi penyegel kehancuran."
+                "Tapi kini... api itu justru menjadi penyegel"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "kehancuran."
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "People4",
-                6,
+                "",
+                0,
                 0,
                 2,
                 ""
@@ -13284,22 +13397,29 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Jika kau ingin masuk... kau harus memadamkan semua obor suci"
+                "Jika kau ingin masuk... kau harus memadamkan"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "yang tersebar di halaman kerajaan ini."
+                "semua obor suci yang tersebar di halaman"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "kerajaan ini."
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "People4",
-                6,
+                "",
+                0,
                 0,
                 2,
                 ""
@@ -13309,29 +13429,29 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Tapi ingat... setiap api menyimpan ujian."
+                "Tapi ingat... setiap api menyimpan ujian. Kau"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Kau tidak hanya akan menghadapi ilmu..."
+                "tidak hanya akan menghadapi ilmu... tapi juga"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "tapi juga arwah penjaga yang terperangkap di dalamnya."
+                "arwah penjaga yang terperangkap di dalamnya."
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "People4",
-                6,
+                "",
+                0,
                 0,
                 2,
                 ""
@@ -13341,22 +13461,29 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Aku tak bisa membantumu lebih jauh..."
+                "Aku tak bisa membantumu lebih jauh... tapi jika"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "tapi jika kau berhasil—kunci kerajaan akan jatuh ke tanganmu."
+                "kau berhasil—kunci kerajaan akan jatuh ke"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "tanganmu."
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "People4",
-                6,
+                "",
+                0,
                 0,
                 2,
                 ""
@@ -13366,14 +13493,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Pergilah... sebelum api itu menyadari kehadiranmu..."
+                "Pergilah... sebelum api itu menyadari"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "dan Jangan lupa letak apinya berada di sudut sudut kerajaan"
+                "kehadiranmu... dan Jangan lupa letak apinya"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "berada di sudut sudut kerajaan"
               ]
             },
             {
@@ -13537,35 +13671,60 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Interpretasi]"
+                "[Indikator: Interpretasi] Perhatikan hasil"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Perhatikan hasil pengamatan berikut!"
+                "pengamatan berikut! • Pada sel A, sel inang"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "* Pada sel A, sel inang pecah setelah terbentuknya banyak virus baru."
+                "pecah setelah terbentuknya banyak virus baru."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "* Pada sel B, sel inang tetap hidup dan terus membelah meskipun mengandung genetik virus."
+                "• Pada sel B, sel inang tetap hidup dan terus"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Berdasarkan pengamatan tersebut pernyataan yang tepat adalah…"
+                "membelah meskipun mengandung genetik virus."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Berdasarkan pengamatan tersebut pernyataan yang"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "tepat adalah…"
               ]
             },
             {
@@ -13620,28 +13779,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena sel A"
+                "Alasan jawaban salah : Jawaban Salah, karena sel"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "mengalami siklus litik yang menyebabkan sel inang"
+                "A mengalami siklus litik yang menyebabkan sel"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "pecah setelah virus memperbanyak diri, sedangkan"
+                "inang pecah setelah virus memperbanyak diri,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sel B mengalami siklus lisogenik karena sel inang"
+                "sedangkan sel B mengalami siklus lisogenik"
               ]
             },
             {
@@ -13659,28 +13818,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tetap hidup dan membelah meskipun mengandung"
+                "karena sel inang tetap hidup dan membelah"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "materi genetik virus, sehingga pilihan 1, 2, 3,"
+                "meskipun mengandung materi genetik virus,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "dan 4 tidak sesuai dengan ciri masing-masing"
+                "sehingga pilihan 1, 2, 3, dan 4 tidak sesuai"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "siklus."
+                "dengan ciri masing-masing siklus."
               ]
             },
             {
@@ -13723,28 +13882,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena sel A"
+                "Alasan jawaban salah : Jawaban Salah, karena sel"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "mengalami siklus litik yang menyebabkan sel inang"
+                "A mengalami siklus litik yang menyebabkan sel"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "pecah setelah virus memperbanyak diri, sedangkan"
+                "inang pecah setelah virus memperbanyak diri,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sel B mengalami siklus lisogenik karena sel inang"
+                "sedangkan sel B mengalami siklus lisogenik"
               ]
             },
             {
@@ -13762,28 +13921,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tetap hidup dan membelah meskipun mengandung"
+                "karena sel inang tetap hidup dan membelah"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "materi genetik virus, sehingga pilihan 1, 2, 3,"
+                "meskipun mengandung materi genetik virus,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "dan 4 tidak sesuai dengan ciri masing-masing"
+                "sehingga pilihan 1, 2, 3, dan 4 tidak sesuai"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "siklus."
+                "dengan ciri masing-masing siklus."
               ]
             },
             {
@@ -13826,28 +13985,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena sel A"
+                "Alasan jawaban salah : Jawaban Salah, karena sel"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "mengalami siklus litik yang menyebabkan sel inang"
+                "A mengalami siklus litik yang menyebabkan sel"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "pecah setelah virus memperbanyak diri, sedangkan"
+                "inang pecah setelah virus memperbanyak diri,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sel B mengalami siklus lisogenik karena sel inang"
+                "sedangkan sel B mengalami siklus lisogenik"
               ]
             },
             {
@@ -13865,28 +14024,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tetap hidup dan membelah meskipun mengandung"
+                "karena sel inang tetap hidup dan membelah"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "materi genetik virus, sehingga pilihan 1, 2, 3,"
+                "meskipun mengandung materi genetik virus,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "dan 4 tidak sesuai dengan ciri masing-masing"
+                "sehingga pilihan 1, 2, 3, dan 4 tidak sesuai"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "siklus."
+                "dengan ciri masing-masing siklus."
               ]
             },
             {
@@ -13929,28 +14088,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena sel A"
+                "Alasan jawaban salah : Jawaban Salah, karena sel"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "mengalami siklus litik yang menyebabkan sel inang"
+                "A mengalami siklus litik yang menyebabkan sel"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "pecah setelah virus memperbanyak diri, sedangkan"
+                "inang pecah setelah virus memperbanyak diri,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sel B mengalami siklus lisogenik karena sel inang"
+                "sedangkan sel B mengalami siklus lisogenik"
               ]
             },
             {
@@ -13968,28 +14127,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tetap hidup dan membelah meskipun mengandung"
+                "karena sel inang tetap hidup dan membelah"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "materi genetik virus, sehingga pilihan 1, 2, 3,"
+                "meskipun mengandung materi genetik virus,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "dan 4 tidak sesuai dengan ciri masing-masing"
+                "sehingga pilihan 1, 2, 3, dan 4 tidak sesuai"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "siklus."
+                "dengan ciri masing-masing siklus."
               ]
             },
             {
@@ -14032,7 +14191,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Sel A mengalami lisis setelah banyak virus baru terbentuk, sedangkan Sel B tetap hidup dan terus membelah sehingga itu siklus lisogenik."
+                "Benar! Sel A mengalami lisis setelah banyak"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus baru terbentuk, sedangkan Sel B tetap"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "hidup dan terus membelah sehingga itu siklus"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "lisogenik."
               ]
             },
             {
@@ -14300,35 +14480,85 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Inference]"
+                "[Indikator: Inference] Seorang siswa mengamati"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Seorang siswa mengamati partikel mikroskopis dengan ciri-ciri sebagai berikut: (1) Tidak memiliki struktur sel,"
+                "partikel mikroskopis dengan ciri-ciri sebagai"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "(2) Tersusun atas asam nukleat yang dibungkus oleh selubung protein, (3) Tidak melakukan metabolisme sendiri,"
+                "berikut: (1) Tidak memiliki struktur sel,"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "dan (4) Hanya dapat bereplikasi di dalam sel hidup. Berdasarkan ciri-ciri tersebut, kesimpulan yang paling tepat"
+                "(2) Tersusun atas asam nukleat yang dibungkus"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "mengenai objek yang diamati adalah..."
+                "oleh selubung protein, (3) Tidak melakukan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "metabolisme sendiri, dan (4) Hanya dapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "bereplikasi di dalam sel hidup."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Berdasarkan ciri-ciri tersebut, kesimpulan yang"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "paling tepat mengenai objek yang diamati adalah…"
               ]
             },
             {
@@ -14390,21 +14620,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bakteri memiliki struktur sel dan dapat melakukan"
+                "bakteri memiliki struktur sel dan dapat"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "metabolisme sendiri, sedangkan virus tidak"
+                "melakukan metabolisme sendiri, sedangkan virus"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "memiliki struktur sel; virus juga tidak dapat"
+                "tidak memiliki struktur sel; virus juga tidak"
               ]
             },
             {
@@ -14422,28 +14652,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "disebut makhluk hidup sejati hanya karena mampu"
+                "dapat disebut makhluk hidup sejati hanya karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bereplikasi karena virus bergantung pada sel inang"
+                "mampu bereplikasi karena virus bergantung pada"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "untuk bereplikasi; jamur mikroskopis memiliki"
+                "sel inang untuk bereplikasi; jamur mikroskopis"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "struktur sel dan melakukan metabolisme sendiri,"
+                "memiliki struktur sel dan melakukan metabolisme"
               ]
             },
             {
@@ -14461,21 +14691,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sedangkan organisme prokariotik juga memiliki"
+                "sendiri, sedangkan organisme prokariotik juga"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "struktur sel seperti membran sel, sitoplasma, dan"
+                "memiliki struktur sel seperti membran sel,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "ribosom yang tidak dimiliki virus."
+                "sitoplasma, dan ribosom yang tidak dimiliki"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus."
               ]
             },
             {
@@ -14525,21 +14762,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bakteri memiliki struktur sel dan dapat melakukan"
+                "bakteri memiliki struktur sel dan dapat"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "metabolisme sendiri, sedangkan virus tidak"
+                "melakukan metabolisme sendiri, sedangkan virus"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "memiliki struktur sel; virus juga tidak dapat"
+                "tidak memiliki struktur sel; virus juga tidak"
               ]
             },
             {
@@ -14557,28 +14794,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "disebut makhluk hidup sejati hanya karena mampu"
+                "dapat disebut makhluk hidup sejati hanya karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bereplikasi karena virus bergantung pada sel inang"
+                "mampu bereplikasi karena virus bergantung pada"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "untuk bereplikasi; jamur mikroskopis memiliki"
+                "sel inang untuk bereplikasi; jamur mikroskopis"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "struktur sel dan melakukan metabolisme sendiri,"
+                "memiliki struktur sel dan melakukan metabolisme"
               ]
             },
             {
@@ -14596,21 +14833,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sedangkan organisme prokariotik juga memiliki"
+                "sendiri, sedangkan organisme prokariotik juga"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "struktur sel seperti membran sel, sitoplasma, dan"
+                "memiliki struktur sel seperti membran sel,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "ribosom yang tidak dimiliki virus."
+                "sitoplasma, dan ribosom yang tidak dimiliki"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus."
               ]
             },
             {
@@ -14660,14 +14904,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Ciri-ciri tersebut sesuai dengan virus yang memiliki kapsid dan hanya "
+                "Benar! Ciri-ciri tersebut sesuai dengan virus"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bereplikasi di dalam sel hidup (parasit intraseluler obligat)."
+                "yang memiliki kapsid dan hanya  bereplikasi di"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "dalam sel hidup (parasit intraseluler obligat)."
               ]
             },
             {
@@ -14717,21 +14968,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bakteri memiliki struktur sel dan dapat melakukan"
+                "bakteri memiliki struktur sel dan dapat"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "metabolisme sendiri, sedangkan virus tidak"
+                "melakukan metabolisme sendiri, sedangkan virus"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "memiliki struktur sel; virus juga tidak dapat"
+                "tidak memiliki struktur sel; virus juga tidak"
               ]
             },
             {
@@ -14749,28 +15000,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "disebut makhluk hidup sejati hanya karena mampu"
+                "dapat disebut makhluk hidup sejati hanya karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bereplikasi karena virus bergantung pada sel inang"
+                "mampu bereplikasi karena virus bergantung pada"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "untuk bereplikasi; jamur mikroskopis memiliki"
+                "sel inang untuk bereplikasi; jamur mikroskopis"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "struktur sel dan melakukan metabolisme sendiri,"
+                "memiliki struktur sel dan melakukan metabolisme"
               ]
             },
             {
@@ -14788,21 +15039,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sedangkan organisme prokariotik juga memiliki"
+                "sendiri, sedangkan organisme prokariotik juga"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "struktur sel seperti membran sel, sitoplasma, dan"
+                "memiliki struktur sel seperti membran sel,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "ribosom yang tidak dimiliki virus."
+                "sitoplasma, dan ribosom yang tidak dimiliki"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus."
               ]
             },
             {
@@ -14852,21 +15110,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bakteri memiliki struktur sel dan dapat melakukan"
+                "bakteri memiliki struktur sel dan dapat"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "metabolisme sendiri, sedangkan virus tidak"
+                "melakukan metabolisme sendiri, sedangkan virus"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "memiliki struktur sel; virus juga tidak dapat"
+                "tidak memiliki struktur sel; virus juga tidak"
               ]
             },
             {
@@ -14884,28 +15142,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "disebut makhluk hidup sejati hanya karena mampu"
+                "dapat disebut makhluk hidup sejati hanya karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bereplikasi karena virus bergantung pada sel inang"
+                "mampu bereplikasi karena virus bergantung pada"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "untuk bereplikasi; jamur mikroskopis memiliki"
+                "sel inang untuk bereplikasi; jamur mikroskopis"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "struktur sel dan melakukan metabolisme sendiri,"
+                "memiliki struktur sel dan melakukan metabolisme"
               ]
             },
             {
@@ -14923,21 +15181,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sedangkan organisme prokariotik juga memiliki"
+                "sendiri, sedangkan organisme prokariotik juga"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "struktur sel seperti membran sel, sitoplasma, dan"
+                "memiliki struktur sel seperti membran sel,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "ribosom yang tidak dimiliki virus."
+                "sitoplasma, dan ribosom yang tidak dimiliki"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus."
               ]
             },
             {
@@ -15875,35 +16140,92 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Evaluasi]"
+                "[Indikator: Evaluasi] Banyak ilmuwan yang telah"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Banyak ilmuwan yang telah mengembangkan vaksin HIV (Human Immunodeficiency Virus). Namun,"
+                "mengembangkan vaksin HIV (Human Immunodeficiency"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "sampai saat ini vaksin yang benar-benar efektif masih sulit ditemukan karena HIV memiliki"
+                "Virus). Namun, sampai saat ini vaksin yang"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "laju mutasi yang sangat tinggi dan menyerang sel-sel sistem kekebalan tubuh manusia."
+                "benar-benar efektif"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Berdasarkan informasi tersebut, pernyataan yang tepat mengenai pengembangan vaksin HIV adalah…"
+                "masih sulit ditemukan karena HIV memiliki laju"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "mutasi yang sangat tinggi dan menyerang sel-sel"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "sistem kekebalan tubuh manusia. Berdasarkan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "informasi berikut, pernyataan yang"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "tepat mengenai penyebab pengembangan vaksin HIV"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "adalah…"
               ]
             },
             {
@@ -15965,14 +16287,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Vaksin HIV sulit dikembangkan karena HIV memiliki laju mutasi yang sangat"
+                "Benar! Vaksin HIV sulit dikembangkan karena HIV"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tinggi dan menyerang sel-sel imun (seperti sel T CD4+) yang seharusnya melawan virus."
+                "memiliki laju mutasi yang sangat tinggi dan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "menyerang sel-sel imun (seperti sel T CD4+) yang"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "seharusnya melawan virus."
               ]
             },
             {
@@ -16029,14 +16365,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "penelitian meskipun terutama menginfeksi manusia;"
+                "penelitian meskipun terutama menginfeksi"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik tidak dapat menyembuhkan HIV karena"
+                "manusia; antibiotik tidak dapat menyembuhkan HIV"
               ]
             },
             {
@@ -16054,28 +16390,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik bekerja terhadap bakteri, bukan virus;"
+                "karena antibiotik bekerja terhadap bakteri,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "HIV juga tidak mudah diatasi oleh sistem imun"
+                "bukan virus; HIV juga tidak mudah diatasi oleh"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena justru menyerang sel CD4 yang berperan"
+                "sistem imun karena justru menyerang sel CD4 yang"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "dalam kekebalan tubuh; sedangkan HIV tidak dapat"
+                "berperan dalam kekebalan tubuh; sedangkan HIV"
               ]
             },
             {
@@ -16093,14 +16429,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "berkembang biak di luar sel hidup manusia karena"
+                "tidak dapat berkembang biak di luar sel hidup"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus membutuhkan sel inang untuk bereplikasi."
+                "manusia karena virus membutuhkan sel inang untuk"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bereplikasi."
               ]
             },
             {
@@ -16157,14 +16500,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "penelitian meskipun terutama menginfeksi manusia;"
+                "penelitian meskipun terutama menginfeksi"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik tidak dapat menyembuhkan HIV karena"
+                "manusia; antibiotik tidak dapat menyembuhkan HIV"
               ]
             },
             {
@@ -16182,28 +16525,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik bekerja terhadap bakteri, bukan virus;"
+                "karena antibiotik bekerja terhadap bakteri,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "HIV juga tidak mudah diatasi oleh sistem imun"
+                "bukan virus; HIV juga tidak mudah diatasi oleh"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena justru menyerang sel CD4 yang berperan"
+                "sistem imun karena justru menyerang sel CD4 yang"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "dalam kekebalan tubuh; sedangkan HIV tidak dapat"
+                "berperan dalam kekebalan tubuh; sedangkan HIV"
               ]
             },
             {
@@ -16221,14 +16564,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "berkembang biak di luar sel hidup manusia karena"
+                "tidak dapat berkembang biak di luar sel hidup"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus membutuhkan sel inang untuk bereplikasi."
+                "manusia karena virus membutuhkan sel inang untuk"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bereplikasi."
               ]
             },
             {
@@ -16285,14 +16635,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "penelitian meskipun terutama menginfeksi manusia;"
+                "penelitian meskipun terutama menginfeksi"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik tidak dapat menyembuhkan HIV karena"
+                "manusia; antibiotik tidak dapat menyembuhkan HIV"
               ]
             },
             {
@@ -16310,28 +16660,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik bekerja terhadap bakteri, bukan virus;"
+                "karena antibiotik bekerja terhadap bakteri,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "HIV juga tidak mudah diatasi oleh sistem imun"
+                "bukan virus; HIV juga tidak mudah diatasi oleh"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena justru menyerang sel CD4 yang berperan"
+                "sistem imun karena justru menyerang sel CD4 yang"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "dalam kekebalan tubuh; sedangkan HIV tidak dapat"
+                "berperan dalam kekebalan tubuh; sedangkan HIV"
               ]
             },
             {
@@ -16349,14 +16699,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "berkembang biak di luar sel hidup manusia karena"
+                "tidak dapat berkembang biak di luar sel hidup"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus membutuhkan sel inang untuk bereplikasi."
+                "manusia karena virus membutuhkan sel inang untuk"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bereplikasi."
               ]
             },
             {
@@ -16413,14 +16770,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "penelitian meskipun terutama menginfeksi manusia;"
+                "penelitian meskipun terutama menginfeksi"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik tidak dapat menyembuhkan HIV karena"
+                "manusia; antibiotik tidak dapat menyembuhkan HIV"
               ]
             },
             {
@@ -16438,28 +16795,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik bekerja terhadap bakteri, bukan virus;"
+                "karena antibiotik bekerja terhadap bakteri,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "HIV juga tidak mudah diatasi oleh sistem imun"
+                "bukan virus; HIV juga tidak mudah diatasi oleh"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena justru menyerang sel CD4 yang berperan"
+                "sistem imun karena justru menyerang sel CD4 yang"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "dalam kekebalan tubuh; sedangkan HIV tidak dapat"
+                "berperan dalam kekebalan tubuh; sedangkan HIV"
               ]
             },
             {
@@ -16477,14 +16834,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "berkembang biak di luar sel hidup manusia karena"
+                "tidak dapat berkembang biak di luar sel hidup"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus membutuhkan sel inang untuk bereplikasi."
+                "manusia karena virus membutuhkan sel inang untuk"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bereplikasi."
               ]
             },
             {

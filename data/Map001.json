@@ -10451,7 +10451,7 @@
                 "",
                 0,
                 0,
-                0,
+                2,
                 ""
               ]
             },
@@ -10477,21 +10477,46 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Interpretasi]"
+                "[Indikator: Interpretasi] Antibiotik seperti"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Antibiotik seperti amoksisilin efektif untuk membunuh bakteri penyebab infeksi tenggorokan, tetapi tidak efektif untuk"
+                "amoksisilin efektif untuk membunuh bakteri"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "flu yang disebabkan oleh virus. Mengapa antibiotik tidak mempan pada virus?"
+                "penyebab infeksi tenggorokan, tetapi tidak"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "efektif untuk flu yang disebabkan"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "oleh virus. Alasan yang paling tepat adalah…"
               ]
             },
             {
@@ -10592,21 +10617,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik tidak efektif, karena antibiotik tidak"
+                "antibiotik tidak efektif, karena antibiotik"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bekerja dengan menghancurkan kapsid. Selain itu,"
+                "tidak bekerja dengan menghancurkan kapsid."
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus tidak disebut resisten terhadap antibiotik"
+                "Selain itu, virus tidak disebut resisten"
               ]
             },
             {
@@ -10624,14 +10649,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena antibiotik memang tidak memiliki target"
+                "terhadap antibiotik karena antibiotik memang"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "kerja pada virus."
+                "tidak memiliki target kerja pada virus."
               ]
             },
             {
@@ -10662,14 +10687,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Virus tidak memiliki dinding sel dan sistem metabolisme yang menjadi target "
+                "Benar! Virus tidak memiliki dinding sel dan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "kerja antibiotik."
+                "sistem metabolisme yang menjadi target  kerja"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "antibiotik."
               ]
             },
             {
@@ -10765,21 +10797,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik tidak efektif, karena antibiotik tidak"
+                "antibiotik tidak efektif, karena antibiotik"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bekerja dengan menghancurkan kapsid. Selain itu,"
+                "tidak bekerja dengan menghancurkan kapsid."
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus tidak disebut resisten terhadap antibiotik"
+                "Selain itu, virus tidak disebut resisten"
               ]
             },
             {
@@ -10797,14 +10829,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena antibiotik memang tidak memiliki target"
+                "terhadap antibiotik karena antibiotik memang"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "kerja pada virus."
+                "tidak memiliki target kerja pada virus."
               ]
             },
             {
@@ -10893,21 +10925,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik tidak efektif, karena antibiotik tidak"
+                "antibiotik tidak efektif, karena antibiotik"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bekerja dengan menghancurkan kapsid. Selain itu,"
+                "tidak bekerja dengan menghancurkan kapsid."
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus tidak disebut resisten terhadap antibiotik"
+                "Selain itu, virus tidak disebut resisten"
               ]
             },
             {
@@ -10925,14 +10957,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena antibiotik memang tidak memiliki target"
+                "terhadap antibiotik karena antibiotik memang"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "kerja pada virus."
+                "tidak memiliki target kerja pada virus."
               ]
             },
             {
@@ -11021,21 +11053,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik tidak efektif, karena antibiotik tidak"
+                "antibiotik tidak efektif, karena antibiotik"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bekerja dengan menghancurkan kapsid. Selain itu,"
+                "tidak bekerja dengan menghancurkan kapsid."
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus tidak disebut resisten terhadap antibiotik"
+                "Selain itu, virus tidak disebut resisten"
               ]
             },
             {
@@ -11053,14 +11085,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena antibiotik memang tidak memiliki target"
+                "terhadap antibiotik karena antibiotik memang"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "kerja pada virus."
+                "tidak memiliki target kerja pada virus."
               ]
             },
             {
@@ -11438,7 +11470,7 @@
                 "",
                 0,
                 0,
-                0,
+                2,
                 ""
               ]
             },
@@ -11464,28 +11496,53 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Analisis]"
+                "[Indikator: Analisis] Penyakit rabies disebabkan"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Penyakit rabies disebabkan oleh virus Rabdovirus yang ditularkan melalui gigitan hewan terinfeksi. Seseorang yang"
+                "oleh virus Rabdovirus yang ditularkan melalui"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "digigit anjing rabies harus segera mendapat vaksin rabies meskipun sudah tergigit. Tindakan ini efektif karena.."
+                "gigitan hewan terinfeksi. Seseorang yang digigit"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "vaksin rabies meskipun sudah tergigit. Tindakan ini efektif karena.."
+                "anjing rabies"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "harus segera mendapat vaksin rabies meskipun"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "sudah tergigit. Tindakan ini efektif karena…"
               ]
             },
             {
@@ -11528,14 +11585,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Virus rabies bergerak lambat menuju otak, jadi vaksin masih bisa "
+                "Benar! Virus rabies bergerak lambat menuju otak,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "memicu antibodi sebelum virus menyebabkan penyakit."
+                "jadi vaksin masih bisa  memicu antibodi sebelum"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus menyebabkan penyakit."
               ]
             },
             {
@@ -11645,7 +11709,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sendiri dalam waktu 24 jam setelah gigitan, virus"
+                "sendiri dalam waktu 24 jam setelah gigitan,"
               ]
             },
             {
@@ -11663,14 +11727,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tetap akan berkembang dan menyebar dalam tubuh"
+                "virus tetap akan berkembang dan menyebar dalam"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "hingga mencapai sistem saraf pusat."
+                "tubuh hingga mencapai sistem saraf pusat."
               ]
             },
             {
@@ -11761,7 +11825,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sendiri dalam waktu 24 jam setelah gigitan, virus"
+                "sendiri dalam waktu 24 jam setelah gigitan,"
               ]
             },
             {
@@ -11779,14 +11843,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tetap akan berkembang dan menyebar dalam tubuh"
+                "virus tetap akan berkembang dan menyebar dalam"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "hingga mencapai sistem saraf pusat."
+                "tubuh hingga mencapai sistem saraf pusat."
               ]
             },
             {
@@ -11889,7 +11953,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sendiri dalam waktu 24 jam setelah gigitan, virus"
+                "sendiri dalam waktu 24 jam setelah gigitan,"
               ]
             },
             {
@@ -11907,14 +11971,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tetap akan berkembang dan menyebar dalam tubuh"
+                "virus tetap akan berkembang dan menyebar dalam"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "hingga mencapai sistem saraf pusat."
+                "tubuh hingga mencapai sistem saraf pusat."
               ]
             },
             {
@@ -12017,7 +12081,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sendiri dalam waktu 24 jam setelah gigitan, virus"
+                "sendiri dalam waktu 24 jam setelah gigitan,"
               ]
             },
             {
@@ -12035,14 +12099,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tetap akan berkembang dan menyebar dalam tubuh"
+                "virus tetap akan berkembang dan menyebar dalam"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "hingga mencapai sistem saraf pusat."
+                "tubuh hingga mencapai sistem saraf pusat."
               ]
             },
             {
@@ -12420,7 +12484,7 @@
                 "",
                 0,
                 0,
-                0,
+                2,
                 ""
               ]
             },
@@ -12443,24 +12507,67 @@
               ]
             },
             {
-              "code": 401,
+              "code": 101,
               "indent": 0,
               "parameters": [
-                "[Indikator: Evaluasi]"
+                "",
+                0,
+                0,
+                2,
+                ""
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Seorang petani menemukan tanaman tembakau di kebunnya menunjukkan gejala mosaik pada daun. Setelah diperiksa,"
+                "[Indikator: Evaluasi] Seorang petani menemukan"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "tanaman tersebut terinfeksi TMV (Tobacco Mosaic Virus). Tindakan pengendalian yang paling tepat untuk mencegah"
+                "tanaman tembakau di kebunnya menunjukkan gejala"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "mosaik pada daun. Setelah diperiksa, tanaman"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "tersebut terinfeksi"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "TMV (Tobacco Mosaic Virus). Tindakan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "pengendalian yang paling tepat untuk mencegah"
               ]
             },
             {
@@ -12568,14 +12675,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tempat teduh tidak dapat menghentikan infeksi atau"
+                "tempat teduh tidak dapat menghentikan infeksi"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "penyebaran TMV."
+                "atau penyebaran TMV."
               ]
             },
             {
@@ -12614,14 +12721,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Tanaman terinfeksi TMV harus dicabut dan dimusnahkan agar virus "
+                "Benar! Tanaman terinfeksi TMV harus dicabut dan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tidak menular ke tanaman sehat."
+                "dimusnahkan agar virus  tidak menular ke tanaman"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "sehat."
               ]
             },
             {
@@ -12725,14 +12839,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tempat teduh tidak dapat menghentikan infeksi atau"
+                "tempat teduh tidak dapat menghentikan infeksi"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "penyebaran TMV."
+                "atau penyebaran TMV."
               ]
             },
             {
@@ -12829,14 +12943,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tempat teduh tidak dapat menghentikan infeksi atau"
+                "tempat teduh tidak dapat menghentikan infeksi"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "penyebaran TMV."
+                "atau penyebaran TMV."
               ]
             },
             {
@@ -12933,14 +13047,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tempat teduh tidak dapat menghentikan infeksi atau"
+                "tempat teduh tidak dapat menghentikan infeksi"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "penyebaran TMV."
+                "atau penyebaran TMV."
               ]
             },
             {
@@ -13335,7 +13449,7 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor1",
+                "",
                 0,
                 0,
                 2,
@@ -13378,7 +13492,7 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor1",
+                "",
                 0,
                 0,
                 2,
@@ -13412,7 +13526,7 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor1",
+                "",
                 0,
                 0,
                 2,
@@ -13513,11 +13627,11 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor2",
-                6,
+                "",
+                0,
                 0,
                 2,
-                "Wendel Stanley"
+                ""
               ]
             },
             {
@@ -13531,11 +13645,11 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor2",
-                6,
+                "",
+                0,
                 0,
                 2,
-                "Wendel Stanley"
+                ""
               ]
             },
             {
@@ -13564,11 +13678,11 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor2",
-                6,
+                "",
+                0,
                 0,
                 2,
-                "Wandel Stanley"
+                ""
               ]
             },
             {
@@ -13582,11 +13696,11 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor1",
+                "",
                 0,
                 0,
                 2,
-                "\\n[1]"
+                ""
               ]
             },
             {
@@ -13600,61 +13714,61 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor1",
+                "",
                 0,
                 0,
                 2,
-                "\\n[1]"
+                ""
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n[1] Tempat apa ini? "
+                "\\n[1] Tempat apa ini?"
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor2",
-                6,
+                "",
+                0,
                 0,
                 2,
-                "Wendel Stanley"
+                ""
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Tempat ini adalah Dunia Cahaya, "
+                "Tempat ini adalah Dunia Cahaya,  gerbang pertama"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "gerbang pertama dalam perjalananmu."
+                "dalam perjalananmu."
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor2",
-                6,
+                "",
+                0,
                 0,
                 2,
-                "Wendel Stanley"
+                ""
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Untuk keluar dari sini, kau harus mengaktifkan "
+                "Untuk keluar dari sini, kau harus mengaktifkan"
               ]
             },
             {
@@ -13668,25 +13782,32 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor2",
-                6,
+                "",
+                0,
                 0,
                 2,
-                "Wendel Stanley"
+                ""
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Kristal-kristal itu tersebar di sekitar area ini. "
+                "Kristal-kristal itu tersebar di sekitar area"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Saat semuanya menyala, portal akan terbuka kembali."
+                "ini.  Saat semuanya menyala, portal akan terbuka"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "kembali."
               ]
             },
             {
@@ -13700,11 +13821,11 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor1",
+                "",
                 0,
                 0,
                 2,
-                "\\n[1]"
+                ""
               ]
             },
             {
@@ -13718,25 +13839,25 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor2",
-                6,
+                "",
+                0,
                 0,
                 2,
-                "Wendel Stanley"
+                ""
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Hati-hati. Energi di sini tidak stabil. Tapi aku percaya "
+                "Hati-hati. Energi di sini tidak stabil. Tapi aku"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "padamu, \\n[1]."
+                "percaya  padamu, \\n[1]."
               ]
             },
             {
@@ -13870,8 +13991,8 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor2",
-                6,
+                "",
+                0,
                 0,
                 2,
                 ""
@@ -13881,14 +14002,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Selamat datang di labirin \\n[1], nyalakan kristal "
+                "Selamat datang di labirin \\n[1], nyalakan"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "dan keluar dari sini"
+                "kristal  dan keluar dari sini"
               ]
             },
             {
