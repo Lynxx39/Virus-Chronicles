@@ -12274,21 +12274,85 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Analisis] Human papilloma virus dapat menyebabkan infeksi pada permukaan kulit dan berpotensi"
+                "[Indikator: Analisis]"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "menyebabkan kanker virus. HPV memiliki struktur utama berupa asam nukleat yang dilindungi oleh lapisan protein."
+                "Human papilloma virus dapat menyebabkan"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Berdasarkan informasi tersebut, struktur HPV yang berfungsi melindungi materi genetik virus adalah…"
+                "infeksi pada permukaan kulit dan berpotensi"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "menyebabkan kanker virus. HPV memiliki"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "struktur utama berupa asam nukleat yang"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "dilindungi oleh lapisan protein."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Berdasarkan informasi tersebut, struktur HPV"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "yang berfungsi melindungi materi genetik"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "virus adalah…"
               ]
             },
             {
@@ -12331,28 +12395,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena nukleokapsid bukan struktur utama HPV yang hanya berfungsi"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "melindungi materi genetik, envelope tidak dimiliki oleh HPV karena HPV merupakan virus non-enveloped, sedangkan"
+                "nukleokapsid bukan struktur utama HPV yang"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "serabut ekor dan base plate tidak terdapat pada struktur HPV karena keduanya merupakan struktur khas"
+                "hanya berfungsi melindungi materi genetik,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bakteriofag."
+                "envelope tidak dimiliki oleh HPV karena HPV"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "merupakan virus non-enveloped, sedangkan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "serabut ekor dan base plate tidak terdapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "pada struktur HPV karena keduanya merupakan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "struktur khas bakteriofag."
               ]
             },
             {
@@ -12445,28 +12548,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena nukleokapsid bukan struktur utama HPV yang hanya berfungsi"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "melindungi materi genetik, envelope tidak dimiliki oleh HPV karena HPV merupakan virus non-enveloped, sedangkan"
+                "nukleokapsid bukan struktur utama HPV yang"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "serabut ekor dan base plate tidak terdapat pada struktur HPV karena keduanya merupakan struktur khas"
+                "hanya berfungsi melindungi materi genetik,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bakteriofag."
+                "envelope tidak dimiliki oleh HPV karena HPV"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "merupakan virus non-enveloped, sedangkan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "serabut ekor dan base plate tidak terdapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "pada struktur HPV karena keduanya merupakan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "struktur khas bakteriofag."
               ]
             },
             {
@@ -12509,28 +12651,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena nukleokapsid bukan struktur utama HPV yang hanya berfungsi"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "melindungi materi genetik, envelope tidak dimiliki oleh HPV karena HPV merupakan virus non-enveloped, sedangkan"
+                "nukleokapsid bukan struktur utama HPV yang"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "serabut ekor dan base plate tidak terdapat pada struktur HPV karena keduanya merupakan struktur khas"
+                "hanya berfungsi melindungi materi genetik,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bakteriofag."
+                "envelope tidak dimiliki oleh HPV karena HPV"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "merupakan virus non-enveloped, sedangkan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "serabut ekor dan base plate tidak terdapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "pada struktur HPV karena keduanya merupakan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "struktur khas bakteriofag."
               ]
             },
             {
@@ -12573,28 +12754,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena nukleokapsid bukan struktur utama HPV yang hanya berfungsi"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "melindungi materi genetik, envelope tidak dimiliki oleh HPV karena HPV merupakan virus non-enveloped, sedangkan"
+                "nukleokapsid bukan struktur utama HPV yang"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "serabut ekor dan base plate tidak terdapat pada struktur HPV karena keduanya merupakan struktur khas"
+                "hanya berfungsi melindungi materi genetik,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bakteriofag."
+                "envelope tidak dimiliki oleh HPV karena HPV"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "merupakan virus non-enveloped, sedangkan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "serabut ekor dan base plate tidak terdapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "pada struktur HPV karena keduanya merupakan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "struktur khas bakteriofag."
               ]
             },
             {
@@ -13402,28 +13622,67 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Interpretasi] Perhatikan hasil pengamatan berikut!"
+                "[Indikator: Interpretasi]"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "• Pada sel A, sel inang pecah setelah terbentuknya banyak virus baru."
+                "Perhatikan hasil pengamatan berikut!"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "• Pada sel B, sel inang tetap hidup dan terus membelah meskipun mengandung genetik virus."
+                "• Pada sel A, sel inang pecah setelah"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Berdasarkan pengamatan tersebut pernyataan yang tepat adalah…"
+                "terbentuknya banyak virus baru."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "• Pada sel B, sel inang tetap hidup dan terus"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "membelah meskipun mengandung genetik virus."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Berdasarkan pengamatan tersebut pernyataan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "yang tepat adalah…"
               ]
             },
             {
@@ -13466,28 +13725,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena sel A mengalami siklus litik yang menyebabkan sel inang pecah"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "setelah virus memperbanyak diri, sedangkan sel B mengalami siklus lisogenik karena sel inang tetap hidup dan"
+                "sel A mengalami siklus litik yang menyebabkan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "membelah meskipun mengandung materi genetik virus, sehingga pilihan A, B, C, dan D tidak sesuai dengan ciri"
+                "sel inang pecah setelah virus memperbanyak"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "masing-masing siklus."
+                "diri, sedangkan sel B mengalami siklus"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "lisogenik karena sel inang tetap hidup dan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "membelah meskipun mengandung materi genetik"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus, sehingga pilihan A, B, C, dan D tidak"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "sesuai dengan ciri masing-masing siklus."
               ]
             },
             {
@@ -13530,28 +13828,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena sel A mengalami siklus litik yang menyebabkan sel inang pecah"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "setelah virus memperbanyak diri, sedangkan sel B mengalami siklus lisogenik karena sel inang tetap hidup dan"
+                "sel A mengalami siklus litik yang menyebabkan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "membelah meskipun mengandung materi genetik virus, sehingga pilihan A, B, C, dan D tidak sesuai dengan ciri"
+                "sel inang pecah setelah virus memperbanyak"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "masing-masing siklus."
+                "diri, sedangkan sel B mengalami siklus"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "lisogenik karena sel inang tetap hidup dan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "membelah meskipun mengandung materi genetik"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus, sehingga pilihan A, B, C, dan D tidak"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "sesuai dengan ciri masing-masing siklus."
               ]
             },
             {
@@ -13594,28 +13931,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena sel A mengalami siklus litik yang menyebabkan sel inang pecah"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "setelah virus memperbanyak diri, sedangkan sel B mengalami siklus lisogenik karena sel inang tetap hidup dan"
+                "sel A mengalami siklus litik yang menyebabkan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "membelah meskipun mengandung materi genetik virus, sehingga pilihan A, B, C, dan D tidak sesuai dengan ciri"
+                "sel inang pecah setelah virus memperbanyak"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "masing-masing siklus."
+                "diri, sedangkan sel B mengalami siklus"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "lisogenik karena sel inang tetap hidup dan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "membelah meskipun mengandung materi genetik"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus, sehingga pilihan A, B, C, dan D tidak"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "sesuai dengan ciri masing-masing siklus."
               ]
             },
             {
@@ -13658,28 +14034,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena sel A mengalami siklus litik yang menyebabkan sel inang pecah"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "setelah virus memperbanyak diri, sedangkan sel B mengalami siklus lisogenik karena sel inang tetap hidup dan"
+                "sel A mengalami siklus litik yang menyebabkan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "membelah meskipun mengandung materi genetik virus, sehingga pilihan A, B, C, dan D tidak sesuai dengan ciri"
+                "sel inang pecah setelah virus memperbanyak"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "masing-masing siklus."
+                "diri, sedangkan sel B mengalami siklus"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "lisogenik karena sel inang tetap hidup dan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "membelah meskipun mengandung materi genetik"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "virus, sehingga pilihan A, B, C, dan D tidak"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "sesuai dengan ciri masing-masing siklus."
               ]
             },
             {
@@ -14002,7 +14417,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Inference] Seorang siswa mengamati partikel mikroskopis dengan ciri-ciri sebagai berikut:"
+                "[Indikator: Inference]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Seorang siswa mengamati partikel mikroskopis"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "dengan ciri-ciri sebagai berikut:"
               ]
             },
             {
@@ -14010,20 +14439,6 @@
               "indent": 0,
               "parameters": [
                 "(1) Tidak memiliki struktur sel,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "(2) Tersusun atas asam nukleat yang dibungkus oleh selubung protein,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "(3) Tidak melakukan metabolisme sendiri, dan"
               ]
             },
             {
@@ -14041,14 +14456,67 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "(4) Hanya dapat bereplikasi di dalam sel hidup."
+                "(2) Tersusun atas asam nukleat yang dibungkus"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Berdasarkan ciri-ciri tersebut, kesimpulan yang paling tepat mengenai objek yang diamati adalah…"
+                "oleh selubung protein,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "(3) Tidak melakukan metabolisme sendiri, dan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "(4) Hanya dapat bereplikasi di dalam sel"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "hidup."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Berdasarkan ciri-ciri tersebut, kesimpulan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "yang paling tepat mengenai objek yang diamati"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "adalah…"
               ]
             },
             {
@@ -14091,28 +14559,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena bakteri memiliki struktur sel dan dapat melakukan metabolisme"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sendiri, sedangkan virus tidak memiliki struktur sel; virus juga tidak dapat disebut makhluk hidup sejati hanya"
+                "bakteri memiliki struktur sel dan dapat"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena mampu bereplikasi karena virus bergantung pada sel inang untuk bereplikasi; jamur mikroskopis memiliki"
+                "melakukan metabolisme sendiri, sedangkan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "struktur sel dan melakukan metabolisme sendiri, sedangkan organisme prokariotik juga memiliki struktur sel"
+                "virus tidak memiliki struktur sel; virus juga"
               ]
             },
             {
@@ -14130,7 +14598,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "seperti membran sel, sitoplasma, dan ribosom yang tidak dimiliki virus."
+                "tidak dapat disebut makhluk hidup sejati"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "hanya karena mampu bereplikasi karena virus"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bergantung pada sel inang untuk bereplikasi;"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "jamur mikroskopis memiliki struktur sel dan"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "melakukan metabolisme sendiri, sedangkan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "organisme prokariotik juga memiliki struktur"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "sel seperti membran sel, sitoplasma, dan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "ribosom yang tidak dimiliki virus."
               ]
             },
             {
@@ -14173,28 +14701,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena bakteri memiliki struktur sel dan dapat melakukan metabolisme"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sendiri, sedangkan virus tidak memiliki struktur sel; virus juga tidak dapat disebut makhluk hidup sejati hanya"
+                "bakteri memiliki struktur sel dan dapat"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena mampu bereplikasi karena virus bergantung pada sel inang untuk bereplikasi; jamur mikroskopis memiliki"
+                "melakukan metabolisme sendiri, sedangkan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "struktur sel dan melakukan metabolisme sendiri, sedangkan organisme prokariotik juga memiliki struktur sel"
+                "virus tidak memiliki struktur sel; virus juga"
               ]
             },
             {
@@ -14212,7 +14740,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "seperti membran sel, sitoplasma, dan ribosom yang tidak dimiliki virus."
+                "tidak dapat disebut makhluk hidup sejati"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "hanya karena mampu bereplikasi karena virus"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bergantung pada sel inang untuk bereplikasi;"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "jamur mikroskopis memiliki struktur sel dan"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "melakukan metabolisme sendiri, sedangkan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "organisme prokariotik juga memiliki struktur"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "sel seperti membran sel, sitoplasma, dan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "ribosom yang tidak dimiliki virus."
               ]
             },
             {
@@ -14312,28 +14900,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena bakteri memiliki struktur sel dan dapat melakukan metabolisme"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sendiri, sedangkan virus tidak memiliki struktur sel; virus juga tidak dapat disebut makhluk hidup sejati hanya"
+                "bakteri memiliki struktur sel dan dapat"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena mampu bereplikasi karena virus bergantung pada sel inang untuk bereplikasi; jamur mikroskopis memiliki"
+                "melakukan metabolisme sendiri, sedangkan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "struktur sel dan melakukan metabolisme sendiri, sedangkan organisme prokariotik juga memiliki struktur sel"
+                "virus tidak memiliki struktur sel; virus juga"
               ]
             },
             {
@@ -14351,7 +14939,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "seperti membran sel, sitoplasma, dan ribosom yang tidak dimiliki virus."
+                "tidak dapat disebut makhluk hidup sejati"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "hanya karena mampu bereplikasi karena virus"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bergantung pada sel inang untuk bereplikasi;"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "jamur mikroskopis memiliki struktur sel dan"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "melakukan metabolisme sendiri, sedangkan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "organisme prokariotik juga memiliki struktur"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "sel seperti membran sel, sitoplasma, dan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "ribosom yang tidak dimiliki virus."
               ]
             },
             {
@@ -14394,28 +15042,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena bakteri memiliki struktur sel dan dapat melakukan metabolisme"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "sendiri, sedangkan virus tidak memiliki struktur sel; virus juga tidak dapat disebut makhluk hidup sejati hanya"
+                "bakteri memiliki struktur sel dan dapat"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "karena mampu bereplikasi karena virus bergantung pada sel inang untuk bereplikasi; jamur mikroskopis memiliki"
+                "melakukan metabolisme sendiri, sedangkan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "struktur sel dan melakukan metabolisme sendiri, sedangkan organisme prokariotik juga memiliki struktur sel"
+                "virus tidak memiliki struktur sel; virus juga"
               ]
             },
             {
@@ -14433,7 +15081,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "seperti membran sel, sitoplasma, dan ribosom yang tidak dimiliki virus."
+                "tidak dapat disebut makhluk hidup sejati"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "hanya karena mampu bereplikasi karena virus"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bergantung pada sel inang untuk bereplikasi;"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "jamur mikroskopis memiliki struktur sel dan"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "melakukan metabolisme sendiri, sedangkan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "organisme prokariotik juga memiliki struktur"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "sel seperti membran sel, sitoplasma, dan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "ribosom yang tidak dimiliki virus."
               ]
             },
             {
@@ -15383,28 +16091,99 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "[Indikator: Evaluasi] Banyak ilmuwan yang telah mengembangkan vaksin HIV (Human Immunodeficiency Virus). Namun,"
+                "[Indikator: Evaluasi]"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "sampai saat ini vaksin yang benar-benar efektif masih sulit ditemukan karena HIV memiliki laju mutasi yang"
+                "Banyak ilmuwan yang telah mengembangkan"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "sangat tinggi dan menyerang sel-sel sistem kekebalan tubuh manusia."
+                "vaksin HIV (Human Immunodeficiency Virus)."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Berdasarkan informasi berikut, pernyataan yang tepat mengenai penyebab pengembangan vaksin HIV adalah…"
+                "Namun, sampai saat ini vaksin yang"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "benar-benar efektif masih sulit ditemukan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "karena HIV memiliki laju mutasi yang sangat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "tinggi dan menyerang sel-sel sistem kekebalan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "tubuh manusia."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Berdasarkan informasi berikut, pernyataan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "yang tepat mengenai penyebab pengembangan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "vaksin HIV adalah…"
               ]
             },
             {
@@ -15504,28 +16283,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena HIV memang dapat dipelajari melalui berbagai metode penelitian"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "meskipun terutama menginfeksi manusia; antibiotik tidak dapat menyembuhkan HIV karena antibiotik bekerja"
+                "HIV memang dapat dipelajari melalui berbagai"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "terhadap bakteri, bukan virus; HIV juga tidak mudah diatasi oleh sistem imun karena justru menyerang sel CD4"
+                "metode penelitian meskipun terutama"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "yang berperan dalam kekebalan tubuh; sedangkan HIV tidak dapat berkembang biak di luar sel hidup manusia karena"
+                "menginfeksi manusia; antibiotik tidak dapat"
               ]
             },
             {
@@ -15543,7 +16322,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus membutuhkan sel inang untuk bereplikasi."
+                "menyembuhkan HIV karena antibiotik bekerja"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "terhadap bakteri, bukan virus; HIV juga tidak"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "mudah diatasi oleh sistem imun karena justru"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "menyerang sel CD4 yang berperan dalam"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "kekebalan tubuh; sedangkan HIV tidak dapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "berkembang biak di luar sel hidup manusia"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "karena virus membutuhkan sel inang untuk"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bereplikasi."
               ]
             },
             {
@@ -15586,28 +16425,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena HIV memang dapat dipelajari melalui berbagai metode penelitian"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "meskipun terutama menginfeksi manusia; antibiotik tidak dapat menyembuhkan HIV karena antibiotik bekerja"
+                "HIV memang dapat dipelajari melalui berbagai"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "terhadap bakteri, bukan virus; HIV juga tidak mudah diatasi oleh sistem imun karena justru menyerang sel CD4"
+                "metode penelitian meskipun terutama"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "yang berperan dalam kekebalan tubuh; sedangkan HIV tidak dapat berkembang biak di luar sel hidup manusia karena"
+                "menginfeksi manusia; antibiotik tidak dapat"
               ]
             },
             {
@@ -15625,7 +16464,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus membutuhkan sel inang untuk bereplikasi."
+                "menyembuhkan HIV karena antibiotik bekerja"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "terhadap bakteri, bukan virus; HIV juga tidak"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "mudah diatasi oleh sistem imun karena justru"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "menyerang sel CD4 yang berperan dalam"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "kekebalan tubuh; sedangkan HIV tidak dapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "berkembang biak di luar sel hidup manusia"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "karena virus membutuhkan sel inang untuk"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bereplikasi."
               ]
             },
             {
@@ -15668,28 +16567,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena HIV memang dapat dipelajari melalui berbagai metode penelitian"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "meskipun terutama menginfeksi manusia; antibiotik tidak dapat menyembuhkan HIV karena antibiotik bekerja"
+                "HIV memang dapat dipelajari melalui berbagai"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "terhadap bakteri, bukan virus; HIV juga tidak mudah diatasi oleh sistem imun karena justru menyerang sel CD4"
+                "metode penelitian meskipun terutama"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "yang berperan dalam kekebalan tubuh; sedangkan HIV tidak dapat berkembang biak di luar sel hidup manusia karena"
+                "menginfeksi manusia; antibiotik tidak dapat"
               ]
             },
             {
@@ -15707,7 +16606,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus membutuhkan sel inang untuk bereplikasi."
+                "menyembuhkan HIV karena antibiotik bekerja"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "terhadap bakteri, bukan virus; HIV juga tidak"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "mudah diatasi oleh sistem imun karena justru"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "menyerang sel CD4 yang berperan dalam"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "kekebalan tubuh; sedangkan HIV tidak dapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "berkembang biak di luar sel hidup manusia"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "karena virus membutuhkan sel inang untuk"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bereplikasi."
               ]
             },
             {
@@ -15750,28 +16709,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Alasan jawaban salah : Jawaban Salah, karena HIV memang dapat dipelajari melalui berbagai metode penelitian"
+                "Alasan jawaban salah : Jawaban Salah, karena"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "meskipun terutama menginfeksi manusia; antibiotik tidak dapat menyembuhkan HIV karena antibiotik bekerja"
+                "HIV memang dapat dipelajari melalui berbagai"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "terhadap bakteri, bukan virus; HIV juga tidak mudah diatasi oleh sistem imun karena justru menyerang sel CD4"
+                "metode penelitian meskipun terutama"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "yang berperan dalam kekebalan tubuh; sedangkan HIV tidak dapat berkembang biak di luar sel hidup manusia karena"
+                "menginfeksi manusia; antibiotik tidak dapat"
               ]
             },
             {
@@ -15789,7 +16748,67 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus membutuhkan sel inang untuk bereplikasi."
+                "menyembuhkan HIV karena antibiotik bekerja"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "terhadap bakteri, bukan virus; HIV juga tidak"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "mudah diatasi oleh sistem imun karena justru"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "menyerang sel CD4 yang berperan dalam"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2,
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "kekebalan tubuh; sedangkan HIV tidak dapat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "berkembang biak di luar sel hidup manusia"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "karena virus membutuhkan sel inang untuk"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "bereplikasi."
               ]
             },
             {
