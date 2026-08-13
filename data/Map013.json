@@ -11132,14 +11132,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\c[4]Selamat \\n[1] Telah Menyelesaikan Game ini\\c[0] Total"
+                "\\c[4]Selamat \\n[1] Telah Menyelesaikan Game ini\\c[0] Total Point Kamu:"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Point Kamu: \\c[3]\\v[1]\\c[0]"
+                "\\c[3]\\v[1]\\c[0]"
               ]
             },
             {
@@ -11686,21 +11686,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Pemerintah mengadakan program vaksinasi untuk mencegah"
+                "Pemerintah mengadakan program vaksinasi untuk mencegah penyebaran penyakit"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "penyebaran penyakit akibat virus. Pada salah satu jenis"
+                "akibat virus. Pada salah satu jenis vaksinasi, vaksin diberikan melalui"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "vaksinasi, vaksin diberikan melalui mulut (oral) agar dapat"
+                "mulut (oral) agar dapat membentuk kekebalan tubuh terhadap penyakit"
               ]
             },
             {
@@ -11718,14 +11718,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "membentuk kekebalan tubuh terhadap penyakit tertentu."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Berdasarkan cara pemberiannya, penyakit yang dapat dicegah"
+                "tertentu. Berdasarkan cara pemberiannya, penyakit yang dapat dicegah"
               ]
             },
             {
@@ -11782,21 +11775,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "hepatitis tidak menggunakan vaksin oral sebagai pemberian"
+                "hepatitis tidak menggunakan vaksin oral sebagai pemberian vaksin yang umum,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "vaksin yang umum, melainkan diberikan melalui suntikan;"
+                "melainkan diberikan melalui suntikan; disentri belum memiliki vaksin rutin"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "disentri belum memiliki vaksin rutin yang digunakan secara"
+                "yang digunakan secara umum untuk mencegah penyakit tersebut; cacar"
               ]
             },
             {
@@ -11814,53 +11807,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "umum untuk mencegah penyakit tersebut; cacar menggunakan"
+                "menggunakan vaksin yang diberikan melalui metode khusus pada kulit, bukan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "vaksin yang diberikan melalui metode khusus pada kulit,"
+                "melalui mulut; sedangkan kolera memang memiliki vaksin oral, tetapi vaksin"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bukan melalui mulut; sedangkan kolera memang memiliki vaksin"
+                "oral yang dimaksud dalam program imunisasi rutin adalah vaksin polio,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "oral, tetapi vaksin oral yang dimaksud dalam program"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "imunisasi rutin adalah vaksin polio, sehingga pilihan yang"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "paling tepat adalah polio."
+                "sehingga pilihan yang paling tepat adalah polio."
               ]
             },
             {
@@ -11910,21 +11878,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "hepatitis tidak menggunakan vaksin oral sebagai pemberian"
+                "hepatitis tidak menggunakan vaksin oral sebagai pemberian vaksin yang umum,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "vaksin yang umum, melainkan diberikan melalui suntikan;"
+                "melainkan diberikan melalui suntikan; disentri belum memiliki vaksin rutin"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "disentri belum memiliki vaksin rutin yang digunakan secara"
+                "yang digunakan secara umum untuk mencegah penyakit tersebut; cacar"
               ]
             },
             {
@@ -11942,53 +11910,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "umum untuk mencegah penyakit tersebut; cacar menggunakan"
+                "menggunakan vaksin yang diberikan melalui metode khusus pada kulit, bukan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "vaksin yang diberikan melalui metode khusus pada kulit,"
+                "melalui mulut; sedangkan kolera memang memiliki vaksin oral, tetapi vaksin"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bukan melalui mulut; sedangkan kolera memang memiliki vaksin"
+                "oral yang dimaksud dalam program imunisasi rutin adalah vaksin polio,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "oral, tetapi vaksin oral yang dimaksud dalam program"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "imunisasi rutin adalah vaksin polio, sehingga pilihan yang"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "paling tepat adalah polio."
+                "sehingga pilihan yang paling tepat adalah polio."
               ]
             },
             {
@@ -12038,21 +11981,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "hepatitis tidak menggunakan vaksin oral sebagai pemberian"
+                "hepatitis tidak menggunakan vaksin oral sebagai pemberian vaksin yang umum,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "vaksin yang umum, melainkan diberikan melalui suntikan;"
+                "melainkan diberikan melalui suntikan; disentri belum memiliki vaksin rutin"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "disentri belum memiliki vaksin rutin yang digunakan secara"
+                "yang digunakan secara umum untuk mencegah penyakit tersebut; cacar"
               ]
             },
             {
@@ -12070,53 +12013,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "umum untuk mencegah penyakit tersebut; cacar menggunakan"
+                "menggunakan vaksin yang diberikan melalui metode khusus pada kulit, bukan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "vaksin yang diberikan melalui metode khusus pada kulit,"
+                "melalui mulut; sedangkan kolera memang memiliki vaksin oral, tetapi vaksin"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bukan melalui mulut; sedangkan kolera memang memiliki vaksin"
+                "oral yang dimaksud dalam program imunisasi rutin adalah vaksin polio,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "oral, tetapi vaksin oral yang dimaksud dalam program"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "imunisasi rutin adalah vaksin polio, sehingga pilihan yang"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "paling tepat adalah polio."
+                "sehingga pilihan yang paling tepat adalah polio."
               ]
             },
             {
@@ -12178,21 +12096,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Vaksin polio oral (OPV - Oral Polio Vaccine)"
+                "Benar! Vaksin polio oral (OPV - Oral Polio Vaccine) diberikan melalui"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "diberikan melalui tetesan mulut untuk merangsang antibodi"
+                "tetesan mulut untuk merangsang antibodi mukosa usus, yang merupakan tempat"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "mukosa usus, yang merupakan tempat replikasi virus polio."
+                "replikasi virus polio."
               ]
             },
             {
@@ -12230,21 +12148,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "hepatitis tidak menggunakan vaksin oral sebagai pemberian"
+                "hepatitis tidak menggunakan vaksin oral sebagai pemberian vaksin yang umum,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "vaksin yang umum, melainkan diberikan melalui suntikan;"
+                "melainkan diberikan melalui suntikan; disentri belum memiliki vaksin rutin"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "disentri belum memiliki vaksin rutin yang digunakan secara"
+                "yang digunakan secara umum untuk mencegah penyakit tersebut; cacar"
               ]
             },
             {
@@ -12262,53 +12180,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "umum untuk mencegah penyakit tersebut; cacar menggunakan"
+                "menggunakan vaksin yang diberikan melalui metode khusus pada kulit, bukan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "vaksin yang diberikan melalui metode khusus pada kulit,"
+                "melalui mulut; sedangkan kolera memang memiliki vaksin oral, tetapi vaksin"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bukan melalui mulut; sedangkan kolera memang memiliki vaksin"
+                "oral yang dimaksud dalam program imunisasi rutin adalah vaksin polio,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "oral, tetapi vaksin oral yang dimaksud dalam program"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "imunisasi rutin adalah vaksin polio, sehingga pilihan yang"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "paling tepat adalah polio."
+                "sehingga pilihan yang paling tepat adalah polio."
               ]
             },
             {
@@ -12600,21 +12493,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Dalam suatu percobaan, sel inang yang terinfeksi virus"
+                "Dalam suatu percobaan, sel inang yang terinfeksi virus mengalami"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "mengalami pembentukan banyak partikel virus baru dan"
+                "pembentukan banyak partikel virus baru dan akhirnya pecah dalam waktu"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "akhirnya pecah dalam waktu singkat setelah infeksi."
+                "singkat setelah infeksi. Berdasarkan peristiwa tersebut, simpulkan alasan"
               ]
             },
             {
@@ -12632,14 +12525,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Berdasarkan peristiwa tersebut, simpulkan alasan mengapa"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "proses tersebut termasuk ke dalam siklus litik."
+                "mengapa proses tersebut termasuk ke dalam siklus litik."
               ]
             },
             {
@@ -12689,21 +12575,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "integrasi materi genetik virus ke DNA sel inang tanpa"
+                "integrasi materi genetik virus ke DNA sel inang tanpa merusak sel merupakan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "merusak sel merupakan ciri siklus lisogenik, begitu pula sel"
+                "ciri siklus lisogenik, begitu pula sel inang yang tetap hidup dan membelah"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "inang yang tetap hidup dan membelah bersama materi genetik"
+                "bersama materi genetik virus. Keadaan virus yang tidak aktif di dalam sel"
               ]
             },
             {
@@ -12721,28 +12607,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus. Keadaan virus yang tidak aktif di dalam sel juga"
+                "juga menunjukkan fase lisogenik, sedangkan virus tidak dapat bereplikasi"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "menunjukkan fase lisogenik, sedangkan virus tidak dapat"
+                "tanpa melibatkan sel inang karena membutuhkan sistem sel inang untuk"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bereplikasi tanpa melibatkan sel inang karena membutuhkan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "sistem sel inang untuk memperbanyak diri."
+                "memperbanyak diri."
               ]
             },
             {
@@ -12797,14 +12676,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Pada siklus litik, virus memperbanyak diri dengan"
+                "Benar! Pada siklus litik, virus memperbanyak diri dengan cepat hingga sel"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "cepat hingga sel inang pecah (lisis)."
+                "inang pecah (lisis)."
               ]
             },
             {
@@ -12849,21 +12728,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "integrasi materi genetik virus ke DNA sel inang tanpa"
+                "integrasi materi genetik virus ke DNA sel inang tanpa merusak sel merupakan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "merusak sel merupakan ciri siklus lisogenik, begitu pula sel"
+                "ciri siklus lisogenik, begitu pula sel inang yang tetap hidup dan membelah"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "inang yang tetap hidup dan membelah bersama materi genetik"
+                "bersama materi genetik virus. Keadaan virus yang tidak aktif di dalam sel"
               ]
             },
             {
@@ -12881,28 +12760,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus. Keadaan virus yang tidak aktif di dalam sel juga"
+                "juga menunjukkan fase lisogenik, sedangkan virus tidak dapat bereplikasi"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "menunjukkan fase lisogenik, sedangkan virus tidak dapat"
+                "tanpa melibatkan sel inang karena membutuhkan sistem sel inang untuk"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bereplikasi tanpa melibatkan sel inang karena membutuhkan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "sistem sel inang untuk memperbanyak diri."
+                "memperbanyak diri."
               ]
             },
             {
@@ -12952,21 +12824,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "integrasi materi genetik virus ke DNA sel inang tanpa"
+                "integrasi materi genetik virus ke DNA sel inang tanpa merusak sel merupakan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "merusak sel merupakan ciri siklus lisogenik, begitu pula sel"
+                "ciri siklus lisogenik, begitu pula sel inang yang tetap hidup dan membelah"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "inang yang tetap hidup dan membelah bersama materi genetik"
+                "bersama materi genetik virus. Keadaan virus yang tidak aktif di dalam sel"
               ]
             },
             {
@@ -12984,28 +12856,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus. Keadaan virus yang tidak aktif di dalam sel juga"
+                "juga menunjukkan fase lisogenik, sedangkan virus tidak dapat bereplikasi"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "menunjukkan fase lisogenik, sedangkan virus tidak dapat"
+                "tanpa melibatkan sel inang karena membutuhkan sistem sel inang untuk"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bereplikasi tanpa melibatkan sel inang karena membutuhkan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "sistem sel inang untuk memperbanyak diri."
+                "memperbanyak diri."
               ]
             },
             {
@@ -13055,21 +12920,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "integrasi materi genetik virus ke DNA sel inang tanpa"
+                "integrasi materi genetik virus ke DNA sel inang tanpa merusak sel merupakan"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "merusak sel merupakan ciri siklus lisogenik, begitu pula sel"
+                "ciri siklus lisogenik, begitu pula sel inang yang tetap hidup dan membelah"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "inang yang tetap hidup dan membelah bersama materi genetik"
+                "bersama materi genetik virus. Keadaan virus yang tidak aktif di dalam sel"
               ]
             },
             {
@@ -13087,28 +12952,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "virus. Keadaan virus yang tidak aktif di dalam sel juga"
+                "juga menunjukkan fase lisogenik, sedangkan virus tidak dapat bereplikasi"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "menunjukkan fase lisogenik, sedangkan virus tidak dapat"
+                "tanpa melibatkan sel inang karena membutuhkan sistem sel inang untuk"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "bereplikasi tanpa melibatkan sel inang karena membutuhkan"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "sistem sel inang untuk memperbanyak diri."
+                "memperbanyak diri."
               ]
             },
             {
@@ -13387,21 +13245,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\c[4]Isi Buku:\\c[0] \"Jika kau membaca ini, berarti kau telah"
+                "\\c[4]Isi Buku:\\c[0] \"Jika kau membaca ini, berarti kau telah tiba di"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "tiba di kerajaan pengetahuan.\" \"Di tempat ini kau harus"
+                "kerajaan pengetahuan.\" \"Di tempat ini kau harus menjalankan tiga ujian yang"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "menjalankan tiga ujian yang menjaga gerbang kebenaran\""
+                "menjaga gerbang kebenaran\""
               ]
             },
             {
@@ -13438,14 +13296,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"Hanya mereka yang menjawab ketiganya yang layak melangkah"
+                "\"Hanya mereka yang menjawab ketiganya yang layak melangkah ke depan.\" \"—"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "ke depan.\" \"— Penjaga Terakhir Kerajaan\""
+                "Penjaga Terakhir Kerajaan\""
               ]
             },
             {
@@ -13631,39 +13489,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Seorang peneliti harus memilih antara menggunakan"
+                "Seorang peneliti harus memilih antara menggunakan bakteriofag atau"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "bakteriofag atau antibiotik untuk mengatasi infeksi bakteri"
+                "antibiotik untuk mengatasi infeksi bakteri tertentu. Berdasarkan prinsip"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "tertentu. Berdasarkan prinsip kerja, manakah pilihan yang"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2,
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "lebih tepat dan mengapa?"
+                "kerja, manakah pilihan yang lebih tepat dan mengapa?"
               ]
             },
             {
@@ -13713,21 +13553,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik hanya bekerja pada bakteri dan tidak dapat"
+                "antibiotik hanya bekerja pada bakteri dan tidak dapat menyerang virus,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "menyerang virus, bakteriofag memiliki target bakteri"
+                "bakteriofag memiliki target bakteri tertentu sehingga tidak merusak semua"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tertentu sehingga tidak merusak semua sel inang, serta"
+                "sel inang, serta antibiotik tidak bekerja dengan menghambat siklus"
               ]
             },
             {
@@ -13745,14 +13585,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik tidak bekerja dengan menghambat siklus lisogenik"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "virus."
+                "lisogenik virus."
               ]
             },
             {
@@ -13814,21 +13647,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Benar! Bakteriofag dapat menginfeksi bakteri tertentu,"
+                "Benar! Bakteriofag dapat menginfeksi bakteri tertentu, berkembang biak di"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "berkembang biak di dalamnya, lalu menghancurkan bakteri"
+                "dalamnya, lalu menghancurkan bakteri secara spesifik tanpa merusak sel"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "secara spesifik tanpa merusak sel lain."
+                "lain."
               ]
             },
             {
@@ -13866,21 +13699,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik hanya bekerja pada bakteri dan tidak dapat"
+                "antibiotik hanya bekerja pada bakteri dan tidak dapat menyerang virus,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "menyerang virus, bakteriofag memiliki target bakteri"
+                "bakteriofag memiliki target bakteri tertentu sehingga tidak merusak semua"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tertentu sehingga tidak merusak semua sel inang, serta"
+                "sel inang, serta antibiotik tidak bekerja dengan menghambat siklus"
               ]
             },
             {
@@ -13898,14 +13731,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik tidak bekerja dengan menghambat siklus lisogenik"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "virus."
+                "lisogenik virus."
               ]
             },
             {
@@ -13955,21 +13781,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik hanya bekerja pada bakteri dan tidak dapat"
+                "antibiotik hanya bekerja pada bakteri dan tidak dapat menyerang virus,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "menyerang virus, bakteriofag memiliki target bakteri"
+                "bakteriofag memiliki target bakteri tertentu sehingga tidak merusak semua"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tertentu sehingga tidak merusak semua sel inang, serta"
+                "sel inang, serta antibiotik tidak bekerja dengan menghambat siklus"
               ]
             },
             {
@@ -13987,14 +13813,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik tidak bekerja dengan menghambat siklus lisogenik"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "virus."
+                "lisogenik virus."
               ]
             },
             {
@@ -14044,21 +13863,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik hanya bekerja pada bakteri dan tidak dapat"
+                "antibiotik hanya bekerja pada bakteri dan tidak dapat menyerang virus,"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "menyerang virus, bakteriofag memiliki target bakteri"
+                "bakteriofag memiliki target bakteri tertentu sehingga tidak merusak semua"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "tertentu sehingga tidak merusak semua sel inang, serta"
+                "sel inang, serta antibiotik tidak bekerja dengan menghambat siklus"
               ]
             },
             {
@@ -14076,14 +13895,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "antibiotik tidak bekerja dengan menghambat siklus lisogenik"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "virus."
+                "lisogenik virus."
               ]
             },
             {

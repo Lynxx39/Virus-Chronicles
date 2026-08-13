@@ -3,18 +3,17 @@
 //=============================================================================
 /*:
  * @target MZ
- * @plugindesc Auto-wraps dialogue text to fill the message window cleanly without overflowing.
+ * @plugindesc Auto-wraps dialogue text to fill the entire message window cleanly (max 75 chars).
  * @author Antigravity
  *
  * @help AutoMessageWrap.js
  *
  * This plugin automatically joins short broken lines in dialogue messages
- * and word-wraps text safely (max 60 chars per line) so it fills the text box
- * without spilling over the right edge.
+ * and word-wraps text across the full width of the message window (~75 chars per line).
  */
 
 (() => {
-    const MAX_LINE_CHARS = 60;
+    const MAX_LINE_CHARS = 75;
 
     const _Window_Message_startMessage = Window_Message.prototype.startMessage;
     Window_Message.prototype.startMessage = function() {

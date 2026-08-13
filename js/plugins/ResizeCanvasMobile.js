@@ -41,8 +41,17 @@
         };
     }
 
-    // Bring Touch UI buttons to top layer in Menu scenes and sync button visibility
+    // Always create cancel button and bring to top layer so back button NEVER disappears
     if (typeof Scene_MenuBase !== "undefined") {
+        Scene_MenuBase.prototype.createButtons = function () {
+            if (this.needsCancelButton()) {
+                this.createCancelButton();
+            }
+            if (ConfigManager.touchUI && this.needsPageButtons()) {
+                this.createPageButtons();
+            }
+        };
+
         const _Scene_MenuBase_start = Scene_MenuBase.prototype.start;
         Scene_MenuBase.prototype.start = function () {
             _Scene_MenuBase_start.call(this);
@@ -64,10 +73,11 @@
         Scene_MenuBase.prototype.update = function () {
             _Scene_MenuBase_update.call(this);
             if (this._cancelButton) {
-                this._cancelButton.visible = ConfigManager.touchUI;
+                this._cancelButton.visible = true;
             }
         };
     }
+
 
 
 
