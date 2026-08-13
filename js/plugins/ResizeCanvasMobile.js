@@ -7,7 +7,7 @@
 (() => {
     // Override stretch height to use 100% height when in Fullscreen or PWA standalone mode
     if (typeof Graphics !== "undefined") {
-        Graphics._stretchHeight = function() {
+        Graphics._stretchHeight = function () {
             if (Utils.isMobileDevice()) {
                 const isStandalone = window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches;
                 const rate = (Utils.isLocal() || this._isFullScreen() || isStandalone) ? 1.0 : 0.9;
@@ -22,7 +22,7 @@
     // This prevents mobile players from getting stuck without a menu/back button, while still allowing them to toggle it.
     if (typeof ConfigManager !== "undefined") {
         Object.defineProperty(ConfigManager, "touchUI", {
-            get: function() {
+            get: function () {
                 if (typeof Utils !== "undefined" && Utils.isMobileDevice()) {
                     if (typeof SceneManager !== "undefined" && SceneManager._scene instanceof Scene_Options) {
                         return this._touchUI !== undefined ? this._touchUI : true;
@@ -31,7 +31,7 @@
                 }
                 return this._touchUI !== undefined ? this._touchUI : true;
             },
-            set: function(value) {
+            set: function (value) {
                 this._touchUI = value;
             },
             configurable: true
@@ -40,11 +40,31 @@
 
     if (typeof Scene_Map !== "undefined") {
         const _Scene_Map_isMapTouchOk = Scene_Map.prototype.isMapTouchOk;
-        Scene_Map.prototype.isMapTouchOk = function() {
+        Scene_Map.prototype.isMapTouchOk = function () {
             const realTouchUI = ConfigManager._touchUI !== undefined ? ConfigManager._touchUI : true;
             return _Scene_Map_isMapTouchOk.call(this) && realTouchUI;
         };
     }
+    // Bring Touch UI buttons to the top layer so they are never hidden under windows
+    if (typeof Scene_MenuBase !== "undefined") {
+        const _Scene_MenuBase_start = Scene_MenuBase.prototype.start;
+        Scene_MenuBase.prototype.start = function () {
+            _Scene_MenuBase_start.call(this);
+            if (this._cancelButton && this._windowLayer) {
+                this._windowLayer.removeChild(this._cancelButton);
+                this._windowLayer.addChild(this._cancelButton);
+            }
+            if (this._pageupButton && this._windowLayer) {
+                this._windowLayer.removeChild(this._pageupButton);
+                this._windowLayer.addChild(this._pageupButton);
+            }
+            if (this._pagedownButton && this._windowLayer) {
+                this._windowLayer.removeChild(this._pagedownButton);
+                this._windowLayer.addChild(this._pagedownButton);
+            }
+        };
+    }
+
 
     // Create floating fullscreen button for mobile devices
     function createFullscreenButton() {
@@ -52,7 +72,7 @@
 
         const btn = document.createElement("div");
         btn.id = "mobileFullscreenBtn";
-        
+
         // Styling
         btn.style.position = "fixed";
         btn.style.top = "15px";
@@ -116,7 +136,7 @@
         document.addEventListener("webkitfullscreenchange", updateIcon);
         document.addEventListener("mozfullscreenchange", updateIcon);
         document.addEventListener("MSFullscreenChange", updateIcon);
-        
+
         updateIcon();
     }
 
@@ -195,7 +215,7 @@
 
         const btn = document.createElement("div");
         btn.id = "mobileIosFullscreenBtn";
-        
+
         btn.style.position = "fixed";
         btn.style.top = "15px";
         btn.style.left = "15px";
