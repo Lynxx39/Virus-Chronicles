@@ -18,11 +18,11 @@
         };
     }
 
-    // Force Touch UI to always be active so UI buttons (menu/back) never disappear when toggled in options
+    // Allow Touch UI to be toggled ON / OFF in Options while defaulting to ON
     if (typeof ConfigManager !== "undefined") {
         Object.defineProperty(ConfigManager, "touchUI", {
             get: function () {
-                return true;
+                return this._touchUI !== undefined ? this._touchUI : true;
             },
             set: function (value) {
                 this._touchUI = value;
@@ -31,15 +31,15 @@
         });
     }
 
-
     if (typeof Scene_Map !== "undefined") {
         const _Scene_Map_isMapTouchOk = Scene_Map.prototype.isMapTouchOk;
         Scene_Map.prototype.isMapTouchOk = function () {
-            const realTouchUI = ConfigManager._touchUI !== undefined ? ConfigManager._touchUI : true;
+            const realTouchUI = ConfigManager.touchUI;
             return _Scene_Map_isMapTouchOk.call(this) && realTouchUI;
         };
     }
-    // Bring Touch UI buttons to the top layer so they are never hidden under windows
+
+    // Bring Touch UI buttons to the top layer and sync visibility with ConfigManager.touchUI
     if (typeof Scene_MenuBase !== "undefined") {
         const _Scene_MenuBase_start = Scene_MenuBase.prototype.start;
         Scene_MenuBase.prototype.start = function () {
@@ -57,7 +57,16 @@
                 this._windowLayer.addChild(this._pagedownButton);
             }
         };
+
+        const _Scene_MenuBase_update = Scene_MenuBase.prototype.update;
+        Scene_MenuBase.prototype.update = function () {
+            _Scene_MenuBase_update.call(this);
+            if (this._cancelButton) {
+                this._cancelButton.visible = ConfigManager.touchUI;
+            }
+        };
     }
+
 
 
     // Create floating fullscreen button for mobile devices
