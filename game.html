@@ -9,9 +9,35 @@
         <link rel="icon" href="icon/icon.png" type="image/png">
         <link rel="apple-touch-icon" href="icon/icon.png">
         <link rel="stylesheet" type="text/css" href="css/game.css">
+        <link rel="stylesheet" type="text/css" href="css/xvpedition.css">
         <title>Virus Chronicles</title>
     </head>
     <body style="background-color: black">
+        <!-- XVPEDITION GLOSSARY POPUP -->
+        <div class="popup-overlay" id="xvpeditionPopup">
+            <div class="popup xvpedition">
+                <div class="close-btn" onclick="closeXVpedition()">✕</div>
+                <h2>XVpedition - Glosarium Virus</h2>
+
+                <div class="xvpedition-controls">
+                    <input type="text" id="xvSearchInput" class="xvpedition-search" placeholder="🔍 Cari istilah biologi (contoh: Litik, Kapsid, Vaksin)..." oninput="filterXVpedition()">
+                    <div class="xvpedition-cats" id="xvCategories">
+                        <button class="cat-btn active" onclick="setXVCategory('all', this)">Semua</button>
+                        <button class="cat-btn" onclick="setXVCategory('struktur', this)">Struktur & Ciri</button>
+                        <button class="cat-btn" onclick="setXVCategory('replikasi', this)">Replikasi</button>
+                        <button class="cat-btn" onclick="setXVCategory('penyakit', this)">Penyakit</button>
+                        <button class="cat-btn" onclick="setXVCategory('pencegahan', this)">Manfaat & Pencegahan</button>
+                    </div>
+                </div>
+
+                <div class="xvpedition-content" id="xvpeditionList">
+                    <!-- Glosarium items populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/xvpedition.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
+

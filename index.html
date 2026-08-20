@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Virus Chronicles</title>
+<link rel="stylesheet" href="css/xvpedition.css">
+
 
 <style>
 *{box-sizing:border-box}
@@ -207,6 +209,160 @@ body::before{
     color: #7a3e12;
 }
 
+/* ================= XVPEDITION GLOSSARY ================= */
+.popup.xvpedition {
+    width: 95%;
+    max-width: 900px;
+    max-height: 85vh;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.xvpedition-controls {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.xvpedition-search {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: 3px solid #7a3e12;
+    background: #fff8e7;
+    color: #4b2600;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.xvpedition-search::placeholder {
+    color: #a37c58;
+    font-weight: normal;
+}
+
+.xvpedition-search:focus {
+    border-color: #ffea81;
+    box-shadow: 0 0 8px rgba(255, 234, 129, 0.6);
+}
+
+.xvpedition-cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.cat-btn {
+    padding: 7px 14px;
+    border-radius: 20px;
+    border: 2px solid #7a3e12;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #c67a3c;
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.cat-btn:hover {
+    background: #d9934f;
+    transform: translateY(-1px);
+}
+
+.cat-btn.active {
+    background: linear-gradient(#ffea81, #ff8400);
+    color: #5a2a0c;
+    border-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.xvpedition-content {
+    max-height: 52vh;
+    overflow-y: auto;
+    padding: 6px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+    text-align: left;
+}
+
+/* Custom Scrollbar for XVpedition */
+.xvpedition-content::-webkit-scrollbar {
+    width: 8px;
+}
+.xvpedition-content::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+.xvpedition-content::-webkit-scrollbar-thumb {
+    background: #ffea81;
+    border-radius: 4px;
+    border: 1px solid #7a3e12;
+}
+
+.term-card {
+    background: rgba(0, 0, 0, 0.25);
+    border: 2px solid #ffe45c;
+    border-radius: 14px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.term-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.term-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.term-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffea81;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+.term-tag {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    background: #7a3e12;
+    color: #ffe45c;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.term-desc {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 0;
+    white-space: normal;
+}
+
+.xv-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px;
+    color: #ffe45c;
+    font-size: 16px;
+}
+
+
 </style>
 </head>
 
@@ -221,6 +377,7 @@ body::before{
     <button class="menu-btn" onclick="openPopup('pendahuluan')">Pendahuluan</button>
     <button class="menu-btn" onclick="openPopup('deskripsi')">Deskripsi</button>
     <button class="menu-btn" onclick="openMateri()">Materi</button>
+    <button class="menu-btn" onclick="openXVpedition()">XVpedition</button>
     <button class="menu-btn" onclick="openPopup('aturan')">Aturan Game</button>
 </div>
 
@@ -261,6 +418,30 @@ body::before{
 
     </div>
 </div>
+
+<!-- XVPEDITION GLOSSARY POPUP -->
+<div class="popup-overlay" id="xvpeditionPopup">
+    <div class="popup xvpedition">
+        <div class="close-btn" onclick="closeXVpedition()">✕</div>
+        <h2>XVpedition - Glosarium Virus</h2>
+
+        <div class="xvpedition-controls">
+            <input type="text" id="xvSearchInput" class="xvpedition-search" placeholder="🔍 Cari istilah biologi (contoh: Litik, Kapsid, Vaksin)..." oninput="filterXVpedition()">
+            <div class="xvpedition-cats" id="xvCategories">
+                <button class="cat-btn active" onclick="setXVCategory('all', this)">Semua</button>
+                <button class="cat-btn" onclick="setXVCategory('struktur', this)">Struktur & Ciri</button>
+                <button class="cat-btn" onclick="setXVCategory('replikasi', this)">Replikasi</button>
+                <button class="cat-btn" onclick="setXVCategory('penyakit', this)">Penyakit</button>
+                <button class="cat-btn" onclick="setXVCategory('pencegahan', this)">Manfaat & Pencegahan</button>
+            </div>
+        </div>
+
+        <div class="xvpedition-content" id="xvpeditionList">
+            <!-- Glosarium items populated by JavaScript -->
+        </div>
+    </div>
+</div>
+
 
 <script>
 let currentIndex = 0;
@@ -405,7 +586,245 @@ function closeIosPrompt() {
     }
 }
 
+/* ================= XVPEDITION GLOSSARY LOGIC ================= */
+const xvpeditionData = [
+    {
+        term: "Virus",
+        cat: "struktur",
+        catLabel: "Struktur & Ciri",
+        desc: "Mikroorganisme mikroskopis (berukuran 0,02 - 200 µm) yang bersifat parasit obligat intraseluler. Virus hanya dapat berkembang biak di dalam sel hidup dan tersusun atas asam nukleat (DNA atau RNA) yang dibungkus selubung protein (kapsid)."
+    },
+    {
+        term: "Virion",
+        cat: "struktur",
+        catLabel: "Struktur & Ciri",
+        desc: "Partikel virus yang utuh, lengkap, dan matang di luar sel inang serta siap untuk menginfeksi sel target."
+    },
+    {
+        term: "Kapsid",
+        cat: "struktur",
+        catLabel: "Struktur & Ciri",
+        desc: "Selubung protein pelindung yang membungkus materi genetik virus. Terdiri dari sub-unit protein yang disebut kapsomer."
+    },
+    {
+        term: "Asam Nukleat",
+        cat: "struktur",
+        catLabel: "Struktur & Ciri",
+        desc: "Bahan inti penyusun virus yang hanya terdiri dari salah satu jenis materi genetik, yaitu DNA saja atau RNA saja."
+    },
+    {
+        term: "Bakteriofag",
+        cat: "struktur",
+        catLabel: "Struktur & Ciri",
+        desc: "Jenis virus berbentuk huruf T yang khusus menyerang dan menginfeksi sel bakteri. Memiliki bagian kepala, leher, lempeng dasar, dan serabut ekor."
+    },
+    {
+        term: "TMV (Tobacco Mosaic Virus)",
+        cat: "struktur",
+        catLabel: "Struktur & Ciri",
+        desc: "Virus berbentuk batang yang menyerang tanaman tembakau. Merupakan virus pertama yang berhasil dikristalkan oleh Wendell Stanley pada tahun 1935."
+    },
+    {
+        term: "Daur Litik",
+        cat: "replikasi",
+        catLabel: "Replikasi",
+        desc: "Daur reproduksi virus di mana virus virulen mengambil alih sel inang, mereplikasi partikel baru, lalu menghancurkan (lisis) sel inang dalam waktu singkat."
+    },
+    {
+        term: "Daur Lisogenik",
+        cat: "replikasi",
+        catLabel: "Replikasi",
+        desc: "Daur reproduksi virus di mana materi genetik virus menyisip ke kromosom sel inang membentuk profag tanpa merusak atau membunuh sel inang secara langsung."
+    },
+    {
+        term: "Profag",
+        cat: "replikasi",
+        catLabel: "Replikasi",
+        desc: "Sisipan DNA virus bakteriofag yang telah menyatu dengan kromosom sel bakteri pada daur lisogenik dan diwariskan ke sel anakan."
+    },
+    {
+        term: "Adsorpsi",
+        cat: "replikasi",
+        catLabel: "Replikasi",
+        desc: "Tahap awal replikasi virus berupa penempelan serabut/ujung ekor virus pada reseptor spesifik di permukaan membran sel inang."
+    },
+    {
+        term: "Penetrasi",
+        cat: "replikasi",
+        catLabel: "Replikasi",
+        desc: "Tahap penginjeksian atau penyuntikan asam nukleat (DNA/RNA) virus ke dalam sitoplasma sel inang."
+    },
+    {
+        term: "Sintesis & Replikasi",
+        cat: "replikasi",
+        catLabel: "Replikasi",
+        desc: "Tahap pembentukan komponen-komponen tubuh virus baru dan penggandaan materi genetik di dalam sel inang."
+    },
+    {
+        term: "Lisis",
+        cat: "replikasi",
+        catLabel: "Replikasi",
+        desc: "Tahap pecah dan hancurnya dinding sel inang oleh enzim lizozim untuk melepaskan ratusan virion baru ke lingkungan."
+    },
+    {
+        term: "Influenza Virus",
+        cat: "penyakit",
+        catLabel: "Penyakit",
+        desc: "Virus RNA dari famili Orthomyxoviridae yang menyerang saluran pernapasan manusia. Ditularkan melalui udara dan percikan lendir."
+    },
+    {
+        term: "SARS",
+        cat: "penyakit",
+        catLabel: "Penyakit",
+        desc: "Severe Acute Respiratory Syndrome; penyakit infeksi saluran pernapasan akut berat (pneumonia) yang disebabkan oleh Coronavirus."
+    },
+    {
+        term: "HIV / AIDS",
+        cat: "penyakit",
+        catLabel: "Penyakit",
+        desc: "Human Immunodeficiency Virus; virus yang merusak sistem kekebalan tubuh (sel limfosit T), menyebabkan sindrom hilangnya kekebalan tubuh (AIDS)."
+    },
+    {
+        term: "Hepatitis",
+        cat: "penyakit",
+        catLabel: "Penyakit",
+        desc: "Gangguan peradangan fungsi hati dan saluran empedu akibat infeksi virus Hepatitis A, B, C, D, atau E."
+    },
+    {
+        term: "Ebola Virus",
+        cat: "penyakit",
+        catLabel: "Penyakit",
+        desc: "Virus sangat mematikan yang menyerang sel darah putih makrofag dan jaringan fibroblas, menyebabkan demam tinggi dan pendarahan hebat."
+    },
+    {
+        term: "Rabies (Rhabdovirus)",
+        cat: "penyakit",
+        catLabel: "Penyakit",
+        desc: "Penyakit infeksi zoonotik yang menyerang sistem saraf pusat hewan dan manusia melalui gigitan hewan terinfeksi seperti anjing atau kera."
+    },
+    {
+        term: "Tetelo (NCD)",
+        cat: "penyakit",
+        catLabel: "Penyakit",
+        desc: "New Castle Disease; penyakit virus mematikan yang menyerang sistem pernapasan dan saraf unggas (ayam/itik) dengan gejala diare dan kepala tertekuk."
+    },
+    {
+        term: "PMK (Penyakit Kuku & Mulut)",
+        cat: "penyakit",
+        catLabel: "Penyakit",
+        desc: "Penyakit yang menyerang hewan ternak berkuku belah (sapi, kambing, babi) akibat Aphthovirus, menimbulkan lepuh di mulut dan kaki."
+    },
+    {
+        term: "Tungro",
+        cat: "penyakit",
+        catLabel: "Penyakit",
+        desc: "Penyakit yang menyerang tanaman padi hingga menyebabkan kekerdilan. Disebabkan virus tungro (Caulimoviridae) dan ditularkan oleh wereng."
+    },
+    {
+        term: "TYLCV",
+        cat: "penyakit",
+        catLabel: "Penyakit",
+        desc: "Tomato Yellow Leaf Curl Virus; virus yang menyebabkan daun tanaman tomat menguning dan menggulung sehingga menurunkan hasil panen."
+    },
+    {
+        term: "TYMV",
+        cat: "penyakit",
+        catLabel: "Penyakit",
+        desc: "Turnip Yellow Mosaic Virus; virus yang menyebabkan daun tanaman tembakau, kapas, dan lobak menjadi menggulung dan menguning."
+    },
+    {
+        term: "BGM (Bean Golden Mosaic)",
+        cat: "penyakit",
+        catLabel: "Penyakit",
+        desc: "Penyakit akibat Begomovirus yang menyebabkan timbulnya warna bercak kuning emas pada daun tanaman tomat dan cabai."
+    },
+    {
+        term: "Vaksin",
+        cat: "pencegahan",
+        catLabel: "Manfaat & Pencegahan",
+        desc: "Suspensi mikroorganisme patogen yang dimatikan/dilemahkan untuk merangsang pembentukan antibodi dan kekebalan imun tubuh."
+    },
+    {
+        term: "Interferon",
+        cat: "pencegahan",
+        catLabel: "Manfaat & Pencegahan",
+        desc: "Senyawa protein alami yang diproduksi sel tubuh untuk mencegah dan merintangi replikasi virus di dalam sel inang."
+    },
+    {
+        term: "Biopestisida",
+        cat: "pencegahan",
+        catLabel: "Manfaat & Pencegahan",
+        desc: "Penggunaan agen biologis seperti Baculovirus untuk memberantas hama tanaman tanpa mencemari lingkungan sekitar."
+    },
+    {
+        term: "Zoonotik",
+        cat: "pencegahan",
+        catLabel: "Manfaat & Pencegahan",
+        desc: "Sifat penyakit infeksi yang dapat ditularkan secara alami dari hewan vertebrata ke manusia."
+    }
+];
+
+let currentCategory = 'all';
+
+function openXVpedition() {
+    currentCategory = 'all';
+    document.getElementById("xvSearchInput").value = '';
+    
+    const catBtns = document.querySelectorAll("#xvCategories .cat-btn");
+    catBtns.forEach(btn => btn.classList.remove("active"));
+    if (catBtns.length > 0) catBtns[0].classList.add("active");
+
+    renderXVpedition();
+    document.getElementById("xvpeditionPopup").style.display = "flex";
+}
+
+function closeXVpedition() {
+    document.getElementById("xvpeditionPopup").style.display = "none";
+}
+
+function setXVCategory(cat, btn) {
+    currentCategory = cat;
+    const catBtns = document.querySelectorAll("#xvCategories .cat-btn");
+    catBtns.forEach(b => b.classList.remove("active"));
+    if (btn) btn.classList.add("active");
+    renderXVpedition();
+}
+
+function filterXVpedition() {
+    renderXVpedition();
+}
+
+function renderXVpedition() {
+    const searchVal = document.getElementById("xvSearchInput").value.toLowerCase().trim();
+    const listContainer = document.getElementById("xvpeditionList");
+    
+    const filtered = xvpeditionData.filter(item => {
+        const matchesCat = (currentCategory === 'all') || (item.cat === currentCategory);
+        const matchesSearch = item.term.toLowerCase().includes(searchVal) || 
+                              item.desc.toLowerCase().includes(searchVal) || 
+                              item.catLabel.toLowerCase().includes(searchVal);
+        return matchesCat && matchesSearch;
+    });
+
+    if (filtered.length === 0) {
+        listContainer.innerHTML = `<div class="xv-empty">🔍 Tidak ada istilah yang cocok dengan pencarian "<strong>${searchVal}</strong>".</div>`;
+        return;
+    }
+
+    listContainer.innerHTML = filtered.map(item => `
+        <div class="term-card">
+            <div class="term-header">
+                <h3 class="term-title">${item.term}</h3>
+                <span class="term-tag">${item.catLabel}</span>
+            </div>
+            <p class="term-desc">${item.desc}</p>
+        </div>
+    `).join('');
+}
+
 </script>
+<script src="js/xvpedition.js"></script>
 
 </body>
 </html>
+
