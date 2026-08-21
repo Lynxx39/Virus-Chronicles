@@ -359,11 +359,11 @@ function resetModelCamera() {
     }
 }
 
-// Check if player is actively in gameplay (NOT during Title, Name Input, Message, or Cutscenes)
+// Check if player is actively in gameplay (ONLY in Scene_Map, NOT during Boot, Title, Name Input, Message, or Cutscenes)
 function shouldShowXVpeditionBtn() {
+    // If not in RPG maker game environment or SceneManager not yet initialized, hide button
     if (typeof SceneManager === "undefined" || !SceneManager._scene) {
-        // If outside RPG maker engine (e.g. index.html), default to visible if button exists
-        return true;
+        return false;
     }
 
     const scene = SceneManager._scene;
@@ -374,7 +374,7 @@ function shouldShowXVpeditionBtn() {
         return false;
     }
 
-    // Hide while dialogue message box is active (intro story / speech / action)
+    // Hide while dialogue message box is active (intro story / speech / question dialogue)
     if (typeof $gameMessage !== "undefined" && $gameMessage && $gameMessage.isBusy()) {
         return false;
     }
@@ -432,11 +432,13 @@ function updateXVpeditionBtnPosition() {
 
 // Mount and keep button position updated
 window.addEventListener("DOMContentLoaded", () => {
+    // Only create floating in-game button if popup container exists and not on index.html main menu
     if (!document.getElementById("xvpeditionGameBtn") && document.getElementById("xvpeditionPopup")) {
         const btn = document.createElement("div");
         btn.id = "xvpeditionGameBtn";
         btn.className = "xvpedition-game-btn";
         btn.title = "Buka VXpedition (Glosarium & Struktur Virus)";
+        btn.style.display = "none"; // Always hidden initially until active in Scene_Map
         btn.onclick = openXVpedition;
         btn.innerHTML = `
             <img src="icon/xvpedition.png" alt="VXpedition Icon" class="xvpedition-btn-img">
