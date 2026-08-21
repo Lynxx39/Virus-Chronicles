@@ -228,6 +228,27 @@ function closeXVpedition() {
     openXVSection('hub');
 }
 
+// Dynamically load model-viewer script only on-demand to protect game WebGL canvas startup
+function ensureModelViewerLoaded(callback) {
+    if (customElements.get("model-viewer")) {
+        if (callback) callback();
+        return;
+    }
+    let script = document.getElementById("modelViewerDynamicScript");
+    if (!script) {
+        script = document.createElement("script");
+        script.id = "modelViewerDynamicScript";
+        script.type = "module";
+        script.src = "js/libs/model-viewer.min.js";
+        script.onload = () => {
+            if (callback) callback();
+        };
+        document.head.appendChild(script);
+    } else {
+        if (callback) callback();
+    }
+}
+
 // Switch between Hub Menu (2 options), Glosarium, and Struktur Virus 3D
 function openXVSection(section) {
     currentSection = section;
@@ -275,13 +296,15 @@ function openXVSection(section) {
 
         renderVirusParts();
 
-        // Ensure model-viewer adjusts to visible layout
-        setTimeout(() => {
-            const mv = document.getElementById("virusModelViewer");
-            if (mv && typeof mv.dismissPoster === 'function') {
-                mv.dismissPoster();
-            }
-        }, 100);
+        // Ensure model-viewer loads on demand and renders cleanly
+        ensureModelViewerLoaded(() => {
+            setTimeout(() => {
+                const mv = document.getElementById("virusModelViewer");
+                if (mv && typeof mv.dismissPoster === 'function') {
+                    mv.dismissPoster();
+                }
+            }, 100);
+        });
     }
 }
 
