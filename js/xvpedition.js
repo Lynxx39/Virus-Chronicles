@@ -1,4 +1,6 @@
-/* ================= XVPEDITION GLOSSARY SYSTEM ================= */
+/* ================= XVPEDITION SYSTEM (GLOSARIUM & STRUKTUR VIRUS) ================= */
+
+// Glosarium Data
 const xvpeditionData = [
     {
         term: "Virus",
@@ -28,7 +30,7 @@ const xvpeditionData = [
         term: "Bakteriofag",
         cat: "struktur",
         catLabel: "Struktur & Ciri",
-        desc: "Jenis virus berbentuk huruf T yang khusus menyerang dan menginfeksi sel bakteri. Memiliki bagian kepala, leher, lempeng dasar, dan serabut ekor."
+        desc: "Jenis virus berbentuk huruf T (kompleks) yang khusus menyerang dan menginfeksi sel bakteri. Memiliki kepala, selubung ekor, dan serabut ekor."
     },
     {
         term: "TMV (Tobacco Mosaic Virus)",
@@ -64,7 +66,7 @@ const xvpeditionData = [
         term: "Penetrasi",
         cat: "replikasi",
         catLabel: "Replikasi",
-        desc: "Tahap penginjeksian atau penyuntikan asam nukleat (DNA/RNA) virus ke dalam sitoplasma sel inang."
+        desc: "Tahap penginjeksian atau penyuntikan asam nukleat (DNA/RNA) virus ke dalam sitoplasma sel inang melalui saluran ekor."
     },
     {
         term: "Sintesis & Replikasi",
@@ -94,7 +96,7 @@ const xvpeditionData = [
         term: "HIV / AIDS",
         cat: "penyakit",
         catLabel: "Penyakit",
-        desc: "Human Immunodeficiency Virus; virus yang merusak sistem kekebalan tubuh (sel limfosit T), menyebabkan sindrom hilangnya kekebalan tubuh (AIDS)."
+        desc: "Human Immunodeficiency Virus; virus yang merusak sistem kekebalan tubuh (sel limfosit T CD4+), menyebabkan sindrom hilangnya kekebalan tubuh (AIDS)."
     },
     {
         term: "Hepatitis",
@@ -106,7 +108,7 @@ const xvpeditionData = [
         term: "Ebola Virus",
         cat: "penyakit",
         catLabel: "Penyakit",
-        desc: "Virus sangat mematikan yang menyerang sel darah putih makrofag dan jaringan fibroblas, menyebabkan demam tinggi dan pendarahan hebat."
+        desc: "Virus sangat mematikan yang menyerang sel darah putih makrofag dan jaringan fibroblas, menyebabkan demam berdarah tinggi dan pendarahan hebat."
     },
     {
         term: "Rabies (Rhabdovirus)",
@@ -176,9 +178,41 @@ const xvpeditionData = [
     }
 ];
 
-let currentCategory = 'all';
+// Struktur Virus Anatomical Parts Data
+const virusPartsData = [
+    {
+        name: "1. Kepala (Kapsid)",
+        desc: "Bagian atas virus berbentuk ikosahedral (polihedral) yang tersusun atas lapisan kapsomer protein. Berfungsi melindungi materi genetik dari pengaruh lingkungan eksternal."
+    },
+    {
+        name: "2. Materi Genetik (DNA/RNA)",
+        desc: "Asam nukleat yang tersimpan di dalam kapsid kepala virus. Mengandung instruksi genetik untuk mereplikasi dan mengambil alih metabolisme sel inang."
+    },
+    {
+        name: "3. Leher & Kerah (Collar)",
+        desc: "Bagian penyambung antara kapsid kepala dan selubung ekor. Berfungsi sebagai saluran penghubung saat materi genetik ditransmisikan menuju ekor."
+    },
+    {
+        name: "4. Selubung Ekor (Sheath)",
+        desc: "Tabung protein heliks kontraktil yang dapat berkontraksi saat infeksi untuk memompa dan menyuntikkan DNA virus menembus dinding sel inang."
+    },
+    {
+        name: "5. Lempeng Dasar (Baseplate & Pins)",
+        desc: "Lempeng heksagonal di ujung selubung ekor yang dilengkapi jarum penusuk (pins). Berfungsi menstabilkan penempelan virus dan melubangi membran sel inang."
+    },
+    {
+        name: "6. Serabut Ekor (Tail Fibers)",
+        desc: "Struktur memanjang seperti kaki yang berfungsi mengenali dan menempel secara spesifik pada protein reseptor di permukaan membran inang (fase adsorpsi)."
+    }
+];
 
-function openXVpedition() {
+let currentCategory = 'all';
+let currentTab = 'glosarium';
+
+// Function to open the VXpedition Popup
+function openXVpedition(initialTab = 'glosarium') {
+    switchXVTab(initialTab);
+    
     currentCategory = 'all';
     const searchInput = document.getElementById("xvSearchInput");
     if (searchInput) searchInput.value = '';
@@ -188,12 +222,15 @@ function openXVpedition() {
     if (catBtns.length > 0) catBtns[0].classList.add("active");
 
     renderXVpedition();
+    renderVirusParts();
+
     const popup = document.getElementById("xvpeditionPopup");
     if (popup) {
         popup.style.setProperty("display", "flex", "important");
     }
 }
 
+// Function to close the VXpedition Popup
 function closeXVpedition() {
     const popup = document.getElementById("xvpeditionPopup");
     if (popup) {
@@ -201,6 +238,35 @@ function closeXVpedition() {
     }
 }
 
+// Function to switch between Glossarium and Struktur Virus tabs
+function switchXVTab(tabName) {
+    currentTab = tabName;
+    
+    const tabGlosarium = document.getElementById("xvTabGlosarium");
+    const tabStruktur = document.getElementById("xvTabStruktur");
+    const viewGlosarium = document.getElementById("xvViewGlosarium");
+    const viewStruktur = document.getElementById("xvViewStruktur");
+
+    if (tabName === 'glosarium') {
+        if (tabGlosarium) tabGlosarium.classList.add("active");
+        if (tabStruktur) tabStruktur.classList.remove("active");
+        if (viewGlosarium) viewGlosarium.style.display = "flex";
+        if (viewStruktur) viewStruktur.style.display = "none";
+    } else {
+        if (tabGlosarium) tabGlosarium.classList.remove("active");
+        if (tabStruktur) tabStruktur.classList.add("active");
+        if (viewGlosarium) viewGlosarium.style.display = "none";
+        if (viewStruktur) viewStruktur.style.display = "grid";
+        
+        // Trigger model viewer render if needed
+        const mv = document.getElementById("virusModelViewer");
+        if (mv && typeof mv.dismissPoster === 'function') {
+            mv.dismissPoster();
+        }
+    }
+}
+
+// Function to filter glossary categories
 function setXVCategory(cat, btn) {
     currentCategory = cat;
     const catBtns = document.querySelectorAll("#xvCategories .cat-btn");
@@ -213,6 +279,7 @@ function filterXVpedition() {
     renderXVpedition();
 }
 
+// Render glossary terms list
 function renderXVpedition() {
     const searchInput = document.getElementById("xvSearchInput");
     const searchVal = searchInput ? searchInput.value.toLowerCase().trim() : '';
@@ -243,7 +310,37 @@ function renderXVpedition() {
     `).join('');
 }
 
-// Function to update position of XVpedition floating button next to RPG Maker menu button
+// Render virus anatomy parts in 3D tab
+function renderVirusParts() {
+    const container = document.getElementById("xvPartsList");
+    if (!container) return;
+
+    container.innerHTML = virusPartsData.map(part => `
+        <div class="xv-part-card">
+            <div class="xv-part-name">${part.name}</div>
+            <p class="xv-part-desc">${part.desc}</p>
+        </div>
+    `).join('');
+}
+
+// 3D Model Helpers
+function toggleModelAutoRotate() {
+    const mv = document.getElementById("virusModelViewer");
+    if (mv) {
+        mv.autoRotate = !mv.autoRotate;
+    }
+}
+
+function resetModelCamera() {
+    const mv = document.getElementById("virusModelViewer");
+    if (mv) {
+        mv.cameraOrbit = "0deg 75deg 105%";
+        mv.fieldOfView = "auto";
+        mv.jumpCameraToGoal();
+    }
+}
+
+// Function to update position of VXpedition floating button at TOP-LEFT (avoiding in-game menu icon)
 function updateXVpeditionBtnPosition() {
     const btn = document.getElementById("xvpeditionGameBtn");
     if (!btn) return;
@@ -252,46 +349,39 @@ function updateXVpeditionBtnPosition() {
         const rect = Graphics._canvas.getBoundingClientRect();
         if (rect && rect.width > 0) {
             const scale = Graphics._realScale || 1.0;
-            const btnSize = Math.max(34, Math.min(48, Math.floor(44 * scale)));
-            const iconSize = Math.floor(btnSize * 0.75);
+            const btnHeight = Math.max(32, Math.min(42, Math.floor(38 * scale)));
+            const topMargin = Math.floor(10 * scale);
+            const leftMargin = Math.floor(12 * scale);
 
-            btn.style.width = btnSize + "px";
-            btn.style.height = btnSize + "px";
-
-            const img = btn.querySelector("img");
-            if (img) {
-                img.style.width = iconSize + "px";
-                img.style.height = iconSize + "px";
-            }
-
-            // Position XVpedition icon cleanly to the left of the RPG Maker menu button with padding
-            const rightMargin = Math.floor(72 * scale);
-            const topMargin = Math.floor(8 * scale);
-
+            btn.style.height = btnHeight + "px";
             btn.style.position = "fixed";
-            btn.style.left = Math.floor(rect.right - rightMargin - btnSize) + "px";
+            btn.style.left = Math.floor(rect.left + leftMargin) + "px";
             btn.style.top = Math.floor(rect.top + topMargin) + "px";
             btn.style.right = "auto";
             return;
         }
     }
 
-    // Default fallback position
+    // Default fallback position on top-left
     btn.style.position = "fixed";
-    btn.style.top = "10px";
-    btn.style.right = "80px";
-    btn.style.left = "auto";
+    btn.style.top = "12px";
+    btn.style.left = "16px";
+    btn.style.right = "auto";
 }
 
 // Mount and keep button position updated
 window.addEventListener("DOMContentLoaded", () => {
+    // Check if we should inject the floating game button
     if (!document.getElementById("xvpeditionGameBtn") && document.getElementById("xvpeditionPopup")) {
         const btn = document.createElement("div");
         btn.id = "xvpeditionGameBtn";
         btn.className = "xvpedition-game-btn";
-        btn.title = "XVpedition - Glosarium Virus";
-        btn.onclick = openXVpedition;
-        btn.innerHTML = `<img src="icon/xvpedition.png" alt="XVpedition Icon" class="xvpedition-btn-img">`;
+        btn.title = "Buka VXpedition (Glosarium & Struktur Virus)";
+        btn.onclick = () => openXVpedition('glosarium');
+        btn.innerHTML = `
+            <img src="icon/xvpedition.png" alt="VXpedition Icon" class="xvpedition-btn-img">
+            <span class="xvpedition-btn-text">VXPEDITION</span>
+        `;
         document.body.appendChild(btn);
 
         // Initial position update
