@@ -12,22 +12,39 @@
         <link rel="stylesheet" type="text/css" href="css/xvpedition.css">
         <title>Virus Chronicles</title>
         <script type="module" src="js/libs/model-viewer.min.js"></script>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     </head>
     <body style="background-color: black">
         <!-- VXPEDITION POPUP -->
         <div class="popup-overlay" id="xvpeditionPopup">
             <div class="popup xvpedition">
                 <div class="close-btn" onclick="closeXVpedition()">✕</div>
+                <button class="xv-back-btn" id="xvBackBtn" onclick="openXVSection('hub')" style="display:none;">⬅ Menu</button>
+                
                 <div class="xvpedition-header">
-                    <h2 class="xvpedition-main-title">VXPEDITION</h2>
-                    <div class="xvpedition-nav-tabs">
-                        <button class="xv-tab-btn active" id="xvTabGlosarium" onclick="switchXVTab('glosarium')">📖 Glosarium</button>
-                        <button class="xv-tab-btn" id="xvTabStruktur" onclick="switchXVTab('struktur')">🧬 Struktur Virus (3D)</button>
+                    <h2 class="xvpedition-main-title" id="xvMainTitle">VXPEDITION</h2>
+                    <p class="xvpedition-subtitle" id="xvSubtitle">Pilih modul pembelajaran yang ingin Anda akses:</p>
+                </div>
+
+                <!-- 1. MAIN HUB VIEW (2 PILIHAN MENU) -->
+                <div id="xvViewHub" class="xv-hub-grid">
+                    <div class="xv-hub-card" onclick="openXVSection('glosarium')">
+                        <div class="xv-hub-icon-wrap">📖</div>
+                        <h3 class="xv-hub-card-title">Glosarium Virus</h3>
+                        <p class="xv-hub-card-desc">Kumpulan istilah biologi penting, ciri-ciri, siklus replikasi litik & lisogenik, serta penyakit virus.</p>
+                        <div class="xv-hub-card-action">Buka Glosarium ➔</div>
+                    </div>
+
+                    <div class="xv-hub-card" onclick="openXVSection('struktur')">
+                        <div class="xv-hub-icon-wrap">🧬</div>
+                        <h3 class="xv-hub-card-title">Struktur Virus (3D)</h3>
+                        <p class="xv-hub-card-desc">Eksplorasi model 3D interaktif virus Bakteriofag (Virus T) 360°, zoom, dan pelajari detail anatomi setiap bagian.</p>
+                        <div class="xv-hub-card-action">Lihat Model 3D ➔</div>
                     </div>
                 </div>
 
-                <!-- TAB 1: GLOSARIUM -->
-                <div id="xvViewGlosarium" class="xv-tab-view active">
+                <!-- 2. GLOSARIUM VIEW -->
+                <div id="xvViewGlosarium" class="xv-tab-view" style="display:none;">
                     <div class="xvpedition-controls">
                         <input type="text" id="xvSearchInput" class="xvpedition-search" placeholder="🔍 Cari istilah biologi (contoh: Litik, Kapsid, Vaksin)..." oninput="filterXVpedition()">
                         <div class="xvpedition-cats" id="xvCategories">
@@ -44,7 +61,7 @@
                     </div>
                 </div>
 
-                <!-- TAB 2: STRUKTUR VIRUS 3D -->
+                <!-- 3. STRUKTUR VIRUS 3D VIEW -->
                 <div id="xvViewStruktur" class="xv-tab-view" style="display:none;">
                     <div class="xv-model-layout">
                         <div class="xv-model-container">

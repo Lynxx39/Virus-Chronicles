@@ -1,4 +1,4 @@
-/* ================= XVPEDITION SYSTEM STYLES ================= */
+/* ================= VXPEDITION SYSTEM STYLES ================= */
 .popup-overlay {
     position: fixed !important;
     top: 0 !important;
@@ -41,7 +41,8 @@
 .close-btn {
     position: absolute;
     top: 12px;
-    left: 18px;
+    right: 18px;
+    left: auto;
     font-size: 26px;
     font-weight: bold;
     cursor: pointer;
@@ -58,12 +59,38 @@
     transform: scale(1.2);
 }
 
-/* Header & Tab Navigation */
+/* Back Button */
+.xv-back-btn {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    font-size: 13.5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #4b2600;
+    background: linear-gradient(#ffe066, #ff9800);
+    border: 2px solid #6b2e05;
+    border-radius: 16px;
+    padding: 5px 12px;
+    z-index: 1000001;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.xv-back-btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Modal Headers */
 .xvpedition-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
     margin-bottom: 14px;
 }
 
@@ -71,49 +98,105 @@
     margin: 0;
     font-size: 26px;
     font-weight: 900;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 218, 128, 0.3);
 }
 
-.xvpedition-nav-tabs {
+.xvpedition-subtitle {
+    margin: 0;
+    font-size: 13.5px;
+    color: #ffeaa7;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* ================= 1. MAIN MENU VIEW (2 CARDS) ================= */
+.xv-hub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 15px 10px 25px 10px;
+    margin: auto 0;
+}
+
+@media (max-width: 650px) {
+    .xv-hub-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+.xv-hub-card {
+    background: rgba(0, 0, 0, 0.35);
+    border: 3px solid #ffe45c;
+    border-radius: 18px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.xv-hub-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 234, 129, 0.4);
+    background: rgba(0, 0, 0, 0.5);
+    border-color: #ffffff;
+}
+
+.xv-hub-icon-wrap {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffe066, #ff9800);
+    border: 3px solid #6b2e05;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    background: rgba(0, 0, 0, 0.25);
-    padding: 5px;
-    border-radius: 30px;
-    border: 2px solid #753910;
-}
-
-.xv-tab-btn {
-    padding: 8px 20px;
-    font-size: 14.5px;
-    font-weight: bold;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    background: transparent;
-    color: #f7e6c4;
-    transition: all 0.2s ease;
-    display: inline-flex;
     align-items: center;
-    gap: 6px;
+    font-size: 34px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4), inset 0 2px 4px rgba(255,255,255,0.6);
 }
 
-.xv-tab-btn:hover {
-    background: rgba(255, 255, 255, 0.15);
-    color: #ffffff;
+.xv-hub-card-title {
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffea81;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
-.xv-tab-btn.active {
-    background: linear-gradient(135deg, #ffea81, #ff9100);
-    color: #4b2203;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
-    font-weight: 800;
+.xv-hub-card-desc {
+    font-size: 13px;
+    color: #f1f1f1;
+    line-height: 1.45;
+    margin: 0;
+    flex: 1;
 }
 
-/* View Containers */
+.xv-hub-card-action {
+    margin-top: 6px;
+    padding: 9px 20px;
+    border-radius: 20px;
+    border: 2px solid #7a3e12;
+    background: linear-gradient(#ffea81, #ff8400);
+    color: #4b2600;
+    font-weight: 900;
+    font-size: 13.5px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.xv-hub-card:hover .xv-hub-card-action {
+    transform: scale(1.05);
+}
+
+/* ================= 2. GLOSARIUM VIEW ================= */
 .xv-tab-view {
     display: flex;
     flex-direction: column;
@@ -121,7 +204,6 @@
     min-height: 0;
 }
 
-/* Controls (Search & Cats) */
 .xvpedition-controls {
     margin-bottom: 12px;
     display: flex;
@@ -184,7 +266,6 @@
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
-/* Glosarium List */
 .xvpedition-content {
     max-height: 48vh;
     overflow-y: auto;
@@ -269,7 +350,7 @@
     font-size: 15px;
 }
 
-/* ================= 3D MODEL VIEWER VIEW ================= */
+/* ================= 3. STRUKTUR VIRUS 3D VIEW ================= */
 .xv-model-layout {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
@@ -412,21 +493,21 @@ model-viewer:active {
     margin: 0;
 }
 
-/* ================= GAMEPLAY FLOATING BUTTON (TOP-LEFT) ================= */
+/* ================= GAMEPLAY FLOATING BUTTON (BELOW MENU BUTTON, TOP-RIGHT) ================= */
 .xvpedition-game-btn {
     position: fixed;
-    top: 12px;
-    left: 16px;
-    right: auto;
-    height: 40px;
-    padding: 0 14px 0 6px;
+    top: 60px;
+    right: 12px;
+    left: auto;
+    height: 35px;
+    padding: 0 12px 0 5px;
     background: linear-gradient(135deg, #ffe066 0%, #ff9800 55%, #d84315 100%);
-    border: 2.5px solid #6b2e05;
-    border-radius: 25px;
-    display: inline-flex;
+    border: 2px solid #6b2e05;
+    border-radius: 20px;
+    display: none; /* Controlled dynamically by shouldShowXVpeditionBtn */
     justify-content: center;
     align-items: center;
-    gap: 7px;
+    gap: 6px;
     cursor: pointer;
     z-index: 10000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6), inset 0 2px 2px rgba(255, 255, 255, 0.6);
@@ -446,8 +527,8 @@ model-viewer:active {
 }
 
 .xvpedition-btn-img {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
     filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5));
     pointer-events: none;
@@ -455,7 +536,7 @@ model-viewer:active {
 
 .xvpedition-btn-text {
     font-family: "Trebuchet MS", Arial, sans-serif;
-    font-size: 13.5px;
+    font-size: 12.5px;
     font-weight: 900;
     color: #441f03;
     text-transform: uppercase;

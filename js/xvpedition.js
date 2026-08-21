@@ -1,4 +1,4 @@
-/* ================= XVPEDITION SYSTEM (GLOSARIUM & STRUKTUR VIRUS) ================= */
+/* ================= VXPEDITION SYSTEM (GLOSARIUM & STRUKTUR VIRUS 3D) ================= */
 
 // Glosarium Data
 const xvpeditionData = [
@@ -207,62 +207,81 @@ const virusPartsData = [
 ];
 
 let currentCategory = 'all';
-let currentTab = 'glosarium';
+let currentSection = 'hub'; // 'hub', 'glosarium', 'struktur'
 
-// Function to open the VXpedition Popup
-function openXVpedition(initialTab = 'glosarium') {
-    switchXVTab(initialTab);
-    
-    currentCategory = 'all';
-    const searchInput = document.getElementById("xvSearchInput");
-    if (searchInput) searchInput.value = '';
-    
-    const catBtns = document.querySelectorAll("#xvCategories .cat-btn");
-    catBtns.forEach(btn => btn.classList.remove("active"));
-    if (catBtns.length > 0) catBtns[0].classList.add("active");
-
-    renderXVpedition();
-    renderVirusParts();
-
+// Open the VXpedition Modal (Always starts at Main Hub Menu)
+function openXVpedition() {
+    openXVSection('hub');
     const popup = document.getElementById("xvpeditionPopup");
     if (popup) {
         popup.style.setProperty("display", "flex", "important");
     }
 }
 
-// Function to close the VXpedition Popup
+// Close the VXpedition Modal
 function closeXVpedition() {
     const popup = document.getElementById("xvpeditionPopup");
     if (popup) {
         popup.style.setProperty("display", "none", "important");
     }
+    // Reset to hub for next open
+    openXVSection('hub');
 }
 
-// Function to switch between Glossarium and Struktur Virus tabs
-function switchXVTab(tabName) {
-    currentTab = tabName;
-    
-    const tabGlosarium = document.getElementById("xvTabGlosarium");
-    const tabStruktur = document.getElementById("xvTabStruktur");
+// Switch between Hub Menu (2 options), Glosarium, and Struktur Virus 3D
+function openXVSection(section) {
+    currentSection = section;
+
+    const viewHub = document.getElementById("xvViewHub");
     const viewGlosarium = document.getElementById("xvViewGlosarium");
     const viewStruktur = document.getElementById("xvViewStruktur");
+    const backBtn = document.getElementById("xvBackBtn");
+    const mainTitle = document.getElementById("xvMainTitle");
+    const subtitle = document.getElementById("xvSubtitle");
 
-    if (tabName === 'glosarium') {
-        if (tabGlosarium) tabGlosarium.classList.add("active");
-        if (tabStruktur) tabStruktur.classList.remove("active");
+    if (section === 'hub') {
+        if (viewHub) viewHub.style.display = "grid";
+        if (viewGlosarium) viewGlosarium.style.display = "none";
+        if (viewStruktur) viewStruktur.style.display = "none";
+        if (backBtn) backBtn.style.display = "none";
+        if (mainTitle) mainTitle.innerText = "VXPEDITION";
+        if (subtitle) {
+            subtitle.style.display = "block";
+            subtitle.innerText = "Pilih modul pembelajaran yang ingin Anda akses:";
+        }
+    } else if (section === 'glosarium') {
+        if (viewHub) viewHub.style.display = "none";
         if (viewGlosarium) viewGlosarium.style.display = "flex";
         if (viewStruktur) viewStruktur.style.display = "none";
-    } else {
-        if (tabGlosarium) tabGlosarium.classList.remove("active");
-        if (tabStruktur) tabStruktur.classList.add("active");
+        if (backBtn) backBtn.style.display = "inline-flex";
+        if (mainTitle) mainTitle.innerText = "📖 Glosarium Virus";
+        if (subtitle) subtitle.style.display = "none";
+
+        currentCategory = 'all';
+        const searchInput = document.getElementById("xvSearchInput");
+        if (searchInput) searchInput.value = '';
+        const catBtns = document.querySelectorAll("#xvCategories .cat-btn");
+        catBtns.forEach(btn => btn.classList.remove("active"));
+        if (catBtns.length > 0) catBtns[0].classList.add("active");
+
+        renderXVpedition();
+    } else if (section === 'struktur') {
+        if (viewHub) viewHub.style.display = "none";
         if (viewGlosarium) viewGlosarium.style.display = "none";
         if (viewStruktur) viewStruktur.style.display = "grid";
-        
-        // Trigger model viewer render if needed
-        const mv = document.getElementById("virusModelViewer");
-        if (mv && typeof mv.dismissPoster === 'function') {
-            mv.dismissPoster();
-        }
+        if (backBtn) backBtn.style.display = "inline-flex";
+        if (mainTitle) mainTitle.innerText = "🧬 Struktur Virus Bakteriofag (3D)";
+        if (subtitle) subtitle.style.display = "none";
+
+        renderVirusParts();
+
+        // Ensure model-viewer adjusts to visible layout
+        setTimeout(() => {
+            const mv = document.getElementById("virusModelViewer");
+            if (mv && typeof mv.dismissPoster === 'function') {
+                mv.dismissPoster();
+            }
+        }, 100);
     }
 }
 
@@ -340,55 +359,96 @@ function resetModelCamera() {
     }
 }
 
-// Function to update position of VXpedition floating button at TOP-LEFT (avoiding in-game menu icon)
+// Check if player is actively in gameplay (NOT during Title, Name Input, Message, or Cutscenes)
+function shouldShowXVpeditionBtn() {
+    if (typeof SceneManager === "undefined" || !SceneManager._scene) {
+        // If outside RPG maker engine (e.g. index.html), default to visible if button exists
+        return true;
+    }
+
+    const scene = SceneManager._scene;
+    const sceneName = scene.constructor ? scene.constructor.name : "";
+
+    // ONLY show during active map exploration (Scene_Map)
+    if (sceneName !== "Scene_Map") {
+        return false;
+    }
+
+    // Hide while dialogue message box is active (intro story / speech / action)
+    if (typeof $gameMessage !== "undefined" && $gameMessage && $gameMessage.isBusy()) {
+        return false;
+    }
+
+    // Hide while event cutscene is executing
+    if (typeof $gameMap !== "undefined" && $gameMap && $gameMap.isEventRunning()) {
+        return false;
+    }
+
+    // Hide if scene is busy
+    if (typeof scene.isBusy === "function" && scene.isBusy()) {
+        return false;
+    }
+
+    return true;
+}
+
+// Function to update position & visibility of VXpedition floating button BELOW the Top-Right Menu Button
 function updateXVpeditionBtnPosition() {
     const btn = document.getElementById("xvpeditionGameBtn");
     if (!btn) return;
+
+    if (!shouldShowXVpeditionBtn()) {
+        btn.style.display = "none";
+        return;
+    }
+
+    btn.style.display = "inline-flex";
 
     if (typeof Graphics !== "undefined" && Graphics._canvas) {
         const rect = Graphics._canvas.getBoundingClientRect();
         if (rect && rect.width > 0) {
             const scale = Graphics._realScale || 1.0;
-            const btnHeight = Math.max(32, Math.min(42, Math.floor(38 * scale)));
-            const topMargin = Math.floor(10 * scale);
-            const leftMargin = Math.floor(12 * scale);
+            const btnHeight = Math.max(30, Math.min(38, Math.floor(34 * scale)));
+            
+            // Positioned directly below RPG Maker's top-right Touch UI menu button
+            const topMargin = Math.floor(60 * scale);
+            const rightMargin = Math.floor(10 * scale);
 
             btn.style.height = btnHeight + "px";
             btn.style.position = "fixed";
-            btn.style.left = Math.floor(rect.left + leftMargin) + "px";
+            btn.style.left = "auto";
+            btn.style.right = Math.floor((window.innerWidth - rect.right) + rightMargin) + "px";
             btn.style.top = Math.floor(rect.top + topMargin) + "px";
-            btn.style.right = "auto";
             return;
         }
     }
 
-    // Default fallback position on top-left
+    // Default fallback position below top-right menu
     btn.style.position = "fixed";
-    btn.style.top = "12px";
-    btn.style.left = "16px";
-    btn.style.right = "auto";
+    btn.style.top = "60px";
+    btn.style.right = "12px";
+    btn.style.left = "auto";
 }
 
 // Mount and keep button position updated
 window.addEventListener("DOMContentLoaded", () => {
-    // Check if we should inject the floating game button
     if (!document.getElementById("xvpeditionGameBtn") && document.getElementById("xvpeditionPopup")) {
         const btn = document.createElement("div");
         btn.id = "xvpeditionGameBtn";
         btn.className = "xvpedition-game-btn";
         btn.title = "Buka VXpedition (Glosarium & Struktur Virus)";
-        btn.onclick = () => openXVpedition('glosarium');
+        btn.onclick = openXVpedition;
         btn.innerHTML = `
             <img src="icon/xvpedition.png" alt="VXpedition Icon" class="xvpedition-btn-img">
             <span class="xvpedition-btn-text">VXPEDITION</span>
         `;
         document.body.appendChild(btn);
 
-        // Initial position update
+        // Initial check
         updateXVpeditionBtnPosition();
 
-        // Periodically adjust position on resize & frame ticks
+        // Continually check scene state and resize
         window.addEventListener("resize", updateXVpeditionBtnPosition);
-        setInterval(updateXVpeditionBtnPosition, 500);
+        setInterval(updateXVpeditionBtnPosition, 250);
     }
 });
