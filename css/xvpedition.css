@@ -38,25 +38,35 @@
 }
 
 /* Close Button */
-.close-btn {
-    position: absolute;
-    top: 12px;
-    right: 18px;
-    left: auto;
-    font-size: 26px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #ffe45c;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-    z-index: 1000001;
-    transition: transform 0.2s ease, color 0.2s ease;
-    line-height: 1;
-    user-select: none;
+.popup.xvpedition .close-btn {
+    position: absolute !important;
+    top: 14px !important;
+    right: 18px !important;
+    left: auto !important;
+    width: 34px !important;
+    height: 34px !important;
+    background: rgba(0, 0, 0, 0.45) !important;
+    border: 2px solid #ffe45c !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 18px !important;
+    font-weight: 900 !important;
+    color: #ffe45c !important;
+    cursor: pointer !important;
+    z-index: 1000002 !important;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5) !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    user-select: none !important;
 }
 
-.close-btn:hover {
-    color: #ffffff;
-    transform: scale(1.2);
+.popup.xvpedition .close-btn:hover {
+    background: #ffe45c !important;
+    color: #4b2600 !important;
+    transform: scale(1.1) !important;
 }
 
 /* Back Button */

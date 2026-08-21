@@ -359,9 +359,8 @@ function resetModelCamera() {
     }
 }
 
-// Check if player is actively in gameplay (ONLY in Scene_Map, NOT during Boot, Title, Name Input, Message, or Cutscenes)
+// Check if player is actively in gameplay (ONLY in Scene_Map, NOT during Boot, Title, Name Input, or Message)
 function shouldShowXVpeditionBtn() {
-    // If not in RPG maker game environment or SceneManager not yet initialized, hide button
     if (typeof SceneManager === "undefined" || !SceneManager._scene) {
         return false;
     }
@@ -369,27 +368,16 @@ function shouldShowXVpeditionBtn() {
     const scene = SceneManager._scene;
     const sceneName = scene.constructor ? scene.constructor.name : "";
 
-    // ONLY show during active map exploration (Scene_Map)
-    if (sceneName !== "Scene_Map") {
-        return false;
+    // ONLY show during map exploration (Scene_Map)
+    if (sceneName === "Scene_Map") {
+        // Hide while dialogue message box is active
+        if (typeof $gameMessage !== "undefined" && $gameMessage && $gameMessage.isBusy()) {
+            return false;
+        }
+        return true;
     }
 
-    // Hide while dialogue message box is active (intro story / speech / question dialogue)
-    if (typeof $gameMessage !== "undefined" && $gameMessage && $gameMessage.isBusy()) {
-        return false;
-    }
-
-    // Hide while event cutscene is executing
-    if (typeof $gameMap !== "undefined" && $gameMap && $gameMap.isEventRunning()) {
-        return false;
-    }
-
-    // Hide if scene is busy
-    if (typeof scene.isBusy === "function" && scene.isBusy()) {
-        return false;
-    }
-
-    return true;
+    return false;
 }
 
 // Function to update position & visibility of VXpedition floating button BELOW the Top-Right Menu Button
@@ -410,8 +398,8 @@ function updateXVpeditionBtnPosition() {
             const scale = Graphics._realScale || 1.0;
             const btnHeight = Math.max(30, Math.min(38, Math.floor(34 * scale)));
             
-            // Positioned directly below RPG Maker's top-right Touch UI menu button
-            const topMargin = Math.floor(60 * scale);
+            // Positioned directly below RPG Maker's top-right Touch UI menu button (y ~ 58px)
+            const topMargin = Math.floor(58 * scale);
             const rightMargin = Math.floor(10 * scale);
 
             btn.style.height = btnHeight + "px";
@@ -425,14 +413,23 @@ function updateXVpeditionBtnPosition() {
 
     // Default fallback position below top-right menu
     btn.style.position = "fixed";
-    btn.style.top = "60px";
+    btn.style.top = "58px";
     btn.style.right = "12px";
     btn.style.left = "auto";
 }
 
+// Hook into Scene_Map lifecycle for guaranteed in-game update
+if (typeof Scene_Map !== "undefined") {
+    const _Scene_Map_update = Scene_Map.prototype.update;
+    Scene_Map.prototype.update = function() {
+        _Scene_Map_update.call(this);
+        updateXVpeditionBtnPosition();
+    };
+}
+
 // Mount and keep button position updated
 window.addEventListener("DOMContentLoaded", () => {
-    // Only create floating in-game button if popup container exists and not on index.html main menu
+    // Only create floating in-game button if popup container exists and not already created
     if (!document.getElementById("xvpeditionGameBtn") && document.getElementById("xvpeditionPopup")) {
         const btn = document.createElement("div");
         btn.id = "xvpeditionGameBtn";
@@ -451,6 +448,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
         // Continually check scene state and resize
         window.addEventListener("resize", updateXVpeditionBtnPosition);
-        setInterval(updateXVpeditionBtnPosition, 250);
+        setInterval(updateXVpeditionBtnPosition, 200);
     }
 });
