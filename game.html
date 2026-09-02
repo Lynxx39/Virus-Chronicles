@@ -13,35 +13,16 @@
         <title>Virus Chronicles</title>
     </head>
     <body style="background-color: black">
-        <!-- VXPEDITION POPUP -->
+        <!-- GLOSARIUM & REFERENSI POPUP -->
         <div class="popup-overlay" id="xvpeditionPopup">
             <div class="popup xvpedition">
                 <div class="close-btn" onclick="closeXVpedition()">✕</div>
-                <button class="xv-back-btn" id="xvBackBtn" onclick="openXVSection('hub')" style="display:none;">⬅ Menu</button>
                 
                 <div class="xvpedition-header">
-                    <h2 class="xvpedition-main-title" id="xvMainTitle">VXPEDITION</h2>
-                    <p class="xvpedition-subtitle" id="xvSubtitle">Pilih modul pembelajaran yang ingin Anda akses:</p>
+                    <h2 class="xvpedition-main-title" id="xvMainTitle">📖 Glosarium Virus</h2>
                 </div>
 
-                <!-- 1. MAIN HUB VIEW (2 PILIHAN MENU) -->
-                <div id="xvViewHub" class="xv-hub-grid">
-                    <div class="xv-hub-card" onclick="openXVSection('glosarium')">
-                        <div class="xv-hub-icon-wrap">📖</div>
-                        <h3 class="xv-hub-card-title">Glosarium Virus</h3>
-                        <p class="xv-hub-card-desc">Kumpulan istilah biologi penting, ciri-ciri, siklus replikasi litik & lisogenik, serta penyakit virus.</p>
-                        <div class="xv-hub-card-action">Buka Glosarium ➔</div>
-                    </div>
-
-                    <div class="xv-hub-card" onclick="openXVSection('struktur')">
-                        <div class="xv-hub-icon-wrap">🧬</div>
-                        <h3 class="xv-hub-card-title">Struktur Virus (3D)</h3>
-                        <p class="xv-hub-card-desc">Eksplorasi model 3D interaktif virus Bakteriofag (Virus T) 360°, zoom, dan pelajari detail anatomi setiap bagian.</p>
-                        <div class="xv-hub-card-action">Lihat Model 3D ➔</div>
-                    </div>
-                </div>
-
-                <!-- 2. GLOSARIUM VIEW -->
+                <!-- 1. GLOSARIUM VIEW -->
                 <div id="xvViewGlosarium" class="xv-tab-view" style="display:none;">
                     <div class="xvpedition-controls">
                         <input type="text" id="xvSearchInput" class="xvpedition-search" placeholder="🔍 Cari istilah biologi (contoh: Litik, Kapsid, Vaksin)..." oninput="filterXVpedition()">
@@ -59,33 +40,32 @@
                     </div>
                 </div>
 
-                <!-- 3. STRUKTUR VIRUS 3D VIEW -->
-                <div id="xvViewStruktur" class="xv-tab-view" style="display:none;">
-                    <div class="xv-model-layout">
-                        <div class="xv-model-container">
-                            <div class="model-controls-bar">
-                                <button class="model-ctrl-btn" onclick="toggleModelAutoRotate()">🔄 Putar</button>
-                                <button class="model-ctrl-btn" onclick="resetModelCamera()">🔍 Reset</button>
+                <!-- 3. REFERENSI WEB VIEW (2 CARDS WITH IMAGES) -->
+                <div id="xvViewReferensi" class="xv-tab-view" style="display:none;">
+                    <div class="ref-card-grid">
+                        <!-- Card 1: YouTube Video -->
+                        <div class="ref-card">
+                            <div class="ref-card-img-wrap">
+                                <img src="https://img.youtube.com/vi/xTJNk3LE_KI/hqdefault.jpg" alt="Thumbnail YouTube Hantavirus" class="ref-card-img">
+                                <span class="ref-card-badge youtube">📺 YouTube Video</span>
                             </div>
-                            <model-viewer id="virusModelViewer"
-                                src="virus_bacteriofage.glb"
-                                alt="Model 3D Struktur Virus Bakteriofag"
-                                auto-rotate
-                                camera-controls
-                                shadow-intensity="1.5"
-                                exposure="1.1"
-                                touch-action="pan-y"
-                                style="width: 100%; height: 100%;">
-                            </model-viewer>
-                            <div class="model-overlay-hint">
-                                <span>👆 Geser untuk memutar 3D | 🔍 Scroll/Cubit untuk Zoom</span>
+                            <div class="ref-card-body">
+                                <h3 class="ref-card-title">Hantavirus Lebih Mematikan dari COVID-19, Dunia Mulai Waspada!</h3>
+                                <p class="ref-card-desc">Video headline berita iNews mengenai potensi ancaman dan tingkat bahaya Hantavirus bagi kesehatan masyarakat global.</p>
+                                <a href="https://youtu.be/xTJNk3LE_KI?si=2OnOX89q4Y02q0x1" target="_blank" rel="noopener noreferrer" class="ref-card-btn youtube">▶️ Tonton Video YouTube</a>
                             </div>
                         </div>
 
-                        <div class="xv-model-info-panel">
-                            <h3 class="xv-info-title">🔬 Struktur Anatomi Bakteriofag</h3>
-                            <div class="xv-parts-list" id="xvPartsList">
-                                <!-- Structure parts populated by JavaScript -->
+                        <!-- Card 2: BBC Article -->
+                        <div class="ref-card">
+                            <div class="ref-card-img-wrap">
+                                <img src="https://ichef.bbci.co.uk/news/1024/branded_indonesia/4eaa/live/fff74570-52cb-11f1-b4b8-8bc40cabb834.jpg" alt="Thumbnail Artikel BBC Ebola" class="ref-card-img">
+                                <span class="ref-card-badge bbc">📰 BBC News Indonesia</span>
+                            </div>
+                            <div class="ref-card-body">
+                                <h3 class="ref-card-title">Kesehatan: WHO Umumkan Wabah Ebola Darurat Internasional</h3>
+                                <p class="ref-card-desc">Artikel resmi BBC News Indonesia mengenai deklarasi darurat kesehatan masyarakat internasional oleh WHO akibat wabah virus Ebola.</p>
+                                <a href="https://www.bbc.com/indonesia/articles/cj0pe3myjypo" target="_blank" rel="noopener noreferrer" class="ref-card-btn bbc">📖 Baca Artikel BBC</a>
                             </div>
                         </div>
                     </div>

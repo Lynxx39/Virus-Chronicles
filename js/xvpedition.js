@@ -1,4 +1,4 @@
-/* ================= VXPEDITION SYSTEM (GLOSARIUM & STRUKTUR VIRUS 3D) ================= */
+/* ================= GLOSARIUM SYSTEM ================= */
 
 // Glosarium Data
 const xvpeditionData = [
@@ -178,105 +178,55 @@ const xvpeditionData = [
     }
 ];
 
-// Struktur Virus Anatomical Parts Data
-const virusPartsData = [
-    {
-        name: "1. Kepala (Kapsid)",
-        desc: "Bagian atas virus berbentuk ikosahedral (polihedral) yang tersusun atas lapisan kapsomer protein. Berfungsi melindungi materi genetik dari pengaruh lingkungan eksternal."
-    },
-    {
-        name: "2. Materi Genetik (DNA/RNA)",
-        desc: "Asam nukleat yang tersimpan di dalam kapsid kepala virus. Mengandung instruksi genetik untuk mereplikasi dan mengambil alih metabolisme sel inang."
-    },
-    {
-        name: "3. Leher & Kerah (Collar)",
-        desc: "Bagian penyambung antara kapsid kepala dan selubung ekor. Berfungsi sebagai saluran penghubung saat materi genetik ditransmisikan menuju ekor."
-    },
-    {
-        name: "4. Selubung Ekor (Sheath)",
-        desc: "Tabung protein heliks kontraktil yang dapat berkontraksi saat infeksi untuk memompa dan menyuntikkan DNA virus menembus dinding sel inang."
-    },
-    {
-        name: "5. Lempeng Dasar (Baseplate & Pins)",
-        desc: "Lempeng heksagonal di ujung selubung ekor yang dilengkapi jarum penusuk (pins). Berfungsi menstabilkan penempelan virus dan melubangi membran sel inang."
-    },
-    {
-        name: "6. Serabut Ekor (Tail Fibers)",
-        desc: "Struktur memanjang seperti kaki yang berfungsi mengenali dan menempel secara spesifik pada protein reseptor di permukaan membran inang (fase adsorpsi)."
-    }
-];
-
 let currentCategory = 'all';
-let currentSection = 'hub'; // 'hub', 'glosarium', 'struktur'
+let currentSection = 'hub'; // 'hub', 'glosarium', 'referensi'
 
-// Open the VXpedition Modal (Always starts at Main Hub Menu)
-function openXVpedition() {
-    openXVSection('hub');
+// Open Glosarium Modal directly
+function openGlosarium() {
+    openXVSection('glosarium');
     const popup = document.getElementById("xvpeditionPopup");
     if (popup) {
         popup.style.setProperty("display", "flex", "important");
     }
 }
 
-// Close the VXpedition Modal
+// Open Referensi Modal directly
+function openReferensi() {
+    openXVSection('referensi');
+    const popup = document.getElementById("xvpeditionPopup");
+    if (popup) {
+        popup.style.setProperty("display", "flex", "important");
+    }
+}
+
+// Backward compatibility alias
+function openXVpedition() {
+    openGlosarium();
+}
+
+// Close the Modal
 function closeXVpedition() {
     const popup = document.getElementById("xvpeditionPopup");
     if (popup) {
         popup.style.setProperty("display", "none", "important");
     }
-    // Reset to hub for next open
-    openXVSection('hub');
 }
 
-// Dynamically load model-viewer script only on-demand to protect game WebGL canvas startup
-function ensureModelViewerLoaded(callback) {
-    if (customElements.get("model-viewer")) {
-        if (callback) callback();
-        return;
-    }
-    let script = document.getElementById("modelViewerDynamicScript");
-    if (!script) {
-        script = document.createElement("script");
-        script.id = "modelViewerDynamicScript";
-        script.type = "module";
-        script.src = "js/libs/model-viewer.min.js";
-        script.onload = () => {
-            if (callback) callback();
-        };
-        document.head.appendChild(script);
-    } else {
-        if (callback) callback();
-    }
-}
-
-// Switch between Hub Menu (2 options), Glosarium, and Struktur Virus 3D
+// Switch between Glosarium and Referensi Web
 function openXVSection(section) {
     currentSection = section;
 
-    const viewHub = document.getElementById("xvViewHub");
     const viewGlosarium = document.getElementById("xvViewGlosarium");
-    const viewStruktur = document.getElementById("xvViewStruktur");
+    const viewReferensi = document.getElementById("xvViewReferensi");
     const backBtn = document.getElementById("xvBackBtn");
     const mainTitle = document.getElementById("xvMainTitle");
-    const subtitle = document.getElementById("xvSubtitle");
 
-    if (section === 'hub') {
-        if (viewHub) viewHub.style.display = "grid";
-        if (viewGlosarium) viewGlosarium.style.display = "none";
-        if (viewStruktur) viewStruktur.style.display = "none";
-        if (backBtn) backBtn.style.display = "none";
-        if (mainTitle) mainTitle.innerText = "VXPEDITION";
-        if (subtitle) {
-            subtitle.style.display = "block";
-            subtitle.innerText = "Pilih modul pembelajaran yang ingin Anda akses:";
-        }
-    } else if (section === 'glosarium') {
-        if (viewHub) viewHub.style.display = "none";
+    if (backBtn) backBtn.style.display = "none";
+
+    if (section === 'glosarium') {
         if (viewGlosarium) viewGlosarium.style.display = "flex";
-        if (viewStruktur) viewStruktur.style.display = "none";
-        if (backBtn) backBtn.style.display = "inline-flex";
+        if (viewReferensi) viewReferensi.style.display = "none";
         if (mainTitle) mainTitle.innerText = "📖 Glosarium Virus";
-        if (subtitle) subtitle.style.display = "none";
 
         currentCategory = 'all';
         const searchInput = document.getElementById("xvSearchInput");
@@ -286,25 +236,10 @@ function openXVSection(section) {
         if (catBtns.length > 0) catBtns[0].classList.add("active");
 
         renderXVpedition();
-    } else if (section === 'struktur') {
-        if (viewHub) viewHub.style.display = "none";
+    } else if (section === 'referensi') {
         if (viewGlosarium) viewGlosarium.style.display = "none";
-        if (viewStruktur) viewStruktur.style.display = "grid";
-        if (backBtn) backBtn.style.display = "inline-flex";
-        if (mainTitle) mainTitle.innerText = "🧬 Struktur Virus Bakteriofag (3D)";
-        if (subtitle) subtitle.style.display = "none";
-
-        renderVirusParts();
-
-        // Ensure model-viewer loads on demand and renders cleanly
-        ensureModelViewerLoaded(() => {
-            setTimeout(() => {
-                const mv = document.getElementById("virusModelViewer");
-                if (mv && typeof mv.dismissPoster === 'function') {
-                    mv.dismissPoster();
-                }
-            }, 100);
-        });
+        if (viewReferensi) viewReferensi.style.display = "flex";
+        if (mainTitle) mainTitle.innerText = "🌐 Referensi Web & Edukasi";
     }
 }
 
@@ -352,36 +287,6 @@ function renderXVpedition() {
     `).join('');
 }
 
-// Render virus anatomy parts in 3D tab
-function renderVirusParts() {
-    const container = document.getElementById("xvPartsList");
-    if (!container) return;
-
-    container.innerHTML = virusPartsData.map(part => `
-        <div class="xv-part-card">
-            <div class="xv-part-name">${part.name}</div>
-            <p class="xv-part-desc">${part.desc}</p>
-        </div>
-    `).join('');
-}
-
-// 3D Model Helpers
-function toggleModelAutoRotate() {
-    const mv = document.getElementById("virusModelViewer");
-    if (mv) {
-        mv.autoRotate = !mv.autoRotate;
-    }
-}
-
-function resetModelCamera() {
-    const mv = document.getElementById("virusModelViewer");
-    if (mv) {
-        mv.cameraOrbit = "0deg 75deg 105%";
-        mv.fieldOfView = "auto";
-        mv.jumpCameraToGoal();
-    }
-}
-
 // Check if player is actively in gameplay (ONLY in Scene_Map, NOT during Boot, Title, Name Input, or Message)
 function shouldShowXVpeditionBtn() {
     if (typeof SceneManager === "undefined" || !SceneManager._scene) {
@@ -403,7 +308,7 @@ function shouldShowXVpeditionBtn() {
     return false;
 }
 
-// Function to update position & visibility of VXpedition floating button BELOW the Top-Right Menu Button
+// Function to update position & visibility of Glosarium floating button BELOW the Top-Right Menu Button
 function updateXVpeditionBtnPosition() {
     const btn = document.getElementById("xvpeditionGameBtn");
     if (!btn) return;
@@ -457,12 +362,12 @@ window.addEventListener("DOMContentLoaded", () => {
         const btn = document.createElement("div");
         btn.id = "xvpeditionGameBtn";
         btn.className = "xvpedition-game-btn";
-        btn.title = "Buka VXpedition (Glosarium & Struktur Virus)";
+        btn.title = "Buka Glosarium";
         btn.style.display = "none"; // Always hidden initially until active in Scene_Map
         btn.onclick = openXVpedition;
         btn.innerHTML = `
-            <img src="icon/xvpedition.png" alt="VXpedition Icon" class="xvpedition-btn-img">
-            <span class="xvpedition-btn-text">VXPEDITION</span>
+            <img src="icon/xvpedition.png" alt="Glosarium Icon" class="xvpedition-btn-img">
+            <span class="xvpedition-btn-text">GLOSARIUM</span>
         `;
         document.body.appendChild(btn);
 
@@ -474,3 +379,4 @@ window.addEventListener("DOMContentLoaded", () => {
         setInterval(updateXVpeditionBtnPosition, 200);
     }
 });
+
