@@ -417,7 +417,7 @@ Scene_Title.prototype.update = function() {
 
 Scene_Title.prototype.isBusy = function() {
     return (
-        this._commandWindow.isClosing() ||
+        (this._commandWindow ? this._commandWindow.isClosing() : false) ||
         Scene_Base.prototype.isBusy.call(this)
     );
 };
@@ -532,7 +532,7 @@ Scene_Message.prototype.initialize = function() {
 };
 
 Scene_Message.prototype.isMessageWindowClosing = function() {
-    return this._messageWindow.isClosing();
+    return this._messageWindow ? this._messageWindow.isClosing() : false;
 };
 
 Scene_Message.prototype.createAllWindows = function() {
