@@ -465,3 +465,58 @@
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
     pointer-events: none;
 }
+
+/* ================= MOBILE RESPONSIVE MEDIA QUERIES ================= */
+@media (max-width: 480px) {
+    .popup.xvpedition {
+        padding: 16px 14px 14px 14px !important;
+        border-width: 3px !important;
+    }
+    .xvpedition-main-title {
+        font-size: 20px;
+    }
+    .cat-btn {
+        padding: 5px 9px;
+        font-size: 11px;
+    }
+    .xvpedition-search {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+    .xvpedition-content {
+        grid-template-columns: 1fr;
+        max-height: 58vh;
+    }
+    .ref-card-grid {
+        grid-template-columns: 1fr;
+        max-height: 58vh;
+        gap: 12px;
+    }
+    .ref-card-title {
+        font-size: 14px;
+    }
+    .ref-card-desc {
+        font-size: 12px;
+    }
+}
+
+@media (max-height: 500px) {
+    .popup.xvpedition {
+        max-height: 94vh !important;
+        padding: 12px 14px !important;
+    }
+    .xvpedition-header {
+        margin-bottom: 8px;
+    }
+    .xvpedition-main-title {
+        font-size: 18px;
+    }
+    .xvpedition-controls {
+        margin-bottom: 8px;
+        gap: 6px;
+    }
+    .xvpedition-content,
+    .ref-card-grid {
+        max-height: 48vh;
+    }
+}

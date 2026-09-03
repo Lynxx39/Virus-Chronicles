@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <title>Virus Chronicles</title>
 <link rel="stylesheet" href="css/xvpedition.css">
 
@@ -14,10 +14,12 @@ body{
     margin:0;
     font-family:"Trebuchet MS",Arial,sans-serif;
     min-height:100vh;
+    min-height: -webkit-fill-available;
     background:url("image/bg.jpg") center/cover no-repeat fixed;
     display:flex;
     justify-content:center;
     align-items:center;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 body::before{
@@ -32,31 +34,29 @@ body::before{
 .menu-card{
     background:linear-gradient(#d9934f,#c67a3c);
     border-radius:20px;
-    padding:30px;
-    width:90%;
-    max-width:360px;
+    padding: clamp(16px, 4vw, 30px);
+    width: 92%;
+    max-width: 380px;
     text-align:center;
     border:4px solid #8b4a19;
     box-shadow:inset 0 4px rgba(255,255,255,.3),
                inset 0 -6px rgba(0,0,0,.25),
                0 10px #8b4a19;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 .menu-title{
-    font-size:32px;
-    margin-bottom:25px;
+    font-size: clamp(24px, 6vw, 32px);
+    margin-bottom: clamp(14px, 3.5vw, 25px);
     color:#ffffff;
     text-shadow:0px 0px #ffd28a;
 }
 
-
-
 .menu-btn{
     width:100%;
-    margin:10px 0;
-    padding:16px;
-    font-size:20px;
+    margin: clamp(6px, 1.5vw, 10px) 0;
+    padding: clamp(10px, 2.5vw, 16px);
+    font-size: clamp(15px, 4vw, 20px);
     font-weight:bold;
     border-radius:18px;
     border:4px solid #7a3e12;
@@ -67,6 +67,7 @@ body::before{
     box-shadow:inset 0 5px rgba(255,255,255,.4),
                inset 0 -4px rgba(0,0,0,.25),
                0 8px #7a3e12;
+    touch-action: manipulation;
 }
 
 .menu-btn:active{
@@ -80,7 +81,7 @@ body::before{
 .popup-overlay{
     position:fixed;
     inset:0;
-    background:rgba(0,0,0,.7);
+    background:rgba(0,0,0,.75);
     display:none;
     justify-content:center;
     align-items:center;
@@ -88,117 +89,121 @@ body::before{
     overflow-y:auto;
     -webkit-overflow-scrolling:touch;
     touch-action:pan-y;
-    padding:20px;
+    padding: clamp(10px, 3vw, 20px);
 }
 
 .popup{
     background:linear-gradient(#d9934f,#c67a3c);
     border-radius:20px;
-    padding:25px;
-    width:90%;
-    max-width:480px;
-    border:4px solid #8b4a19;
-    box-shadow:0 15px 40px rgba(0,0,0,.7);
-    position:relative;
-    text-align:center;
-    margin:auto;
-}
-
-.popup p {
-    font-size: 16px;              /* teks agak besar */
-    line-height: 1.8;
-    color: #ffffff;               /* teks putih */
-    text-align: justify;             /* rata kiri */
-    white-space: pre-line;        /* AKTIFKAN ENTER */
+    padding: clamp(14px, 3.5vw, 25px);
+    width: 95%;
+    max-width: 520px;
+    max-height: 90vh;
+    border: 4px solid #8b4a19;
+    box-shadow: 0 15px 40px rgba(0,0,0,.7);
+    position: relative;
+    text-align: center;
+    margin: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .close-btn{
     position:absolute;
     top:10px;
     left:16px;
-    font-size:22px;
+    font-size: clamp(18px, 4vw, 24px);
     font-weight:bold;
     cursor:pointer;
     color:#4b2600;
+    z-index: 12;
+    user-select: none;
 }
 
 .popup h2{
-    margin-bottom:15px;
-    color:white;
-    font-size:24px;
-    text-shadow:2px 2px rgba(0,0,0,.5);
+    margin-bottom: 12px;
+    color: white;
+    font-size: clamp(18px, 4.5vw, 24px);
+    text-shadow: 2px 2px rgba(0,0,0,.5);
+    padding-left: 25px;
 }
 
 .popup p{
-    font-size:16px;
-    line-height:1.8;
-    color:white;
+    font-size: clamp(13.5px, 3.5vw, 16px);
+    line-height: 1.6;
+    color: white;
+    text-align: justify;
+    white-space: pre-line;
+    margin: 10px 0;
 }
 
 /* ===== NAV ===== */
 .popup-nav{
     display:flex;
     justify-content:space-between;
-    margin-top:20px;
+    margin-top:15px;
 }
 
 .nav-btn{
-    padding:10px 18px;
-    border-radius:14px;
-    border:3px solid #7a3e12;
-    font-weight:bold;
-    cursor:pointer;
-    background:linear-gradient(#ffe45c,#ffb700);
-    color:#7a3e12;
+    padding: 8px 18px;
+    font-size: clamp(14px, 3.5vw, 18px);
+    border-radius: 14px;
+    border: 3px solid #7a3e12;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(#ffe45c,#ffb700);
+    color: #7a3e12;
+    touch-action: manipulation;
 }
+
 /* ================= MATERI IMAGE ================= */
 .popup.materi {
-    width: 95%;
-    max-width: 1000px;     /* CARD LEBIH BESAR */
-    padding: 20px;
+    width: 96%;
+    max-width: 1000px;
+    padding: clamp(12px, 3vw, 20px);
 }
 
 /* GAMBAR SLIDE */
 .materi-img {
     width: 100%;
-    max-height: 70vh;         /* GAMBAR LEBIH BESAR */
+    max-height: clamp(250px, 62vh, 650px);
     object-fit: contain;
     border-radius: 12px;
-    margin: 15px 0;
+    margin: 10px 0;
     background: rgba(0,0,0,0.4);
 }
 
 /* ===== IOS PWA PROMPT ===== */
 .ios-prompt-box {
     position: fixed;
-    bottom: 20px;
+    bottom: max(15px, env(safe-area-inset-bottom));
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 92%;
     max-width: 400px;
     background: linear-gradient(#5a2a0c, #3a1a05);
     border: 3px solid #ffe45c;
     border-radius: 16px;
-    padding: 15px;
+    padding: 14px;
     color: #ffffff;
     box-shadow: 0 8px 24px rgba(0,0,0,0.6);
     z-index: 100;
     text-align: center;
 }
 .ios-prompt-title {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     color: #ffe45c;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
 }
 .ios-prompt-text {
-    font-size: 13px;
-    line-height: 1.5;
-    margin-bottom: 12px;
+    font-size: 12.5px;
+    line-height: 1.45;
+    margin-bottom: 10px;
     text-align: left;
 }
 .ios-prompt-btn {
@@ -209,6 +214,36 @@ body::before{
     cursor: pointer;
     background: linear-gradient(#ffe45c,#ffb700);
     color: #7a3e12;
+}
+
+/* Media Queries for Small Screens and Landscape */
+@media (max-width: 480px) {
+    .menu-card {
+        padding: 18px 14px;
+        border-width: 3px;
+    }
+    .popup {
+        padding: 16px 14px;
+    }
+}
+
+@media (max-height: 500px) {
+    .menu-card {
+        padding: 12px 18px;
+        margin: 5px auto;
+    }
+    .menu-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .menu-btn {
+        padding: 6px 12px;
+        margin: 4px 0;
+        font-size: 14px;
+    }
+    .materi-img {
+        max-height: 48vh;
+    }
 }
 
 /* ================= XVPEDITION GLOSSARY ================= */
