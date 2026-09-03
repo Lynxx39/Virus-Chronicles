@@ -178,8 +178,31 @@ const xvpeditionData = [
     }
 ];
 
+// Referensi Web Data
+const xvReferensiData = [
+    {
+        type: "youtube",
+        badge: "📺 YouTube Video",
+        img: "https://img.youtube.com/vi/xTJNk3LE_KI/hqdefault.jpg",
+        title: "Hantavirus Lebih Mematikan dari COVID-19, Dunia Mulai Waspada!",
+        desc: "Video headline berita iNews mengenai potensi ancaman dan tingkat bahaya Hantavirus bagi kesehatan masyarakat global.",
+        btnText: "▶️ Tonton Video YouTube",
+        link: "https://youtu.be/xTJNk3LE_KI?si=2OnOX89q4Y02q0x1"
+    },
+    {
+        type: "bbc",
+        badge: "📰 BBC News Indonesia",
+        img: "https://ichef.bbci.co.uk/news/1024/branded_indonesia/4eaa/live/fff74570-52cb-11f1-b4b8-8bc40cabb834.jpg",
+        title: "Kesehatan: WHO Umumkan Wabah Ebola Darurat Internasional",
+        desc: "Artikel resmi BBC News Indonesia mengenai deklarasi darurat kesehatan masyarakat internasional oleh WHO akibat wabah virus Ebola.",
+        btnText: "📖 Baca Artikel BBC",
+        link: "https://www.bbc.com/indonesia/articles/cj0pe3myjypo"
+    }
+];
+
 let currentCategory = 'all';
 let currentSection = 'hub'; // 'hub', 'glosarium', 'referensi'
+let currentRefIndex = 0;
 
 // Open Glosarium Modal directly
 function openGlosarium() {
@@ -240,6 +263,56 @@ function openXVSection(section) {
         if (viewGlosarium) viewGlosarium.style.display = "none";
         if (viewReferensi) viewReferensi.style.display = "flex";
         if (mainTitle) mainTitle.innerText = "🌐 Referensi Web & Edukasi";
+        currentRefIndex = 0;
+        renderReferensi();
+    }
+}
+
+// Render Referensi slider card
+function renderReferensi() {
+    const viewRef = document.getElementById("xvViewReferensi");
+    if (!viewRef) return;
+
+    const item = xvReferensiData[currentRefIndex];
+    if (!item) return;
+
+    const isFirst = currentRefIndex === 0;
+    const isLast = currentRefIndex === xvReferensiData.length - 1;
+
+    viewRef.innerHTML = `
+        <div class="ref-single-container">
+            <div class="ref-card">
+                <div class="ref-card-img-wrap">
+                    <img src="${item.img}" alt="${item.title}" class="ref-card-img">
+                    <span class="ref-card-badge ${item.type}">${item.badge}</span>
+                </div>
+                <div class="ref-card-body">
+                    <h3 class="ref-card-title">${item.title}</h3>
+                    <p class="ref-card-desc">${item.desc}</p>
+                    <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="ref-card-btn ${item.type}">${item.btnText}</a>
+                </div>
+            </div>
+            
+            <div class="popup-nav ref-nav">
+                <button class="nav-btn" onclick="prevReferensi()" ${isFirst ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''}>←</button>
+                <span class="ref-indicator">${currentRefIndex + 1} / ${xvReferensiData.length}</span>
+                <button class="nav-btn" onclick="nextReferensi()" ${isLast ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''}>→</button>
+            </div>
+        </div>
+    `;
+}
+
+function prevReferensi() {
+    if (currentRefIndex > 0) {
+        currentRefIndex--;
+        renderReferensi();
+    }
+}
+
+function nextReferensi() {
+    if (currentRefIndex < xvReferensiData.length - 1) {
+        currentRefIndex++;
+        renderReferensi();
     }
 }
 
