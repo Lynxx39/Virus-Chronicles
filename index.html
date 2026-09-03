@@ -407,7 +407,7 @@ body::before{
 
     <!-- GAMBAR SLIDE -->
     <img id="materiImage"
-            src="image/materi/materi_1.PNG"
+            src="image/materi/materi_1.PNG?v=2"
             alt="Materi Slide"
             class="materi-img">
 
@@ -514,7 +514,7 @@ function prevMateri() {
 
 function updateMateri() {
     document.getElementById("materiImage").src =
-        `image/materi/materi_${materiIndex}.PNG`;
+        `image/materi/materi_${materiIndex}.PNG?v=2`;
 
     document.getElementById("materiTitle").innerText =
         `Materi (${materiIndex} / ${totalMateri})`;
