@@ -287,66 +287,20 @@ function renderXVpedition() {
     `).join('');
 }
 
-// Check if player is actively in gameplay (ONLY in Scene_Map, NOT during Boot, Title, Name Input, or Message)
+// Check if player is actively in gameplay (In-game Glosarium icon disabled)
 function shouldShowXVpeditionBtn() {
-    if (typeof SceneManager === "undefined" || !SceneManager._scene) {
-        return false;
-    }
-
-    const scene = SceneManager._scene;
-    const sceneName = scene.constructor ? scene.constructor.name : "";
-
-    // ONLY show during map exploration (Scene_Map)
-    if (sceneName === "Scene_Map") {
-        // Hide while dialogue message box is active
-        if (typeof $gameMessage !== "undefined" && $gameMessage && $gameMessage.isBusy()) {
-            return false;
-        }
-        return true;
-    }
-
     return false;
 }
 
-// Function to update position & visibility of Glosarium floating button BELOW the Top-Right Menu Button
+// Function to update position & visibility of Glosarium floating button
 function updateXVpeditionBtnPosition() {
     const btn = document.getElementById("xvpeditionGameBtn");
-    if (!btn) return;
-
-    if (!shouldShowXVpeditionBtn()) {
+    if (btn) {
         btn.style.display = "none";
-        return;
     }
-
-    btn.style.display = "inline-flex";
-
-    if (typeof Graphics !== "undefined" && Graphics._canvas) {
-        const rect = Graphics._canvas.getBoundingClientRect();
-        if (rect && rect.width > 0) {
-            const scale = Graphics._realScale || 1.0;
-            const btnHeight = Math.max(30, Math.min(38, Math.floor(34 * scale)));
-            
-            // Positioned directly below RPG Maker's top-right Touch UI menu button (y ~ 58px)
-            const topMargin = Math.floor(58 * scale);
-            const rightMargin = Math.floor(10 * scale);
-
-            btn.style.height = btnHeight + "px";
-            btn.style.position = "fixed";
-            btn.style.left = "auto";
-            btn.style.right = Math.floor((window.innerWidth - rect.right) + rightMargin) + "px";
-            btn.style.top = Math.floor(rect.top + topMargin) + "px";
-            return;
-        }
-    }
-
-    // Default fallback position below top-right menu
-    btn.style.position = "fixed";
-    btn.style.top = "58px";
-    btn.style.right = "12px";
-    btn.style.left = "auto";
 }
 
-// Hook into Scene_Map lifecycle for guaranteed in-game update
+// Hook into Scene_Map lifecycle
 if (typeof Scene_Map !== "undefined") {
     const _Scene_Map_update = Scene_Map.prototype.update;
     Scene_Map.prototype.update = function() {
@@ -355,28 +309,12 @@ if (typeof Scene_Map !== "undefined") {
     };
 }
 
-// Mount and keep button position updated
+// Mount and keep button position updated (in-game button creation removed)
 window.addEventListener("DOMContentLoaded", () => {
-    // Only create floating in-game button if popup container exists and not already created
-    if (!document.getElementById("xvpeditionGameBtn") && document.getElementById("xvpeditionPopup")) {
-        const btn = document.createElement("div");
-        btn.id = "xvpeditionGameBtn";
-        btn.className = "xvpedition-game-btn";
-        btn.title = "Buka Glosarium";
-        btn.style.display = "none"; // Always hidden initially until active in Scene_Map
-        btn.onclick = openXVpedition;
-        btn.innerHTML = `
-            <img src="icon/xvpedition.png" alt="Glosarium Icon" class="xvpedition-btn-img">
-            <span class="xvpedition-btn-text">GLOSARIUM</span>
-        `;
-        document.body.appendChild(btn);
-
-        // Initial check
-        updateXVpeditionBtnPosition();
-
-        // Continually check scene state and resize
-        window.addEventListener("resize", updateXVpeditionBtnPosition);
-        setInterval(updateXVpeditionBtnPosition, 200);
+    const btn = document.getElementById("xvpeditionGameBtn");
+    if (btn) {
+        btn.style.display = "none";
+        btn.remove();
     }
 });
 
