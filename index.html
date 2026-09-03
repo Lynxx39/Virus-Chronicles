@@ -486,7 +486,44 @@ body::before{
 
         <!-- 3. REFERENSI WEB VIEW (SLIDER WITH NAV BUTTONS) -->
         <div id="xvViewReferensi" class="xv-tab-view" style="display:none;">
-            <!-- Content populated by JavaScript renderReferensi() -->
+            <div class="ref-single-container">
+                <!-- Slide 1: YouTube Video -->
+                <div id="refSlide0" class="ref-slide" style="display: block;">
+                    <div class="ref-card">
+                        <div class="ref-card-img-wrap">
+                            <img src="https://img.youtube.com/vi/xTJNk3LE_KI/hqdefault.jpg" alt="Thumbnail YouTube Hantavirus" class="ref-card-img">
+                            <span class="ref-card-badge youtube">📺 YouTube Video</span>
+                        </div>
+                        <div class="ref-card-body">
+                            <h3 class="ref-card-title">Hantavirus Lebih Mematikan dari COVID-19, Dunia Mulai Waspada!</h3>
+                            <p class="ref-card-desc">Video headline berita iNews mengenai potensi ancaman dan tingkat bahaya Hantavirus bagi kesehatan masyarakat global.</p>
+                            <a href="https://youtu.be/xTJNk3LE_KI?si=2OnOX89q4Y02q0x1" target="_blank" rel="noopener noreferrer" class="ref-card-btn youtube">▶️ Tonton Video YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: BBC Article -->
+                <div id="refSlide1" class="ref-slide" style="display: none;">
+                    <div class="ref-card">
+                        <div class="ref-card-img-wrap">
+                            <img src="https://ichef.bbci.co.uk/news/1024/branded_indonesia/4eaa/live/fff74570-52cb-11f1-b4b8-8bc40cabb834.jpg" alt="Thumbnail Artikel BBC Ebola" class="ref-card-img">
+                            <span class="ref-card-badge bbc">📰 BBC News Indonesia</span>
+                        </div>
+                        <div class="ref-card-body">
+                            <h3 class="ref-card-title">Kesehatan: WHO Umumkan Wabah Ebola Darurat Internasional</h3>
+                            <p class="ref-card-desc">Artikel resmi BBC News Indonesia mengenai deklarasi darurat kesehatan masyarakat internasional oleh WHO akibat wabah virus Ebola.</p>
+                            <a href="https://www.bbc.com/indonesia/articles/cj0pe3myjypo" target="_blank" rel="noopener noreferrer" class="ref-card-btn bbc">📖 Baca Artikel BBC</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation bar with yellow buttons -->
+                <div class="popup-nav ref-nav">
+                    <button id="refPrevBtn" class="nav-btn" onclick="prevReferensi()" disabled style="opacity:0.4; cursor:not-allowed;">←</button>
+                    <span id="refIndicator" class="ref-indicator">1 / 2</span>
+                    <button id="refNextBtn" class="nav-btn" onclick="nextReferensi()">→</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

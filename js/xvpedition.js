@@ -203,6 +203,7 @@ const xvReferensiData = [
 let currentCategory = 'all';
 let currentSection = 'hub'; // 'hub', 'glosarium', 'referensi'
 let currentRefIndex = 0;
+const totalRefSlides = 2;
 
 // Open Glosarium Modal directly
 function openGlosarium() {
@@ -264,55 +265,51 @@ function openXVSection(section) {
         if (viewReferensi) viewReferensi.style.display = "flex";
         if (mainTitle) mainTitle.innerText = "🌐 Referensi Web & Edukasi";
         currentRefIndex = 0;
-        renderReferensi();
+        updateRefSlideDisplay();
     }
 }
 
-// Render Referensi slider card
-function renderReferensi() {
-    const viewRef = document.getElementById("xvViewReferensi");
-    if (!viewRef) return;
+// Update Referensi slider slide visibility
+function updateRefSlideDisplay() {
+    for (let i = 0; i < totalRefSlides; i++) {
+        const slide = document.getElementById("refSlide" + i);
+        if (slide) {
+            slide.style.display = (i === currentRefIndex) ? "block" : "none";
+        }
+    }
 
-    const item = xvReferensiData[currentRefIndex];
-    if (!item) return;
+    const indicator = document.getElementById("refIndicator");
+    if (indicator) {
+        indicator.innerText = `${currentRefIndex + 1} / ${totalRefSlides}`;
+    }
 
-    const isFirst = currentRefIndex === 0;
-    const isLast = currentRefIndex === xvReferensiData.length - 1;
+    const prevBtn = document.getElementById("refPrevBtn");
+    const nextBtn = document.getElementById("refNextBtn");
 
-    viewRef.innerHTML = `
-        <div class="ref-single-container">
-            <div class="ref-card">
-                <div class="ref-card-img-wrap">
-                    <img src="${item.img}" alt="${item.title}" class="ref-card-img">
-                    <span class="ref-card-badge ${item.type}">${item.badge}</span>
-                </div>
-                <div class="ref-card-body">
-                    <h3 class="ref-card-title">${item.title}</h3>
-                    <p class="ref-card-desc">${item.desc}</p>
-                    <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="ref-card-btn ${item.type}">${item.btnText}</a>
-                </div>
-            </div>
-            
-            <div class="popup-nav ref-nav">
-                <button class="nav-btn" onclick="prevReferensi()" ${isFirst ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''}>←</button>
-                <span class="ref-indicator">${currentRefIndex + 1} / ${xvReferensiData.length}</span>
-                <button class="nav-btn" onclick="nextReferensi()" ${isLast ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''}>→</button>
-            </div>
-        </div>
-    `;
+    if (prevBtn) {
+        prevBtn.disabled = currentRefIndex === 0;
+        prevBtn.style.opacity = currentRefIndex === 0 ? "0.4" : "1";
+        prevBtn.style.cursor = currentRefIndex === 0 ? "not-allowed" : "pointer";
+    }
+
+    if (nextBtn) {
+        nextBtn.disabled = currentRefIndex === totalRefSlides - 1;
+        nextBtn.style.opacity = currentRefIndex === totalRefSlides - 1 ? "0.4" : "1";
+        nextBtn.style.cursor = currentRefIndex === totalRefSlides - 1 ? "not-allowed" : "pointer";
+    }
 }
 
 function prevReferensi() {
     if (currentRefIndex > 0) {
         currentRefIndex--;
-        renderReferensi();
+        updateRefSlideDisplay();
     }
 }
 
 function nextReferensi() {
-    if (currentRefIndex < xvReferensiData.length - 1) {
+    if (currentRefIndex < totalRefSlides - 1) {
         currentRefIndex++;
-        renderReferensi();
+        updateRefSlideDisplay();
     }
 }
 
