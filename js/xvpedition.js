@@ -316,5 +316,13 @@ window.addEventListener("DOMContentLoaded", () => {
         btn.style.display = "none";
         btn.remove();
     }
+
+    // iOS Touch Scroll protection for popup container
+    const popup = document.getElementById("xvpeditionPopup");
+    if (popup) {
+        popup.addEventListener("touchmove", (e) => {
+            e.stopPropagation();
+        }, { passive: true });
+    }
 });
 
