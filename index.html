@@ -373,13 +373,13 @@ body::before{
 <!-- MENU -->
 <div class="menu-card">
     <div class="menu-title">Virus Chronicles</div>
-    <button class="menu-btn" onclick="startGame()">Start</button>
-    <button class="menu-btn" onclick="openPopup('pendahuluan')">Pendahuluan</button>
-    <button class="menu-btn" onclick="openPopup('deskripsi')">Deskripsi</button>
+    <button class="menu-btn" onclick="openPopup('pendahuluan')">CP & TP</button>
     <button class="menu-btn" onclick="openMateri()">Materi</button>
     <button class="menu-btn" onclick="openGlosarium()">Glosarium</button>
     <button class="menu-btn" onclick="openReferensi()">Referensi</button>
+    <button class="menu-btn" onclick="openPopup('deskripsi')">Deskripsi Game</button>
     <button class="menu-btn" onclick="openPopup('aturan')">Aturan Game</button>
+    <button class="menu-btn" onclick="startGame()">BioQuiz</button>
 </div>
 
 
@@ -486,7 +486,7 @@ let currentIndex = 0;
 let activeContent = [];
 
 let materiIndex = 1;
-const totalMateri = 30;
+const totalMateri = 24;
 
 function openMateri() {
     materiIndex = 1;
