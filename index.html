@@ -407,7 +407,7 @@ body::before{
 
     <!-- GAMBAR SLIDE -->
     <img id="materiImage"
-            src="image/materi/materi_1.PNG?v=2"
+            src="image/materi/materi_1.webp"
             alt="Materi Slide"
             class="materi-img">
 
@@ -487,11 +487,27 @@ let activeContent = [];
 
 let materiIndex = 1;
 const totalMateri = 24;
+const preloadedMateri = {};
+
+function preloadSlide(idx) {
+    if (idx >= 1 && idx <= totalMateri && !preloadedMateri[idx]) {
+        const img = new Image();
+        img.src = `image/materi/materi_${idx}.webp`;
+        preloadedMateri[idx] = img;
+    }
+}
+
+function preloadAllMateri() {
+    for (let i = 1; i <= totalMateri; i++) {
+        preloadSlide(i);
+    }
+}
 
 function openMateri() {
     materiIndex = 1;
     updateMateri();
     document.getElementById("materiPopup").style.display = "flex";
+    preloadAllMateri();
 }
 
 function closeMateri() {
@@ -514,10 +530,14 @@ function prevMateri() {
 
 function updateMateri() {
     document.getElementById("materiImage").src =
-        `image/materi/materi_${materiIndex}.PNG?v=2`;
+        `image/materi/materi_${materiIndex}.webp`;
 
     document.getElementById("materiTitle").innerText =
         `Materi (${materiIndex} / ${totalMateri})`;
+
+    preloadSlide(materiIndex + 1);
+    preloadSlide(materiIndex + 2);
+    preloadSlide(materiIndex - 1);
 }
 
 const content = {
@@ -593,6 +613,7 @@ function startGame(){
 }
 
 window.addEventListener("load", () => {
+    setTimeout(preloadAllMateri, 1000);
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     const isStandalone = window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches;
     if (isIOS && !isStandalone) {
