@@ -178,8 +178,32 @@ const xvpeditionData = [
     }
 ];
 
+// Referensi Web Data
+const xvReferensiData = [
+    {
+        type: "youtube",
+        badge: "📺 YouTube Video",
+        img: "https://img.youtube.com/vi/xTJNk3LE_KI/hqdefault.jpg",
+        title: "Hantavirus Lebih Mematikan dari COVID-19, Dunia Mulai Waspada!",
+        desc: "Video headline berita iNews mengenai potensi ancaman dan tingkat bahaya Hantavirus bagi kesehatan masyarakat global.",
+        btnText: "▶️ Tonton Video YouTube",
+        link: "https://youtu.be/xTJNk3LE_KI?si=2OnOX89q4Y02q0x1"
+    },
+    {
+        type: "bbc",
+        badge: "📰 BBC News Indonesia",
+        img: "https://ichef.bbci.co.uk/news/1024/branded_indonesia/4eaa/live/fff74570-52cb-11f1-b4b8-8bc40cabb834.jpg",
+        title: "Kesehatan: WHO Umumkan Wabah Ebola Darurat Internasional",
+        desc: "Artikel resmi BBC News Indonesia mengenai deklarasi darurat kesehatan masyarakat internasional oleh WHO akibat wabah virus Ebola.",
+        btnText: "📖 Baca Artikel BBC",
+        link: "https://www.bbc.com/indonesia/articles/cj0pe3myjypo"
+    }
+];
+
 let currentCategory = 'all';
 let currentSection = 'hub'; // 'hub', 'glosarium', 'referensi'
+let currentRefIndex = 0;
+const totalRefSlides = 2;
 
 // Open Glosarium Modal directly
 function openGlosarium() {
@@ -240,6 +264,52 @@ function openXVSection(section) {
         if (viewGlosarium) viewGlosarium.style.display = "none";
         if (viewReferensi) viewReferensi.style.display = "flex";
         if (mainTitle) mainTitle.innerText = "🌐 Referensi Web & Edukasi";
+        currentRefIndex = 0;
+        updateRefSlideDisplay();
+    }
+}
+
+// Update Referensi slider slide visibility
+function updateRefSlideDisplay() {
+    for (let i = 0; i < totalRefSlides; i++) {
+        const slide = document.getElementById("refSlide" + i);
+        if (slide) {
+            slide.style.display = (i === currentRefIndex) ? "block" : "none";
+        }
+    }
+
+    const indicator = document.getElementById("refIndicator");
+    if (indicator) {
+        indicator.innerText = `${currentRefIndex + 1} / ${totalRefSlides}`;
+    }
+
+    const prevBtn = document.getElementById("refPrevBtn");
+    const nextBtn = document.getElementById("refNextBtn");
+
+    if (prevBtn) {
+        prevBtn.disabled = currentRefIndex === 0;
+        prevBtn.style.opacity = currentRefIndex === 0 ? "0.4" : "1";
+        prevBtn.style.cursor = currentRefIndex === 0 ? "not-allowed" : "pointer";
+    }
+
+    if (nextBtn) {
+        nextBtn.disabled = currentRefIndex === totalRefSlides - 1;
+        nextBtn.style.opacity = currentRefIndex === totalRefSlides - 1 ? "0.4" : "1";
+        nextBtn.style.cursor = currentRefIndex === totalRefSlides - 1 ? "not-allowed" : "pointer";
+    }
+}
+
+function prevReferensi() {
+    if (currentRefIndex > 0) {
+        currentRefIndex--;
+        updateRefSlideDisplay();
+    }
+}
+
+function nextReferensi() {
+    if (currentRefIndex < totalRefSlides - 1) {
+        currentRefIndex++;
+        updateRefSlideDisplay();
     }
 }
 
@@ -287,66 +357,20 @@ function renderXVpedition() {
     `).join('');
 }
 
-// Check if player is actively in gameplay (ONLY in Scene_Map, NOT during Boot, Title, Name Input, or Message)
+// Check if player is actively in gameplay (In-game Glosarium icon disabled)
 function shouldShowXVpeditionBtn() {
-    if (typeof SceneManager === "undefined" || !SceneManager._scene) {
-        return false;
-    }
-
-    const scene = SceneManager._scene;
-    const sceneName = scene.constructor ? scene.constructor.name : "";
-
-    // ONLY show during map exploration (Scene_Map)
-    if (sceneName === "Scene_Map") {
-        // Hide while dialogue message box is active
-        if (typeof $gameMessage !== "undefined" && $gameMessage && $gameMessage.isBusy()) {
-            return false;
-        }
-        return true;
-    }
-
     return false;
 }
 
-// Function to update position & visibility of Glosarium floating button BELOW the Top-Right Menu Button
+// Function to update position & visibility of Glosarium floating button
 function updateXVpeditionBtnPosition() {
     const btn = document.getElementById("xvpeditionGameBtn");
-    if (!btn) return;
-
-    if (!shouldShowXVpeditionBtn()) {
+    if (btn) {
         btn.style.display = "none";
-        return;
     }
-
-    btn.style.display = "inline-flex";
-
-    if (typeof Graphics !== "undefined" && Graphics._canvas) {
-        const rect = Graphics._canvas.getBoundingClientRect();
-        if (rect && rect.width > 0) {
-            const scale = Graphics._realScale || 1.0;
-            const btnHeight = Math.max(30, Math.min(38, Math.floor(34 * scale)));
-            
-            // Positioned directly below RPG Maker's top-right Touch UI menu button (y ~ 58px)
-            const topMargin = Math.floor(58 * scale);
-            const rightMargin = Math.floor(10 * scale);
-
-            btn.style.height = btnHeight + "px";
-            btn.style.position = "fixed";
-            btn.style.left = "auto";
-            btn.style.right = Math.floor((window.innerWidth - rect.right) + rightMargin) + "px";
-            btn.style.top = Math.floor(rect.top + topMargin) + "px";
-            return;
-        }
-    }
-
-    // Default fallback position below top-right menu
-    btn.style.position = "fixed";
-    btn.style.top = "58px";
-    btn.style.right = "12px";
-    btn.style.left = "auto";
 }
 
-// Hook into Scene_Map lifecycle for guaranteed in-game update
+// Hook into Scene_Map lifecycle
 if (typeof Scene_Map !== "undefined") {
     const _Scene_Map_update = Scene_Map.prototype.update;
     Scene_Map.prototype.update = function() {
@@ -355,28 +379,20 @@ if (typeof Scene_Map !== "undefined") {
     };
 }
 
-// Mount and keep button position updated
+// Mount and keep button position updated (in-game button creation removed)
 window.addEventListener("DOMContentLoaded", () => {
-    // Only create floating in-game button if popup container exists and not already created
-    if (!document.getElementById("xvpeditionGameBtn") && document.getElementById("xvpeditionPopup")) {
-        const btn = document.createElement("div");
-        btn.id = "xvpeditionGameBtn";
-        btn.className = "xvpedition-game-btn";
-        btn.title = "Buka Glosarium";
-        btn.style.display = "none"; // Always hidden initially until active in Scene_Map
-        btn.onclick = openXVpedition;
-        btn.innerHTML = `
-            <img src="icon/xvpedition.png" alt="Glosarium Icon" class="xvpedition-btn-img">
-            <span class="xvpedition-btn-text">GLOSARIUM</span>
-        `;
-        document.body.appendChild(btn);
+    const btn = document.getElementById("xvpeditionGameBtn");
+    if (btn) {
+        btn.style.display = "none";
+        btn.remove();
+    }
 
-        // Initial check
-        updateXVpeditionBtnPosition();
-
-        // Continually check scene state and resize
-        window.addEventListener("resize", updateXVpeditionBtnPosition);
-        setInterval(updateXVpeditionBtnPosition, 200);
+    // iOS Touch Scroll protection for popup container
+    const popup = document.getElementById("xvpeditionPopup");
+    if (popup) {
+        popup.addEventListener("touchmove", (e) => {
+            e.stopPropagation();
+        }, { passive: true });
     }
 });
 

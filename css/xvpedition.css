@@ -12,7 +12,9 @@
     justify-content: center;
     align-items: center;
     z-index: 999999 !important;
-    overflow-y: auto;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-y !important;
     padding: 16px;
     box-sizing: border-box;
 }
@@ -35,6 +37,8 @@
     box-sizing: border-box !important;
     color: #ffffff;
     font-family: "Trebuchet MS", Arial, sans-serif;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-y !important;
 }
 
 /* Close Button */
@@ -192,7 +196,10 @@
 
 .xvpedition-content {
     max-height: 52vh;
-    overflow-y: auto;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-y !important;
+    overscroll-behavior-y: contain;
     padding: 4px 6px 6px 4px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -271,21 +278,19 @@
     font-size: 15px;
 }
 
-/* ================= 3. REFERENSI WEB VIEW (2 CARDS WITH IMAGES) ================= */
-.ref-card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-    padding: 10px 4px;
-    max-height: 54vh;
-    overflow-y: auto;
+/* ================= 3. REFERENSI WEB VIEW (SLIDER WITH NAV BUTTONS) ================= */
+.ref-single-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    gap: 8px;
 }
 
-@media (max-width: 680px) {
-    .ref-card-grid {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
+.ref-slide {
+    width: 100%;
 }
 
 .ref-card {
@@ -295,13 +300,14 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    width: 100%;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     text-align: left;
 }
 
 .ref-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7), 0 0 12px rgba(255, 228, 92, 0.4);
     border-color: #ffffff;
 }
@@ -309,9 +315,25 @@
 .ref-card-img-wrap {
     position: relative;
     width: 100%;
-    height: 160px;
+    height: clamp(130px, 25vh, 200px);
     background: #111;
     overflow: hidden;
+}
+
+.ref-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 6px;
+    padding: 0 4px;
+}
+
+.ref-indicator {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffe45c;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .ref-card-img {
@@ -454,4 +476,59 @@
     letter-spacing: 0.8px;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
     pointer-events: none;
+}
+
+/* ================= MOBILE RESPONSIVE MEDIA QUERIES ================= */
+@media (max-width: 480px) {
+    .popup.xvpedition {
+        padding: 16px 14px 14px 14px !important;
+        border-width: 3px !important;
+    }
+    .xvpedition-main-title {
+        font-size: 20px;
+    }
+    .cat-btn {
+        padding: 5px 9px;
+        font-size: 11px;
+    }
+    .xvpedition-search {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+    .xvpedition-content {
+        grid-template-columns: 1fr;
+        max-height: 58vh;
+    }
+    .ref-card-grid {
+        grid-template-columns: 1fr;
+        max-height: 58vh;
+        gap: 12px;
+    }
+    .ref-card-title {
+        font-size: 14px;
+    }
+    .ref-card-desc {
+        font-size: 12px;
+    }
+}
+
+@media (max-height: 500px) {
+    .popup.xvpedition {
+        max-height: 94vh !important;
+        padding: 12px 14px !important;
+    }
+    .xvpedition-header {
+        margin-bottom: 8px;
+    }
+    .xvpedition-main-title {
+        font-size: 18px;
+    }
+    .xvpedition-controls {
+        margin-bottom: 8px;
+        gap: 6px;
+    }
+    .xvpedition-content,
+    .ref-card-grid {
+        max-height: 48vh;
+    }
 }
