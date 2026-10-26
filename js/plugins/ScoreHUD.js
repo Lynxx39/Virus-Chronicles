@@ -237,10 +237,37 @@
     }
   }
 
+  // Sinkronisasi nama pemain dari localStorage (vc_username) ke Actor 1
+  function syncPlayerName() {
+    try {
+      const savedName = localStorage.getItem("vc_username");
+      if (savedName && typeof $gameActors !== "undefined" && $gameActors.actor(1)) {
+        if ($gameActors.actor(1).name() !== savedName) {
+          $gameActors.actor(1).setName(savedName);
+        }
+      }
+    } catch (e) {
+      console.warn("Gagal sinkronisasi nama pemain:", e);
+    }
+  }
+
+  const _DataManager_setupNewGame = DataManager.setupNewGame;
+  DataManager.setupNewGame = function() {
+    _DataManager_setupNewGame.call(this);
+    syncPlayerName();
+  };
+
+  const _Scene_Load_onLoadSuccess = Scene_Load.prototype.onLoadSuccess;
+  Scene_Load.prototype.onLoadSuccess = function() {
+    _Scene_Load_onLoadSuccess.call(this);
+    syncPlayerName();
+  };
+
   // Integrasikan pembuatan D-pad ke Scene_Map
   const _Scene_Map_start = Scene_Map.prototype.start;
   Scene_Map.prototype.start = function() {
     _Scene_Map_start.call(this);
+    syncPlayerName();
     createDpad();
   };
 

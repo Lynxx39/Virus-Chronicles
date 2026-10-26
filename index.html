@@ -77,6 +77,168 @@ body::before{
                0 2px #7a3e12;
 }
 
+/* ===== USERNAME CARD ===== */
+.username-card{
+    background:linear-gradient(#d9934f,#c67a3c);
+    border-radius:20px;
+    padding: clamp(22px, 5vw, 32px) clamp(16px, 4vw, 28px);
+    width: 92%;
+    max-width: 380px;
+    text-align:center;
+    border:4px solid #8b4a19;
+    box-shadow:inset 0 4px rgba(255,255,255,.3),
+               inset 0 -6px rgba(0,0,0,.25),
+               0 10px #8b4a19;
+    margin: 15px auto;
+    position: relative;
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.username-title{
+    font-size: clamp(22px, 5.5vw, 28px);
+    margin: 0 0 clamp(16px, 4vw, 24px) 0;
+    color:#ffffff;
+    font-weight:bold;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.45);
+}
+
+.username-input-wrapper{
+    position:relative;
+    width:100%;
+}
+
+.username-input{
+    width:100%;
+    padding: clamp(10px, 2.8vw, 14px) 20px;
+    font-size: clamp(16px, 4vw, 19px);
+    font-weight:bold;
+    font-family: inherit;
+    text-align:center;
+    border-radius:25px;
+    border:3px solid #7a3e12;
+    background:#f7f3eb;
+    color:#4b2600;
+    outline:none;
+    box-sizing:border-box;
+    box-shadow:inset 0 3px 6px rgba(0,0,0,0.22),
+               0 1px rgba(255,255,255,0.4);
+    transition:all 0.2s ease;
+}
+
+.username-input::placeholder{
+    color:#a89481;
+    font-weight:normal;
+    text-align:center;
+    opacity:0.85;
+}
+
+.username-input:focus{
+    background:#ffffff;
+    border-color:#ffd28a;
+    box-shadow:0 0 10px rgba(255, 210, 138, 0.7),
+               inset 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.username-btn{
+    width:100%;
+    margin-top: clamp(12px, 3vw, 18px);
+    padding: clamp(10px, 2.5vw, 15px);
+    font-size: clamp(16px, 4vw, 20px);
+    font-weight:bold;
+    font-family: inherit;
+    border-radius:25px;
+    border:4px solid #7a3e12;
+    cursor:pointer;
+    background:linear-gradient(#ffea81,#ff8400);
+    color:#ffffff;
+    text-shadow:1px 1px 2px rgba(0,0,0,.35);
+    box-shadow:inset 0 5px rgba(255,255,255,.4),
+               inset 0 -4px rgba(0,0,0,.25),
+               0 6px #7a3e12;
+    touch-action: manipulation;
+    transition:transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.username-btn:hover{
+    filter: brightness(1.05);
+}
+
+.username-btn:active{
+    transform:translateY(4px);
+    box-shadow:inset 0 3px rgba(255,255,255,.3),
+               inset 0 -3px rgba(0,0,0,.25),
+               0 2px #7a3e12;
+}
+
+.username-error{
+    color:#fff0b3;
+    font-size: 13.5px;
+    font-weight:bold;
+    margin-top:12px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    display:none;
+}
+
+.player-info-badge{
+    background:rgba(0, 0, 0, 0.22);
+    border:2px solid rgba(255, 234, 129, 0.45);
+    border-radius:14px;
+    padding:6px 14px;
+    margin-bottom:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    color:#ffea81;
+    font-size: clamp(13px, 3.2vw, 15px);
+    text-shadow:1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.player-info-badge strong{
+    color:#ffffff;
+}
+
+.player-edit-btn{
+    background:#ffe45c;
+    border:2px solid #7a3e12;
+    border-radius:8px;
+    padding:2px 7px;
+    font-size:12px;
+    font-weight:bold;
+    cursor:pointer;
+    color:#7a3e12;
+    transition:transform 0.1s ease;
+}
+
+.player-edit-btn:hover{
+    transform:scale(1.1);
+}
+
+.player-edit-btn:active{
+    transform:scale(0.95);
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+}
+
+.shake {
+    animation: shake 0.35s ease;
+}
+
 /* ===== POPUP ===== */
 .popup-overlay{
     position:fixed;
@@ -222,6 +384,10 @@ body::before{
         padding: 18px 14px;
         border-width: 3px;
     }
+    .username-card {
+        padding: 20px 14px;
+        border-width: 3px;
+    }
     .popup {
         padding: 16px 14px;
     }
@@ -231,6 +397,23 @@ body::before{
     .menu-card {
         padding: 12px 18px;
         margin: 5px auto;
+    }
+    .username-card {
+        padding: 12px 18px;
+        margin: 5px auto;
+    }
+    .username-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .username-input {
+        padding: 7px 14px;
+        font-size: 15px;
+    }
+    .username-btn {
+        padding: 7px 14px;
+        font-size: 15px;
+        margin-top: 8px;
     }
     .menu-title {
         font-size: 20px;
@@ -407,9 +590,25 @@ body::before{
 
 
 
-<!-- MENU -->
-<div class="menu-card">
+<!-- USERNAME CARD (SAAT AWAL) -->
+<div class="username-card" id="usernameCard">
+    <div class="username-title">Masukkan Username</div>
+    <form onsubmit="submitUsername(event)">
+        <div class="username-input-wrapper">
+            <input type="text" id="usernameInput" class="username-input" placeholder="Username" maxlength="20" autocomplete="off" autofocus>
+        </div>
+        <button type="submit" class="username-btn">Masuk</button>
+        <div id="usernameError" class="username-error"></div>
+    </form>
+</div>
+
+<!-- MENU UTAMA -->
+<div class="menu-card" id="mainMenuCard" style="display:none;">
     <div class="menu-title">Virus Chronicles</div>
+    <div class="player-info-badge">
+        <span>👤 Pemain: <strong id="playerGreetingName">-</strong></span>
+        <button type="button" class="player-edit-btn" onclick="openUsernameForm()" title="Ganti Username">✏️ Ganti</button>
+    </div>
     <button class="menu-btn" onclick="openPopup('pendahuluan')">CP & TP</button>
     <button class="menu-btn" onclick="openMateri()">Materi</button>
     <button class="menu-btn" onclick="openGlosarium()">Glosarium</button>
@@ -656,9 +855,82 @@ function closePopup(){
     document.getElementById("popup").style.display="none";
 }
 
+function submitUsername(e){
+    if(e) e.preventDefault();
+    const input = document.getElementById("usernameInput");
+    const errorEl = document.getElementById("usernameError");
+    const card = document.getElementById("usernameCard");
+    const val = input ? input.value.trim() : "";
+    
+    if(!val){
+        if(errorEl){
+            errorEl.style.display = "block";
+            errorEl.innerText = "Silakan masukkan username terlebih dahulu!";
+        }
+        if(card){
+            card.classList.remove("shake");
+            void card.offsetWidth;
+            card.classList.add("shake");
+        }
+        if(input) input.focus();
+        return;
+    }
+
+    if(errorEl) errorEl.style.display = "none";
+    localStorage.setItem("vc_username", val);
+    showMainMenu(val);
+}
+
+function showMainMenu(name){
+    const usernameCard = document.getElementById("usernameCard");
+    const mainMenuCard = document.getElementById("mainMenuCard");
+    const displayEl = document.getElementById("playerGreetingName");
+
+    if(displayEl) displayEl.innerText = name;
+    if(usernameCard) usernameCard.style.display = "none";
+    if(mainMenuCard){
+        mainMenuCard.style.display = "block";
+        mainMenuCard.style.animation = "popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)";
+    }
+}
+
+function openUsernameForm(){
+    const usernameCard = document.getElementById("usernameCard");
+    const mainMenuCard = document.getElementById("mainMenuCard");
+    const input = document.getElementById("usernameInput");
+    const errorEl = document.getElementById("usernameError");
+
+    if(errorEl) errorEl.style.display = "none";
+    if(mainMenuCard) mainMenuCard.style.display = "none";
+    if(usernameCard){
+        usernameCard.style.display = "block";
+        if(input){
+            const saved = localStorage.getItem("vc_username") || "";
+            input.value = saved;
+            setTimeout(() => {
+                input.focus();
+                input.select();
+            }, 60);
+        }
+    }
+}
+
 function startGame(){
+    const saved = localStorage.getItem("vc_username");
+    if(!saved || !saved.trim()){
+        openUsernameForm();
+        return;
+    }
     window.location.href="game.html";
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+    const input = document.getElementById("usernameInput");
+    const saved = localStorage.getItem("vc_username");
+    if(saved && input){
+        input.value = saved;
+    }
+});
 
 window.addEventListener("load", () => {
     setTimeout(preloadAllMateri, 1000);
